@@ -1,0 +1,1 @@
+# SemDH2024-GreekNewTestamentNames
