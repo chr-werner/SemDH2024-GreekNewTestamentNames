@@ -384,7 +384,6 @@ class TEIFile(object):
                     if part_f_tag:
                         # merge them with previous sibling
                         preceding_w_tag = part_f_tag.find_previous_sibling("w")
-                        # TODO BUG: string concat sometimes fails without notice in parallel
                         if preceding_w_tag:
                             # get text of both word tags
                             combined_text = (
@@ -466,10 +465,9 @@ class TEIFile(object):
         :param s: string to strip punctuation from
         :return: string without punctuation
         """
-        # remove punctuation
-        # TODO: BUG the following line fucks up the GAP annotations
-        s = re.sub(r"[^\w\s]", "", s)
-        # normalize
+        # remove everything expect characters, spaces, '[' and ']'
+        s = re.sub(r"[^\w\s\[\]]", "", s)
+        # normalize by removing multiple consecutive whitespaces
         s = re.sub(r"\s+", " ", s)
         # remove leading/trailing whitespaces
         return s.strip()
@@ -540,6 +538,7 @@ class TEIFile(object):
         else:
             combined_text += word_object.get_text()
 
+        # replace spaces, tabs and newlines with 'nothing' to concat the different word parts
         return combined_text.replace(" ", "").replace("\t", "").replace("\n", "")
 
     @staticmethod

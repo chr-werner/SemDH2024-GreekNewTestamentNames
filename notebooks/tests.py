@@ -279,8 +279,8 @@ def test_verse_id_to_bkv_nkv(input_value, expected_output):
     "input_value, expected_output",
     [
         (  # ancient greek without scentence marks
-            "ο εμε μεισων · και τον πατερα μου μισει :",
-            "ο εμε μεισων και τον πατερα μου μισει",
+            "ο εμε μεισων · και[gap] τον πατερα μου μισει :",
+            "ο εμε μεισων και[gap] τον πατερα μου μισει",
         ),
         (  # English with sentence marks
             "hello, world!",

@@ -66,7 +66,7 @@ ORDER BY (?PersonLabel)
 
 ## Updates and Refinements
 
-There will be/have been updates on this repo. Please have a look the release tags for previous versions.
+There will be/have been updates on this repo. Please have a look at the release tags for previous versions.
 
 <!--
 ## How to Cite
