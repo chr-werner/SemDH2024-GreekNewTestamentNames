@@ -6,10 +6,28 @@ import re
 import requests
 import xml.etree.ElementTree as ET
 import zipfile
+import csv
 
+from pathlib import Path
 from constants import BOOK_INFO
 from TEIFile import TEIFile
-from converters import tei_to_verses_dict, tei_to_manuscript_dict
+
+
+def check_and_create_file(file_path):
+    # Check if the file already exists
+    if not os.path.exists(file_path):
+        # Get the directory path
+        dir_path = os.path.dirname(file_path)
+
+        # Create the directory path if it does not exist
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+            print(f"Directory created: {dir_path}")
+
+        # Create the file
+        with open(file_path, "w") as file:
+            file.write("")
+            print(f"File created: {file_path}")
 
 
 def url_to_error_log(url: str, reason: str, error_log_file: str):
@@ -20,6 +38,8 @@ def url_to_error_log(url: str, reason: str, error_log_file: str):
     :param error_log_file: path to log file
     :return:
     """
+    check_and_create_file(error_log_file)
+
     with open(error_log_file, "a") as error_log:
         error_log.write(f"{url}; {reason}\n")
 
@@ -32,21 +52,23 @@ def fetch_and_format_xml(url: str, output_file: str, error_log_file: str):
     :param error_log_file: Path to the log file
     :return:
     """
+    check_and_create_file(error_log_file)
+
     try:
         response = requests.get(url)
         if response.status_code == 200 and "text/xml" in response.headers.get(
             "content-type"
         ):
             root = ET.fromstring(response.text)
-
             # Check for <error> tag with code attribute equal to 1
             if root.tag == "error":
                 url_to_error_log(url, root.get("message"), error_log_file)
                 return
-
-            tree = ET.ElementTree(root)
-            ET.indent(tree, level=0)
-            tree.write(output_file, encoding="utf-8")
+            # format XML
+            xml_string = format_xml(root)
+            # Write the string to the output file without any formatting
+            with open(output_file, "w") as f:
+                f.write(xml_string)
         else:
             url_to_error_log(url, "no xml found", error_log_file)
 
@@ -54,7 +76,22 @@ def fetch_and_format_xml(url: str, output_file: str, error_log_file: str):
         url_to_error_log(url, str(e), error_log_file)
 
 
-def check_xml(file_path: str, parser) -> str | None:
+def format_xml(root: ET.Element) -> str:
+    """Formatting an XML element to be a one line string
+
+    :param root: XML root element
+    :param output_file: fiel to write formatted XML to
+    """
+    # Convert the XML element tree to a string without formatting (removing newlines and spaces between tags)
+    xml_string = (
+        ET.tostring(root, encoding="utf-8", method="xml")
+        .decode("utf-8")
+        .replace("\n", "")
+    )
+    return re.sub(r"\s{2,}", "", xml_string)
+
+
+def check_xml(file_path: str, parser) -> str or None:
     """Check XML file validity
 
     :param file_path: path string to file to be checked
@@ -180,28 +217,43 @@ def concat_raw_text_from_tags(tags: list, exception_list: list) -> str:
     return " ".join(words)
 
 
-def get_data_from_tei(tei_file_path: str) -> tuple:
+def get_data_from_tei(
+    tei_file_path: str,
+    clear_only,
+    verbose: bool = False,
+    write_to_file: bool = False,
+    trans_out_dir: str = "../data/parsed/trans",
+    man_out_dir: str = "../data/parsed/man",
+) -> tuple:
     """Wrapper function to extract manuscript and verse data from TEI file
 
+    :param man_out_dir:
+    :param trans_out_dir:
+    :param verbose:
+    :param clear_only: set True to get GAP indicators for supplied and illegible text
+    :param write_to_file: set True to write results to files
     :param tei_file_path: TEI file path
     :return: tupel with manuscript and verses data
     """
-    tei = TEIFile(tei_file_path)
-    # check for source from filepath # TODO: better use the tei file if possible
-    if "ntvmr" in str(tei_file_path):
-        source = "ntvmr"
-    elif "igntp" in str(tei_file_path):
-        source = "igntp"
+    tei = TEIFile(tei_file_path, clear_only, verbose)
+    file_name = Path(tei_file_path).stem
+    man_data = tei.get_manuscript_data()
+    trans_data = tei.get_transcription_list()
+
+    if not write_to_file:
+        return man_data, trans_data
     else:
-        source = None
+        with open(f"{man_out_dir}/{file_name}.csv", "w", newline="") as file1:
+            w = csv.DictWriter(file1, man_data.keys())
+            w.writeheader()
+            w.writerow(man_data)
+        with open(f"{trans_out_dir}/{file_name}.csv", "w", newline="") as file2:
+            w = csv.DictWriter(file2, trans_data[0].keys())
+            w.writeheader()
+            w.writerows(trans_data)
 
-    verses = tei_to_verses_dict(tei, source)
-    manuscript = tei_to_manuscript_dict(tei, source)
 
-    return manuscript, verses
-
-
-def fix_bkv(row: pd.Series) -> str | None:
+def fix_bkv(row: pd.Series) -> str or None:
     """Fix the bkv column, by checking and converting nkv entries
 
     :param row: pandas dataframe row
@@ -221,7 +273,7 @@ def fix_bkv(row: pd.Series) -> str | None:
         book_name = match_nkv.group(1)
         chapter = match_nkv.group(2)
         verse = match_nkv.group(3)
-        # check for boo_name in en values of dicts
+        # check for book_name in en values of dicts
         for key, value in BOOK_INFO.items():
             if value["en"] == book_name:
                 book_num = key
@@ -236,7 +288,75 @@ def fix_bkv(row: pd.Series) -> str | None:
         return None
 
 
-def generate_transcription_url(row: pd.Series) -> str | None:
+def bkv_nkv_from_verse_id(row: pd.Series, verse_id_col: str = "verse") -> pd.Series:
+    """Taking a pandas data frames row, this function takes the verse id from a given column, checks for its format and
+    converts it to 'standardized' nkv and bkv formats
+
+    :param row: row representing a verse
+    :param verse_id_col: column the verse id lives in
+    :return: modified row representing a verse
+    """
+    verse_id = row[verse_id_col]
+    # patterns to check for
+    pattern_nkv = r"([1-3A-Za-z]+)\.(\d+)\.(\d+)"
+    pattern_nkv_scriptio = r"([1-3A-Za-z]+)\.(inscriptio|subscriptio)"
+    pattern_bkv = r"B(\d{2})K(\d+)V(\d+)"
+    pattern_bkv_scriptio = (
+        r"B(\d{2})K(inscriptio|subscriptio|Inscriptio|Subscriptio)V(\d+)"
+    )
+    # check data against patterns
+    match_nkv = re.match(pattern_nkv, verse_id)
+    match_nkv_scriptio = re.match(pattern_nkv_scriptio, verse_id)
+    match_bkv = re.match(pattern_bkv, verse_id)
+    match_bkv_scriptio = re.match(pattern_bkv_scriptio, verse_id)
+
+    # handle match on nkv schema
+    if match_nkv:
+        # parts of matched string
+        book_name = match_nkv.group(1)
+        chapter = match_nkv.group(2)
+        verse = match_nkv.group(3)
+        # check for book_name in en values of dicts
+        for book_num, value in BOOK_INFO.items():
+            if value["en"] == book_name:
+                row["bkv"] = f"B{book_num}K{chapter}V{verse}"
+                row["nkv"] = verse_id
+                break
+    # handle match on bkv schema
+    elif match_bkv:
+        book_num = match_bkv.group(1)
+        chapter = match_bkv.group(2)
+        verse = match_bkv.group(3)
+        # check for book_name in en values of dicts
+        book_abb_en = BOOK_INFO[str(book_num)]["en"]
+        row["nkv"] = f"{book_abb_en}.{chapter}.{verse}"
+        row["bkv"] = verse_id
+    # check for sub- or inscriptio
+    elif match_nkv_scriptio:
+        book_name = match_nkv_scriptio.group(1)
+        scriptio = match_nkv_scriptio.group(2)
+        # check for book_name in en values of dicts
+        for book_num, value in BOOK_INFO.items():
+            if value["en"] == book_name:
+                row["bkv"] = f"B{book_num}K{scriptio.capitalize()}V0"
+                row["nkv"] = f"{book_name}.{scriptio.capitalize()}"
+                break
+    elif match_bkv_scriptio:
+        book_num = match_bkv_scriptio.group(1)
+        scriptio = match_bkv_scriptio.group(2)
+        # check for book_name in en values of dicts
+        book_abb_en = BOOK_INFO[str(book_num)]["en"]
+        row["nkv"] = f"{book_abb_en}.{scriptio.capitalize()}"
+        row["bkv"] = f"B{book_num}K{scriptio.capitalize()}V0"
+    # handle no match
+    else:
+        row["bkv"] = None
+        row["nkv"] = None
+
+    return row
+
+
+def generate_transcription_url(row: pd.Series) -> str or None:
     """Generate a transcription URL for a pandas dataframe row which has a nkv and docID assigned, as well as is
     sourced from the NTVMR.
 
@@ -270,7 +390,7 @@ def generate_local_copies(
     """
     # make local copy of verses_df
     local_verses = verses[verses["bkv"] == bkv].copy()
-    local_verses.dropna(subset=["text", "marks"], inplace=True)
+    local_verses.dropna(subset=["transcript"], inplace=True)
 
     # make local copy of gendervoc_df
     local_gendervoc = gendervoc.copy()
@@ -282,8 +402,6 @@ def generate_local_copies(
 
 def search_words(words: pd.DataFrame, verses: pd.DataFrame):
     """search verses for given list of words
-
-    TODO: search should be done on unique variantID
 
     :param words: pandas dataframe holding word variants (en_tag,el_tag,variant,gender,type,wordID,variantID)
     :param verses: pandas dataframe holding verses (bkv,text,docID)
@@ -398,7 +516,10 @@ def process_bkv(
         # merging dataframes of found and missing
         occurrences = pd.concat([found, missing], ignore_index=True)
 
-        occurrences.drop(columns=["missing_wordIDs", "missing_names"], inplace=True)
+        # delete certain columns
+        # occurrences.drop(columns=["missing_wordIDs", "missing_names"], inplace=True)
+        # get relevant columns only
+        occurrences = occurrences[["verse_id", "variantID", "occurrence", "wordID"]]
         # Writing the DataFrame to a CSV file
         occurrences.to_csv(output_file, index=False)
 
@@ -434,3 +555,64 @@ def get_docID_set(metadata_list_xml: str, all: bool = True) -> set:
 
     # Print the set of docIDs smaller than 50000
     return doc_ids_set
+
+
+def ga_to_docID(row: pd.Series) -> int or None:
+    """Convert the GA string corresponding docID for a given row of a pandas dataframe. ONLY do this when docID is Null.
+
+    :param row: pandas dataframe row
+    :return: docID integer or None if GA string is present, else just return already present rows docID
+    """
+    if pd.isnull(row["docID"]):
+        # Get ga from row data
+        ga = str(row["ga"])
+
+        if not re.match(r"^[PL0-9]$", ga[0]):
+            raise AttributeError
+
+        # Compile the regular expression pattern
+        pattern = re.compile(r"([0-9]\d*)")
+
+        # Remove non-digits from ga
+        try:
+            ga_digits = re.search(pattern, ga).group()
+        except AttributeError:
+            print(f"No digits found in GA string: {ga}")
+            return None
+
+        if ga[0] == "P":
+            docID = 10000 + int(ga_digits)
+        elif ga[0] == "0":
+            docID = 20000 + int(ga_digits)
+        elif ga[0].isdigit():
+            docID = 30000 + int(ga_digits)
+        elif ga[0] == "L":
+            docID = 40000 + int(ga_digits)
+        else:
+            raise ValueError(
+                f"Invalid input: cannot determine document ID for the given input. {ga},{ga_digits}"
+            )
+
+        if len(ga_digits) > 4 or len(str(docID)) != 5 or docID > 49999:
+            raise ValueError(f"{ga} or {docID} is invalid in length")
+
+        return docID
+
+    else:
+        return row["docID"]
+
+
+def gap_clean(text: str) -> str:
+    """Removes everything inside brackets except Greek characters, also removes the brackets.
+
+    :param text: Input string containing text with brackets
+    :return: Cleaned string with only Greek characters inside the brackets
+    """
+    try:
+        return re.sub(
+            r"\[([^\]]*)\]",
+            lambda match: "".join(re.findall(r"[Α-Ωα-ω]+", match.group(1))),
+            text,
+        )
+    except TypeError as e:
+        print(e, text)

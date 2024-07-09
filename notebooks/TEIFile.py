@@ -1,153 +1,432 @@
-from dataclasses import dataclass
 from bs4 import BeautifulSoup
-import os
+from dateutil import parser as dtparser
 import unicodedata
-
-
-@dataclass
-class Source:
-    country: str
-    settlement: str
-    repository: str
-    idno: str
-
-
-@dataclass
-class Verse:
-    bkv: str
-    text: str  # lorem ipsum text
-    marks: str  # ccccu sssss uccc -> unclear: u, clear: c, supplied: s
-    # raw: str
-    publisher: str
-
-
-@dataclass
-class Manuscript:
-    sources: list[Source]
-    ga: str
-    docID: int
-    label: str
-    # originYear: {late: int, early: int, content: str}
+import re
 
 
 class TEIFile(object):
-    def __init__(self, filepath):
-        self.filepath = filepath
-        self.soup = self._read_tei(self.filepath)
+    def __init__(self, filepath, clear_only, verbose):
+        self._filepath = filepath
+        self._soup = self._read_tei(self._filepath)
+        self._clear_only = clear_only
+        self.verbose = verbose
+
+    # All properties below are currently read only
 
     @property
-    def ga(self) -> str:
+    def ga(self) -> str or None:
+        """Property returning the Gregory Aaland (GA) Number
+
+        :return: Gregory Aaland (GA) Number as String
+        """
         try:
-            return self.soup.find("title", type="document").get("n")
+            return self._soup.find("title", type="document").get("n")
         except Exception as e:
-            print(f"{e} for file {self.filepath}")
+            print(f"No title; {e} for file {self._filepath}") if self.verbose else None
+            return None
 
     @property
-    def publisher(self) -> str:
-        content = self.soup.find("name", type="org")
-        return self._get_elem_text(content)
+    def publisher(self) -> list or None:
+        """Property returning the names of publishing institutions/persons
 
-    @property
-    def docID(self) -> int | None:
-        # TODO BUG: if content is not digits only, a conversion of the ga should be done: as NT_GRC_2816S_Rom.xml
-        #  gives key="2816S" but also gives a correct msDesc/msIdentifier type="Liste"
-        #  (but this description is not always given)
+        :return: List of names of publishing institutions/persons
+        """
+        publisher_names = []
         try:
-            # Try getting "key" attribute from "title" tag with type="document"
-            value = self.soup.find("title", type="document").get("key")
+            for name_tag in self._soup.find("publisher").find_all("name"):
+                publisher_names.append(name_tag.text)
+            return publisher_names
         except Exception as e:
-            value = None
-        if value is None:
-            try:
-                # If the above fails, try getting text from "msidentifier" tag with type="Liste"
-                value = self.soup.find("msidentifier", type="Liste").text
-            except Exception as e:
-                value = None
-        if value is None:
-            try:
-                # If the above fails, try getting an integer from the filename without extension
-                value = int(os.path.splitext(os.path.basename(self.filepath))[0])
-            except Exception as e:
-                value = None
-        return value
+            (
+                print(f"No publisher; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return None
 
     @property
-    def label(self) -> str:
-        content = self.soup.find("msName")
-        return self._get_elem_text(content)
+    def founder(self) -> str or None:
+        """Property returning the name of founding institution
+
+        :return: name of founding institution
+        """
+        try:
+            return self._soup.find("funder").getText()
+        except Exception as e:
+            (
+                print(f"No founder; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return None
 
     @property
-    def sources(self) -> list[Source]:
-        sources_in_header = self.soup.find_all("msIdentifier")
+    def label(self) -> str or None:
+        """Property returning the name of the document
 
-        sources = []
-        for source in sources_in_header:
-            country = self._get_elem_text(source.country)
-            settlement = self._get_elem_text(source.settlement)
-            repository = self._get_elem_text(source.repository)
-            idno = self._get_elem_text(source.idno)
-
-            sources.append(Source(country, settlement, repository, idno))
-
-        return sources
+        :return: name of the document
+        """
+        try:
+            return self._soup.find("msName").getText()
+        except Exception as e:
+            print(f"No label; {e} for file {self._filepath}") if self.verbose else None
+            return None
 
     @property
-    def verses(self) -> list[Verse]:
+    def sponsor(self) -> set or None:
+        """Property returning the names of sponsoring institutions/persons
+
+        :return: names of sponsoring institutions/persons
+        """
+        sponsor_names = set()
+        try:
+            for name_tag in self._soup.find("publisher").find_all("name"):
+                sponsor_names.add(name_tag.text)
+            return sponsor_names
+        except Exception as e:
+            (
+                print(f"No sponsor; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return None
+
+    @property
+    def edition(self) -> ():
+        """Property returning the editions version and date (in YYYY-MM-DD format) as tuple
+
+        :return: editions version and date
+        """
+        try:
+            edition = self._soup.find("edition").get("n")
+        except Exception as e:
+            (
+                print(f"No edition; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            edition = None
+
+        try:
+            date_str = self._soup.find("edition").find("date").getText()
+            date = dtparser.parse(date_str).strftime("%Y-%m-%d")
+        except Exception as e:
+            (
+                print(f"No edition date; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            date = None
+
+        return edition, date
+
+    @property
+    def publishing_date(self) -> str or None:
+        """Property returning the publishing date of the document in YYYY-MM-DD Format
+
+        :return: publishing date of the document
+        """
+        try:
+            date_str = self._soup.find("publicationStmt").find("date").getText()
+            return dtparser.parse(date_str).strftime("%Y-%m-%d")
+        except Exception as e:
+            (
+                print(f"No publishing date; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return None
+
+    @property
+    def alt_identifiers(self) -> dict or None:
+        """Property returning alternative identifiers for a documents
+
+        :return: tuples of alternative identifier name and number in this schema
+        """
+        alt_identifiers = {}
+        try:
+            for alt_identifier in self._soup.find_all("altIdentifier"):
+                type = alt_identifier.get("type")
+                value = alt_identifier.find("idno").getText()
+                alt_identifiers[type] = value
+            return alt_identifiers
+        except Exception as e:
+            (
+                print(f"No alternative identifiers; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return alt_identifiers
+
+    # @property
+    # def witnesses(self) -> set or None:
+    #    """Property returning the list of witnesses in the document
+    #       TODO: this should/could be a method
+    #    :return: witnesses in the document
+    #    """
+    #    witnesses = set()
+    #    try:
+    #        for witness in self._soup.find("listWit").find_all("witness"):
+    #            witnesses.add(witness.get("xml:id"))
+    #        return witnesses
+    #    except Exception as e:
+    #        (
+    #            print(f"No witnesses; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return None
+
+    @property
+    def encoding_version(self) -> str or None:
+        """Property returning the encoding version (by the IGNTP) of the document
+
+        :return: witnesses in the document
+        """
+        try:
+            return self._soup.find("encodingDesc").get("n")
+        except Exception as e:
+            (
+                print(f"No encoding version; {e} for file {self._filepath}")
+                if self.verbose
+                else None
+            )
+            return None
+
+    # @property
+    # def revisions(self) -> set or None:
+    #    """Property returning revision history of the document
+    #       TODO: this should/could be a method
+    #    :return: list of tuples of revision id, date of the revision and description
+    #    """
+    #    revisions = set()
+    #    try:
+    #        for revision in self._soup.find("revisionDesc").find_all("change"):
+    #            no = revision.get("n")
+    #            date = revision.get("when")
+    #            description = revision.getText()
+    #            revisions.add((no, date, description))
+    #        return revisions
+    #    except Exception as e:
+    #        (
+    #            print(f"No revision; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return None
+
+    # @property
+    # def resp(self) -> ():
+    #    """Property returning the response object of the document
+    #       TODO: this should/could be a method
+    #    :return: triple of lists of creators, transcribers and reconcilers
+    #    """
+    #    creators = []
+    #    transcribers = []
+    #    reconcilers = []
+    #    try:
+    #        for respStmt in self._soup.find_all("respStmt"):
+    #            resp = respStmt.find("resp").text
+    #            name = respStmt.find("name").text
+    #            # Check the type of responsibility and append to the corresponding list
+    #            if resp == "Created by":
+    #                creators.append(name)
+    #            elif resp == "Transcribed by":
+    #                transcribers.append(name)
+    #            elif resp == "Reconciled by":
+    #                reconcilers.append(name)
+    #        return creators, transcribers, reconcilers
+    #    except Exception as e:
+    #        (
+    #            print(f"No transcriber data; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return None
+
+    # @property
+    # def lections(self) -> set or None:
+    #    """Property returning the set of lections in the document
+    #       TODO: this should/could be a method
+    #    :return: set of lections in document
+    #    """
+    #    lections = set()
+    #    try:
+    #        for lection in self._soup.find_all("div", type="lection"):
+    #            # remove all spaces from lection string
+    #            lections.add(re.sub(r"\s+", "", lection.get("n")))
+    #        return lections
+    #    except Exception as e:
+    #        (
+    #            print(f"No lections; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return None
+
+    # @property
+    # def books(self) -> set or None:
+    #    """Property returning the set of books in the document
+    #       TODO: this should/could be a method
+    #    :return: set of books in the document
+    #    """
+    #    books = set()
+    #    try:
+    #        # Find all <div> elements with type="lection"
+    #        book_divs = self._soup.find_all("div", type="book")
+    #        # Extract the values of the "n" attribute from each <div> element
+    #        for book in book_divs:
+    #            books.add(book.get("n"))
+    #        # Convert the list to a set to remove duplicates
+    #        return books
+    #    except Exception as e:
+    #        print(f"No books; {e} for file {self._filepath}") if self.verbose else None
+    #        return None
+
+    @property
+    def verses(self) -> set or None:
+        """Property returning the set of verses in the document
+
+        :return: set of verses in the document
+        """
         verses = []
+        try:
+            # Find all <div> elements with type="lection"
+            verse_divs = self._soup.find_all("ab", attrs={"n": True})
+            # Extract the values of the "n" attribute from each <div> element
+            for book in verse_divs:
+                verses.append(book.get("n"))
+            # Convert the list to a set to remove duplicates
+            return set(verses)
+        except Exception as e:
+            print(f"No verses; {e} for file {self._filepath}") if self.verbose else None
+            return None
 
-        # get all blocks with verses
-        blocks = self.soup.find_all("ab", attrs={"n": True})
+    # @property
+    # def nomsac(self) -> set or None:
+    #    """Property returning the list of nomina sarca in the document
+    #       TODO: this should/could be a method
+    #    :return: nomina sacra in the document
+    #    """
+    #    nomsac = set()
+    #    try:
+    #        for nom in self._soup.find_all("abbr", type="nomSac"):
+    #            # if clear_only is set, we only want to get nomina sacra which are not supplied or unclear
+    #            if self._clear_only and (
+    #                nom.parent.name in ["supplied", "unclear"]
+    #                or nom.find(name=["supplied", "unclear"])
+    #            ):
+    #                nomsac.add(nom.getText(strip=True))
+    #            else:
+    #                nomsac.add(nom.getText(strip=True))
+    #        # Convert the list to a set to remove duplicates
+    #        return nomsac
+    #    except Exception as e:
+    #        (
+    #            print(f"No nomina sacra; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return None
 
-        # Iterate through blocks
-        for i in range(len(blocks)):
-            # list to store w tags
-            all_words = []
-            # get current block data
-            current_soup = blocks[i]
-            # get current blocks bkv
-            bkv = current_soup.get("n")
-
-            # Check if it's not the last block
-            if i < len(blocks) - 1:
-                next_soup = blocks[i + 1]
-                # Check if both current and next soup objects have 'part' attribute AND are of same bkv
-                if (
-                    current_soup.get("part") == "I"
-                    and next_soup.get("part") == "F"
-                    and current_soup.get("n") == next_soup.get("n")
-                ):
-                    all_words.extend(current_soup.find_all("w"))
-                    all_words.extend(next_soup.find_all("w"))
-                else:
-                    all_words.extend(current_soup.find_all("w"))
-            # Handling the last block
-            else:
-                prev_soup = blocks[i - 1]
-                if prev_soup.get("part") == "I" and current_soup.get("part") == "F":
-                    break
-                else:
-                    all_words = current_soup.find_all("w")
-
-            text_reconstructed = self._concat_text_from_tags_2(all_words)
-            # remove diacritics from text
-            text_reconstructed = self._str_remove_diacritics(text_reconstructed)
-            marks = self._get_marks_2(all_words)
-            publisher = self.publisher
-            # write to object
-            verse_description = Verse(bkv, text_reconstructed, marks, publisher)
-            # append object to list
-            verses.append(verse_description)
-
-        return verses
+    # @property
+    # def unspecified_supply(self) -> bool:
+    #    """Check if an unspecified supplied tag is present in the document, which indicates a faulty transcription
+    #       TODO: this should/could be a method
+    #    :return: True if unspecified supplied tag is present in the document
+    #    """
+    #    try:
+    #        if self._soup.find("supplied", reason="unspecified"):
+    #            return True
+    #        else:
+    #            return False
+    #    except Exception as e:
+    #        (
+    #            print(f"No unspecified supplied tags; {e} for file {self._filepath}")
+    #            if self.verbose
+    #            else None
+    #        )
+    #        return False
 
     @property
-    def manuscript(self) -> Manuscript:
-        sources = self.sources
-        ga = self.ga
-        label = self.label
-        docID = self.docID
+    def transcriptions(self) -> list[dict]:
+        # TODO: split into sub functions as currently too much is going on here, also for debugging
+        # TODO: test when function is split into sub functions
+        """Property returning the transcriptions of verses of the document
 
-        return Manuscript(sources, ga, docID, label)
+        :return: dictionary of the documents structure
+        """
+        transcriptions_list = []
+
+        # iterate through all known verse_ids in document
+        for idx, verse_id in enumerate(self.verses, start=1):
+            # verbose output
+            if self.verbose:
+                print(f"Verse {idx} of {len(self.verses)}")
+            # get all ab tags of verse by soup.find_all (generates an ordered list, beginning at the start of the document)
+            verse_parts = self._soup.find_all("ab", attrs={"n": verse_id})
+
+            while verse_parts:
+                # get first entry
+                first_part = verse_parts.pop(0)
+                # try to get parent lection
+                lection_div = first_part.find_parent("div", {"type": "lection"})
+
+                # if part is a 'I' Part
+                if first_part.get("part") == "I" and len(verse_parts) > 0:
+                    # also get the followup part ('F')
+                    second_part = verse_parts.pop(0)
+                    # merge followup into first part
+                    first_part.extend(second_part.contents)
+                    # merge parted words by finding all <w> tags with attribute part='F'
+                    part_f_tag = first_part.find("w", attrs={"part": "F"})
+                    # check if one is found
+                    if part_f_tag:
+                        # merge them with previous sibling
+                        preceding_w_tag = part_f_tag.find_previous_sibling("w")
+                        # TODO BUG: string concat sometimes fails without notice in parallel
+                        if preceding_w_tag:
+                            # get text of both word tags
+                            combined_text = (
+                                preceding_w_tag.get_text() + part_f_tag.get_text()
+                            )
+                            # create new word tag
+                            new_tag = self._soup.new_tag("ns0:w", part="combined")
+                            new_tag.string = combined_text
+                            # Replace the original tags with the new tag
+                            preceding_w_tag.insert_after(new_tag)
+                            preceding_w_tag.decompose()
+                            part_f_tag.decompose()
+                    verse_transcript = self._get_verse_transcription(first_part)
+
+                # else get the transcription of one
+                else:
+                    verse_transcript = self._get_verse_transcription(first_part)
+
+                transcriptions_list.append(
+                    {
+                        "lection": lection_div["n"] if lection_div else None,
+                        "verse": verse_id,
+                        "transcript": self._str_remove_diacritics(
+                            verse_transcript
+                        ).lower(),
+                    }
+                )
+
+        return transcriptions_list
+
+    @property
+    def source(self) -> str or None:
+        """Property returning the source of the document
+
+        :return: download source of the document
+        """
+        if "ntvmr" in str(self._filepath):
+            return "ntvmr"
+        elif "igntp" in str(self._filepath):
+            return "igntp"
+        else:
+            return None
 
     @staticmethod
     def _read_tei(tei_file_path: str) -> BeautifulSoup:
@@ -164,70 +443,6 @@ class TEIFile(object):
             print("An error occurred:", exception)
 
     @staticmethod
-    def _get_elem_text(elem, default="") -> str:
-        """Get text of soup element
-
-        :param elem: soup object element
-        :param default: fallback to be returned if no text was found in element
-        :return: text of element or default value
-        """
-        try:
-            if elem:
-                return elem.getText()
-            else:
-                return default
-        except Exception as exception:
-            print("An error occurred:", exception)
-
-    @staticmethod
-    def _concat_text_from_tags_2(tags: list) -> str:
-        """concatenate texts of multiple tags to space seperated string
-
-        :param tags: list of tags to concatenate text from
-        :return: string of tag texts
-        """
-        words = []
-        prev_index = None  # Initialize previous index
-
-        # Extract text from each 'w' tag and its child elements
-        for i, tag in enumerate(tags):
-            # Check if the tag has an attribute called part="F"
-            if tag.get("part") == "F":
-                # Save the index of the tag with part="F"
-                prev_index = i
-
-            # Filter out text from "note", "lb", "cb" subtags
-            text_parts = [
-                part.get_text(separator="", strip=True)
-                for part in tag.contents
-                if part.name not in ["note", "lb", "cb"]
-            ]
-
-            word = "".join([item for item in text_parts if item != ""])
-
-            # If previous index exists, merge it with the previous word
-            if prev_index is not None and i != 0:
-                words[-1] += text_parts[0]  # Merge previous index with previous word
-                prev_index = None
-            else:
-                words.append(word)
-
-        return " ".join(words)
-
-    @staticmethod
-    def _replace_characters(tag, mark: str, replacement: str):
-        """Helper function to replace characters
-
-        :param tag:
-        :param mark:
-        :param replacement:
-        :return:
-        """
-        for child in tag.children:
-            if child.name == mark:
-                child.string = replacement * len(child.text)
-
-    @staticmethod
     def _str_remove_diacritics(s: str) -> str:
         """Normalize string by removing accents and converting to lower case.
 
@@ -242,78 +457,166 @@ class TEIFile(object):
             c
             for c in unicodedata.normalize("NFKD", s)
             if unicodedata.category(c) != "Mn"
-        ).lower()
+        )
 
-    def _get_marks_2(self, tags: list) -> str:
-        """Second iteration of get_marks()
+    @staticmethod
+    def _str_remove_punctuation(s: str) -> str:
+        """Strip punctuation from input string
 
-        :param tags:
+        :param s: string to strip punctuation from
+        :return: string without punctuation
+        """
+        # remove punctuation
+        # TODO: BUG the following line fucks up the GAP annotations
+        s = re.sub(r"[^\w\s]", "", s)
+        # normalize
+        s = re.sub(r"\s+", " ", s)
+        # remove leading/trailing whitespaces
+        return s.strip()
+
+    @staticmethod
+    def _handle_gap(gap_object: BeautifulSoup) -> str:
+        """Function to get information from gap tag
+
+        :param gap_object: bs4 object containing the gap tag
+        :return: string of the gap reason and description
+        """
+        # this oneliner is iterating over the attributes given in the list,
+        # checks if they do exist and appends their values to a string respectively
+        return f"[GAP{''.join(f'-{gap_object.get(attr)}' for attr in ['reason', 'unit', 'extent'] if gap_object.get(attr))}]"
+
+    @staticmethod
+    def _handle_unclear_and_supplied(gap_object: BeautifulSoup) -> str:
+        """Method to handle unclear and supplied tags as GAPs with description and text
+
+        :param gap_object: bs4 object of supplied or unclear tag
+        :return: string of the reason, description and text of the given gap_object
+        """
+        formatted_string = f"[GAP-{gap_object.name}"
+
+        # Add reason and source if available
+        for attr in ["reason", "source"]:
+            if gap_object.get(attr):
+                formatted_string += f"-{gap_object.get(attr)}"
+
+        # Add the length of the text
+        formatted_string += f"-{len(gap_object.text.strip())}"
+
+        # Add text
+        formatted_string += f"-{gap_object.text.strip()}]"
+
+        return formatted_string
+
+    def _extract_word(self, word_object: BeautifulSoup) -> str:
+        """TODO: description
+
+        :param word_object:
         :return:
         """
-        marks = []
-        prev_index = None  # Initialize previous index
+        # Initialize an empty string to hold the combined text
+        combined_text = ""
 
-        # Replace characters based on conditions
-        # Extract text from each 'w' tag and its child elements
-        for i, tag in enumerate(tags):
-            # Check if the tag has an attribute called part="F"
-            if tag.get("part") == "F":
-                # Save the index of the tag with part="F"
-                prev_index = i
-            self._replace_characters(tag, "supplied", "s")
-            self._replace_characters(tag, "unclear", "u")
-            text = tag.get_text(separator="", strip=True)
+        # Find all 'abbr' tags and replace them with their respective contents
+        abbr_tags_to_replace = word_object.find_all("abbr")
+        for tag in abbr_tags_to_replace:
+            tag.replace_with(tag.contents[0])
 
-            # replace every char that is not a 'u' or 's' with a 'c'
-            text = "".join(["c" if char not in ["s", "u"] else char for char in text])
+        # Find all 'hi' tags and replace them with their respective contents
+        hi_tags_to_replace = word_object.find_all("hi")
+        for tag in hi_tags_to_replace:
+            tag.replace_with(tag.contents[0])
 
-            # If previous index exists, merge it with the previous word
-            if prev_index is not None and i != 0:
-                marks[-1] += text  # Merge previous index with previous word
-                prev_index = None
-            else:
-                marks.append(text)
+        if self._clear_only:
+            # Iterate over the contents of the <w> tag
+            for content in word_object.contents:
+                # Check if the content is a string
+                if isinstance(content, str):
+                    # Append the string to the combined text
+                    combined_text += content.strip()
+                # Check if the content is an <unclear> tag
+                elif content.name in ["unclear", "supplied"]:
+                    # Append the representation of the <unclear>/<supplied> tag to the combined text
+                    combined_text += self._handle_unclear_and_supplied(content)
+        else:
+            combined_text += word_object.get_text()
 
-        return " ".join(marks)
+        return combined_text.replace(" ", "").replace("\t", "").replace("\n", "")
 
+    @staticmethod
+    def _decompose_unwanted_tags(
+        soup_object: BeautifulSoup, tags_to_decompose: list[str]
+    ):
+        """Remove unwanted tags from soup object
 
-#    @staticmethod
-#    def _concat_text_from_tags(tags: list) -> str:
-#        """concatenate texts of multiple tags to space seperated string
-#
-#        :param tags: list of tags to concatenate text from
-#        :return: string of tag texts
-#        """
-#        words = []
-#
-#        # Extract text from each 'w' tag and its child elements
-#        for tag in tags:
-#            # Filter out text from "note", "lb", "cb" subtags
-#            text_parts = [
-#                part.get_text(separator="", strip=True)
-#                for part in tag.contents
-#                if part.name not in ["note", "lb", "cb"]
-#            ]
-#            words.append("".join([item for item in text_parts if item != ""]))
-#
-#        return " ".join(words)
-#
-#    @staticmethod
-#    def get_marks(tags: list) -> str:
-#        """Function to extract weather a tag is supplied or unclear
-#
-#        :param tags: list of xml tags
-#        :return: string of characters in range(c,s,u)
-#        """
-#        word_marks = []
-#        # Replace characters based on conditions
-#        for tag in tags:
-#            replace_characters(tag, "supplied", "s")
-#            replace_characters(tag, "unclear", "u")
-#            text = tag.get_text(separator="", strip=True)
-#            # replace every char that is not a 'u' or 's' with a 'c'
-#            text = "".join(["c" if char not in ["s", "u"] else char for char in text])
-#
-#            word_marks.append(text)
-#
-#        return " ".join(word_marks)
+        :param soup_object: bs4 object containing tags
+        :param tags_to_decompose: list of tags to decompose
+        :return: cleaned up bs4 object
+        """
+        for tag_name in tags_to_decompose:
+            tags = soup_object.find_all(tag_name)
+            for tag in tags:
+                tag.decompose()
+
+    def _get_verse_transcription(self, verse_object: BeautifulSoup) -> str:
+        """Get the verse transcription of a verse block
+
+        :param verse_object: BeautifulSoup object of ab-tag representing a verse
+        """
+        verse_transcript = []
+
+        self._decompose_unwanted_tags(verse_object, ["note", "lb", "cb", "fw"])
+
+        # Iterate over all child elements of the div
+        for child in verse_object.children:
+            if child.name == "w":
+                # _extract_word internally handles unclear and supplied tags
+                verse_transcript.append(self._extract_word(child))
+            elif child.name == "gap":
+                verse_transcript.append(self._handle_gap(child))
+            else:  # TODO: check if something else is outputted here
+                verse_transcript.append(child.getText())
+
+        # remove list entries containing NONE
+        verse_transcript = list(filter(None, verse_transcript))
+        # Merge all list entries and remove \n and \r etc.
+        verse_transcript = " ".join(verse_transcript).strip()
+        verse_transcript_clean = re.sub(
+            r"\s+", " ", verse_transcript
+        )  # Replace multiple spaces with a single space
+        return verse_transcript_clean
+
+    def get_transcription_list(self):
+        """Get a list of transcriptions from the document
+
+        :return: Updated list of transcriptions
+        """
+        transcripts = self.transcriptions
+        for transcript in transcripts:
+            transcript.update(
+                {
+                    "publisher": self.publisher[0],
+                    "source": self.source,
+                    "ga": self.ga,
+                    "sponsor": " ;".join(list(self.sponsor)),
+                    "founder": self.founder,
+                    "edition_version": self.edition[0],
+                    "edition_date": self.edition[1],
+                    "publishing_date": self.publishing_date,
+                    "encoding_version": self.encoding_version,
+                }
+            )
+        return transcripts
+
+    def get_manuscript_data(self):
+        """Get a dictionary of the manuscript metadata
+
+        :return: dictionary of the manuscript metadata
+        """
+        manuscript_data = {
+            "ga": self.ga,
+            "docID": self.alt_identifiers.get("Liste", None),
+            "label": self.label,
+            "source": self.source,
+        }
+
+        return manuscript_data

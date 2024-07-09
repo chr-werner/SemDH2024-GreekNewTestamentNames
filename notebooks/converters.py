@@ -1,47 +1,9 @@
 import pandas as pd
 import re
 from constants import BOOK_INFO
-from TEIFile import TEIFile
 
 
-def ga_to_docID(row: pd.Series) -> int:
-    """Convert the GA string corresponding docID for a given row of a pandas dataframe
-
-    :param row: pandas dataframe row
-    :return: docID integer
-    """
-    # Get ga from row data
-    ga = row["ga"]
-
-    if not re.match(r"^[PL0-9]$", ga[0]):
-        raise AttributeError
-
-    # Compile the regular expression pattern
-    pattern = re.compile(r"([0-9]\d*)")
-
-    # Remove non-digits from ga
-    ga_digits = re.search(pattern, ga).group()
-
-    if ga[0] == "P":
-        docID = 10000 + int(ga_digits)
-    elif ga[0] == "0":
-        docID = 20000 + int(ga_digits)
-    elif ga[0].isdigit():
-        docID = 30000 + int(ga_digits)
-    elif ga[0] == "L":
-        docID = 40000 + int(ga_digits)
-    else:
-        raise ValueError(
-            f"Invalid input: cannot determine document ID for the given input. {ga},{ga_digits}"
-        )
-
-    if len(ga_digits) > 4 or len(str(docID)) != 5 or docID > 49999:
-        raise ValueError
-
-    return docID
-
-
-def docID_to_ga(doc_id: int) -> str | None:
+def docID_to_ga(doc_id: int) -> str or None:
     """Convert a docID to a GA string
 
     :param doc_id: docID integer value
@@ -62,7 +24,7 @@ def docID_to_ga(doc_id: int) -> str | None:
         return None
 
 
-def bkv_to_nkv(row: pd.Series) -> str | None:
+def bkv_to_nkv(row: pd.Series) -> str or None:
     """Convert bkv values to nkv in a pandas dataframe row
 
     :param row: pandas dataframe row
@@ -95,50 +57,3 @@ def string_to_list(value):
         return list(alt_set)
     else:
         return value  # If not a string, return the original value
-
-
-def tei_to_verses_dict(tei: TEIFile, source: str) -> list[dict]:
-    """Extract verses from TEI file
-
-    :param tei: TEI data
-    :param source: verses source
-    :return: list of dictionaries with verses data
-    """
-    entries_list = []
-    verses = tei.verses
-    manuscript = tei.manuscript
-
-    # Remove entries where text is empty
-    verses = [verse for verse in verses if verse.text.strip() != ""]
-
-    for verse in verses:
-        entries_list.append(
-            {
-                "docID": manuscript.docID,
-                "ga": manuscript.ga,
-                "bkv": verse.bkv,
-                "text": verse.text,
-                "marks": verse.marks,
-                "publisher": verse.publisher,
-                "source": source,
-            }
-        )
-    return entries_list
-
-
-def tei_to_manuscript_dict(tei: TEIFile, source: str) -> dict:
-    """Extract manuscript data from TEI file
-
-    :param tei: TEI data
-    :param source: manuscript source
-    :return: dictionary with manuscript data
-    """
-    manuscript = {
-        "docID": tei.manuscript.docID,
-        "ga": tei.manuscript.ga,
-        "label": tei.manuscript.label,
-        "source": source,
-        # "sources": tei.manuscript.sources,
-    }
-
-    return manuscript
