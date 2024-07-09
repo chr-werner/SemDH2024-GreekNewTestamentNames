@@ -26,7 +26,8 @@ notebooks/                        Directory of notebooks used
   |-- constants.py                Constants
   |-- convertes.py                Converter functions
   |-- TEIFile.py                  Class file for TEIFile
-  `-- utils.py                    Helper functions
+  |-- utils.py                    Helper functions
+  `-- tests.py                    Testing functions
 .python-version                   Python version indicator
 README                            This README
 requirements.txt                  Requirements for Python environment
@@ -34,7 +35,7 @@ requirements.txt                  Requirements for Python environment
 
 ## Install and Use
 
-The recommended Python version for using this repo is `3.9.19`. Dockerimages with Python preinstalled can be found on [Dockerhub](https://hub.docker.com/_/python).
+The recommended Python version for using this repo is `3.9.18`. Dockerimages with Python preinstalled can be found on [Dockerhub](https://hub.docker.com/_/python). Alternatively you can setup and run a [virtual Python environment](https://docs.python.org/3/library/venv.html).
 
 In your Python environment run `pip install -r requirements.txt` from the projects root directory to install [Jupyter](https://jupyter.org). This will enable you to run the notebooks.
 
