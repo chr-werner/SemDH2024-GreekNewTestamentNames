@@ -35,7 +35,7 @@ requirements.txt                  Requirements for Python environment
 
 ## Install and Use
 
-The recommended Python version for using this repo is `3.9.18`. Dockerimages with Python preinstalled can be found on [Dockerhub](https://hub.docker.com/_/python). Alternatively you can setup and run a [virtual Python environment](https://docs.python.org/3/library/venv.html).
+The recommended Python version for this repo is `3.9.18` (see `.python-version`). Dockerimages with Python preinstalled can be found on [Dockerhub](https://hub.docker.com/_/python). Alternatively you can setup and run a [virtual Python environment](https://docs.python.org/3/library/venv.html).
 
 In your Python environment run `pip install -r requirements.txt` from the projects root directory to install [Jupyter](https://jupyter.org). This will enable you to run the notebooks.
 
@@ -68,18 +68,37 @@ ORDER BY (?PersonLabel)
 
 There will be/have been updates on this repo. Please have a look at the release tags for previous versions.
 
-<!--
 ## How to Cite
 
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@Article{Werner2024,
-  author       = {Christoph Werner and Zacharias Shoukry and Soham Al-Suadi and Frank Krüger},
-  title        = {A Corpus of Biblical Names in the Greek New Testament to Study the Additions, Omissions, and Variations across Different Manuscripts},
-  journal      = {tba},
-  year         = {2024},
-  doi          = {tba},
+@inproceedings{Werner2024,
+  title = {A Corpus of Biblical Names in the Greek New Testament to Study the Additions, Omissions, and Variations across Different Manuscripts},
+  author = {Christoph Werner and Zacharias Shoukry and Soham Al-Suadi and Frank Krüger},
+  url = {https://ceur-ws.org/Vol-3724/paper6.pdf},
+  crossref = {SemDH2024},
+  year     = {2024},
+  abstract = {The analysis of textual variants of verses in the New Testament across different manuscripts has mainly been done by close reading with manual effort. With the increasing number of transcriptions of the different manuscripts, quantitative analyses (so-called distant reading) can be used to search for patterns of omission, addition, or other variations, to formulate novel hypotheses to be investigated by close reading. In this work, we present a corpus of biblical names including spelling variation and inflections and their mentions in the transcriptions of the New Testament. By integrating and semantically enriching the data collected from different sources, we established a corpus that can be used for the quantitative study of omission, addition, and variation of such biblical names. To illustrate the corpus, we implement some use cases and show that well-known cases can be quantitatively reproduced. The corpus and all code are published under open licenses to enable reproduction, update, and maintenance.},
+  keywords = {New Testament,Biblical Names,Textual Variation Units},
+}
+
+@proceedings{SemDH2024,
+  booktitle = {Semantic Digital Humanities 2024},
+  year = {2024},
+  editor = {Oleksandra Bruns and Andrea Poltronieri and Lise Stork and Tabea Tietz},
+  series = {CEUR Workshop Proceedings},
+  address = {Aachen},
+  issn = {1613-0073},
+  url = {https://ceur-ws.org/Vol-3724/},
+  venue = {Hersonissos, Greece},
+  eventdate = {2024-05-27},
+  title = {Proceedings of the First International Workshop of Semantic Digital Humanities (SemDH 2024)}
 }
 ```
--->
+
+## Versions of Generated Data on Zenodo
+
+- [Version v1](https://doi.org/10.5281/zenodo.10985520) from Mar 15, 2024
+- [Version v2](https://doi.org/10.5281/zenodo.10985520) from May 17, 2024
+- [Version v3](https://doi.org/10.5281/zenodo.12697995) from Jul 10, 2024
