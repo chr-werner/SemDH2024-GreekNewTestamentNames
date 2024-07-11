@@ -515,9 +515,9 @@ def process_bkv(
 
         # merging dataframes of found and missing
         occurrences = pd.concat([found, missing], ignore_index=True)
+        # TODO: set occurrences cells with null to -1 for variantID integers, as when occurrence is FALSE,
+        #  there will be no variantID given – only the wordID will be present
 
-        # delete certain columns
-        # occurrences.drop(columns=["missing_wordIDs", "missing_names"], inplace=True)
         # get relevant columns only
         occurrences = occurrences[["verse_id", "variantID", "occurrence", "wordID"]]
         # Writing the DataFrame to a CSV file
