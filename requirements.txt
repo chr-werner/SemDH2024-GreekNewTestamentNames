@@ -1,5 +1,4 @@
 beautifulsoup4==4.12.3
-black==24.4.2
 jupyter==1.0.0
 lxml==5.0.0
 numpy==1.26.4
@@ -9,4 +8,16 @@ requests==2.32.3
 matplotlib==3.8.2
 seaborn==0.13.2
 python-dateutil==2.9.0.post0
+flair==0.13.1
 tqdm==4.66.4
+sparqlwrapper==2.0.0
+pyarrow==16.0.0
+scipy==1.14.1
+torch==2.5.0
+swifter==1.4.0
+black[jupyter]==24.4.2
+isort==5.13.2
+radian==0.6.13
+nbformat==5.10.4
+nbconvert==7.16.5
+ipykernel==6.29.5
