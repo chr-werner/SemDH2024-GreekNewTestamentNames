@@ -1,9 +1,10 @@
-import pandas as pd
 import re
+
+import pandas as pd
 from constants import BOOK_INFO
 
 
-def docID_to_ga(doc_id: int) -> str or None:
+def docID_to_ga(doc_id: int) -> str | None:
     """Convert a docID to a GA string
 
     :param doc_id: docID integer value
@@ -24,7 +25,7 @@ def docID_to_ga(doc_id: int) -> str or None:
         return None
 
 
-def bkv_to_nkv(row: pd.Series) -> str or None:
+def bkv_to_nkv(row: pd.Series) -> str | None:
     """Convert bkv values to nkv in a pandas dataframe row
 
     :param row: pandas dataframe row
@@ -32,17 +33,19 @@ def bkv_to_nkv(row: pd.Series) -> str or None:
     """
     bkv = row["bkv"]
     pattern = r"B(\d{2})K(\d+)V(\d+)"
+    match = re.match(pattern, bkv)
+
+    if not match:
+        return None
 
     try:
-        match = re.match(pattern, bkv)
         book_num = match.group(1)
         kapitel = match.group(2)
         verse = match.group(3)
 
-        book_abb_en = BOOK_INFO[str(book_num)]["en"]
-
+        book_abb_en = BOOK_INFO.get(str(book_num), {}).get("en")
         return f"{book_abb_en}.{kapitel}.{verse}" if book_abb_en else None
-    except:
+    except Exception:
         return None
 
 
