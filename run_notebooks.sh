@@ -30,6 +30,19 @@ find . -type f -name "*.py" -exec sed -i "s/from tqdm\.notebook import tqdm/from
 cd ..
 
 # Define functions for each task
+check_ntvmr_down() {
+    local url="https://ntvmr.uni-muenster.de"
+
+    # Try to connect and get the HTTP status code
+    local status_code
+    status_code=$(curl -o /dev/null -s -w "%{http_code}" --connect-timeout 10 "$url")
+
+    if [[ "$status_code" -lt 200 || "$status_code" -ge 400 ]]; then
+        echo "❌ $url is not reachable (HTTP $status_code). Aborting script execution."
+        exit 1
+    fi
+}
+
 
 get_transcripts() {
     echo "Running task: Get transcripts"
@@ -86,9 +99,13 @@ publication_prep() {
     cd ..
 }
 
+check_ntvmr_down
+
 # Check if --noninteractive flag is provided
 if [[ "$1" == "--noninteractive" ]]; then
     echo "Running in non-interactive mode: executing all tasks..."
+    get_transcripts
+    get_manuscripts
     get_words
     parse_tei
     parse_json
