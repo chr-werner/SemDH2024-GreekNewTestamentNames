@@ -1,0 +1,12 @@
+tidyverse
+magrittr
+ggplot2
+dplyr
+patchwork
+lintr
+httpgd
+languageserver
+ggraph
+tidygraph
+igraph
+jsonlite
