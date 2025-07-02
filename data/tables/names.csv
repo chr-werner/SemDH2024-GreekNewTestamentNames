@@ -1,415 +1,443 @@
-﻿label:de,label:en,gender,label:el,label:el:norm,alternatives,Nom Sg,Gen Sg,Dat Sg,Akk Sg,Voc Sg,source,note,factgrid
-,Aaron,m,Ααρων,ααρων,Ἀαρών,Ἀαρών,"Ἀαρών,Ααρωνος",Ἀαρών,Ἀαρών,,,,
-,Abaddon,m,Αβαδδων,αβαδδων,Ἀβαδδών,Ἀβαδδών,,,,,,,
-,Abrion,m,Αβειρων,αβειρων,Αβιρων,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Abe,m,Ἅβελ,αβελ,Ἄβελ,Ἅβελ,Ἅβελ,,Ἅβελ,,,,
-,Abijah,m,Ἀβιά,αβια,,,,,,,"Bauer; Wörterbuch, NRSV",,
-,Abjathar,m,Αβιαθαρ,αβιαθαρ,"αβηαβηαθαρ,Ἀβιάθαρος",,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Abiud,m,Αβιούδ,αβιουδ,Ἀβιούδ,Ἀβιοὺδ,,,Ἀβιοὺδ,,,,https://database.factgrid.de/entity/Q165703
-,Abraham,m,Αβρααμ,αβρααμ,,Ἀβραάμ,Ἀβραάμ,Ἀβραάμ,Ἀβραάμ,Ἀβραάμ,,,
-,Agabus,m,Αγαβος,αγαβος,,Αγαβος,,,,,,,https://database.factgrid.de/entity/Q165759
-,Hagar,f,Ἁγάρ,αγαρ,,Ἁγάρ,,,,,,,
-,Agrippa,m,Ἀγρίππας,αγριππας,,Ἀγρίππας,Ἀγρίππα,,,Ἀγρίππα,,,https://database.factgrid.de/entity/Q165764
-,Addi,m,Αδδί,αδδι,,,Ἀδδὶ,,,,,,https://database.factgrid.de/entity/Q165732
-,Admin,m,Αδμιν,αδμιν,,,Ἀδμὶν,,,,,,
-,Azor,m,Ἀζώρ,αζωρ,,Ἀζὼρ,,,Ἀζὼρ,,,,https://database.factgrid.de/entity/Q166086
-,Aeneas,m,Αινέας,αινεας,,,,,Αἰνέαν,Αἰνέα,,"ursprünglich stand hier die Form Αγγρίππας (mit αγριππας als alternative), wird er wirklich mit Doppel-Gamma geschrieben? Meinen Recherchen zufolge nicht - ZS",https://database.factgrid.de/entity/Q165758
-,Aquila,m,Ἀκύλας,ακυλας,,Ἀκύλας,,,"Ἀκύλαν,κυλαν",,,,https://database.factgrid.de/entity/Q165946
-,Alexander,m,Ἀλέξανδρος,αλεξανδρος,,Ἀλέξανδρος,Ἀλεξάνδρου,,Ἀλέξανδρον,,,,"https://database.factgrid.de/entity/Q165847,https://database.factgrid.de/entity/Q165845"
-,Alphaeus,m,Ἁλφαῖος,αλφαιος,,,Ἁλφαίου,,,,,,https://database.factgrid.de/entity/Q165853
-,Amminadab,m,Ἀμιναδάβ,αμιναδαβ,,Ἀμιναδὰβ,Ἀμιναδὰβ,,Ἀμιναδὰβ,,,,https://database.factgrid.de/entity/Q165881
-,Amplias,m,Αμπλιατος,αμπλιατος,Ἀμπλιάς,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q165906
-,Amos,m,Ἀμώς,αμως,"αμων,αμμωμ,αμμων",Ἀμώς,Ἀμώς,,Ἀμώς,,,,https://database.factgrid.de/entity/Q165904
-,Ananias,m,Ἁνανίας,ανανιας,,Ἁνανίας,,,Ἁνανίαν,Ἁνανία,,,https://database.factgrid.de/entity/Q165924
-,Andrew,m,Ανδρέας,ανδρεας,,Ἀνδρέας,Ἀνδρέου,Ἀνδρέᾳ,Ἀνδρέαν,,,,https://database.factgrid.de/entity/Q77541
-,Andronicus,m,Ανδρόνικος,ανδρονικος,,,,,Ἀνδρόνικον,,,,https://database.factgrid.de/entity/Q165931
-,Anna,m,Ἅννα,αννα,,Ἅννα,,,,,,,https://database.factgrid.de/entity/Q165934
-,Annas,m,Ἅννας,αννας,,Ἅννας,Ἅννα,,Ἅνναν,,,,https://database.factgrid.de/entity/Q165935
-,Antipas,m,Ἀντιπᾶς,αντιπας,,Ἀντιπᾶς,,,,,,,https://database.factgrid.de/entity/Q165936
-,Apelles,m,Ἀπελλῆς,απελλης,,Ἀπελλῆς,,,Ἀπελλῆν,,,,https://database.factgrid.de/entity/Q165939
-,Apollonius,m,Απολλωνιυς,απολλωνιυς,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Apollos,m,Ἀπολλῶς,απολλως,,Ἀπολλῶς,Ἀπολλῶ,,"Ἀπολλῶν,Ἀπολλῶ",,,nach Louw-Neida zwei Akk. Formen,https://database.factgrid.de/entity/Q165942
-,Apphia,m,Ἀπφία,απφια,,,,Ἀπφίᾳ,,,,,https://database.factgrid.de/entity/Q165945
-,Aretas,m,Ἁρέτας,αρετας,,Ἁρέτας,Ἁρέτα,,,,,,https://database.factgrid.de/entity/Q165965
-,Aristarchus,m,Ἀρίσταρχος,αρισταρχος,,Ἀρίσταρχος,Ἀριστάρχου,,Ἀρίσταρχον,,,,https://database.factgrid.de/entity/Q165974
-,Aristobulus,m,Ἀριστόβουλος,αριστοβουλος,,Ἀριστόβουλος,Ἀριστοβούλου,,,,,,https://database.factgrid.de/entity/Q165975
-,Artemas,m,Ἀρτεμᾶς,αρτεμας,,Ἀρτεμᾶς,,,Ἀρτεμᾶν,,,,https://database.factgrid.de/entity/Q165984
-,Archelaus,m,Ἀρχέλαος,αρχελαος,,Ἀρχέλαος,,,,,,"ursprünglich stand hier Αρχελέλαος (mit Αρχελαος als Alternative), aber meiner Recherche nach gibt es Αρχελέλαος in dieser Schreibform nicht - ZS",https://database.factgrid.de/entity/Q165959
-,Archippus,m,Ἄρχιππος,αρχιππος,,Ἄρχιππος,,Ἀρχίππῳ,,,,,https://database.factgrid.de/entity/Q165960
-,Asyncritus,m,Ἀσύγκριτος,ασυγκριτος,,Ἀσύγκριτος,,,Ἀσύγκριτον,,,,https://database.factgrid.de/entity/Q166026
-,Augustus,m,Αυγουστος,αυγουστος,,,,,,,,TODO: Mischform,https://database.factgrid.de/entity/Q166039
-,Achaicus,m,Αχαϊκός,αχαικος,Ἀχαϊκός,,Αχαικου,,,,,,https://database.factgrid.de/entity/Q165708
-,Achim,m,Αχίμ,αχιμ,Ἀχείμ,,,,Ἀχὶμ,,,Ἀχείμ t. r.  T. H. S.,https://database.factgrid.de/entity/Q165715
-,Baal,m,Βάαλ,βααλ,,Βάαλ,Βάαλ,,,,,,
-,Bileam,m,Βαλααμ,βαλααμ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Balak,m,Βαλάκ,βαλακ,,Βαλὰκ,,Βαλὰκ,,,,,
-,Barabbas,m,Βαραββᾶς,βαραββας,Βαραβας,Βαραββᾶς,,,Βαραββᾶν,,,,https://database.factgrid.de/entity/Q166136
-,Barak,m,Βαράκ,βαρακ,,Βαράκ,Βαράκ,,,,,,
-,Barachja,m,Βαραχιας,βαραχιας,,Βαραχιου,,,Βαραχιον,,,keine Formen für label:en in Louw-Naida - CW,
-,Bartholomew,m,Βαρθολομαῖος,βαρθολομαιος,,Βαρθολομαῖος,,,Βαρθολομαῖον,,,,https://database.factgrid.de/entity/Q166146
-,Bar-Jesus,m,Βαριησοῦς,βαριησους,,Βαριησοῦς,Βαριησοῦ,,,,,,https://database.factgrid.de/entity/Q166141
-,Barjona,m,Βαριωνα,βαριωνα,"βαριονὰν,βαριονασ",,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Barnabas,m,Βαρναβᾶς,βαρναβας,,Βαρναβᾶς,Βαρναβᾶ,Βαρναβᾷ,Βαρναβᾶν,,,,
-,Barsabas,m,Βαρσαββας,βαρσαββας,Βαρσαβας,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q166144
-,Bartimaeus,m,Βαρτιμαῖος,βαρτιμαιος,,Βαρτιμαῖος,,,,,,,https://database.factgrid.de/entity/Q166147
-,Beelzebul,m,Βεελζεβούλ,βεελζεβουλ,Βεελζεβούβ,Βεελζεβούλ,,Βεελζεβούλ,Βεελζεβούλ,,,,
-,Beliar,m,Βελιαρ,βελιαρ,"Βελιάβ,Βελιάλ,Βελιάν",,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Bernice,f,Βερνίκη,βερνικη,"βερονικη,βερνικηνα,βερνικι,βερονικης,βερνηκης,βερονικη,βερνικηι,βερνηκη",Βερνίκη,Βερνίκης,,,,,,https://database.factgrid.de/entity/Q166234
-,Beor,m,Βεωρ,βεωρ,Βοσόρ,,Βοσὸρ,,,,,,
-,Blastus,m,Βλάστος,βλαστος,,Βλάστος,,,Βλάστον,,,,https://database.factgrid.de/entity/Q166273
-,Boangeras,m,Βοανηργες,βοανηργες,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Boaz,m,Βόες,βοες,"Βόος,Βόοζ",,Βόος,,,,,,https://database.factgrid.de/entity/Q166276
-,Gabriel,m,Γαβριήλ,γαβριηλ,,Γαβριὴλ,,,,,,,
-,Gaius,m,Γάϊος,γαιος,,Γάϊος,,Γαΐῳ,Γάϊον,,,,https://database.factgrid.de/entity/Q166694
-,Gallio,m,Γαλλίων,γαλλιων,,Γαλλίων,Γαλλίωνος,Γαλλίωνι,Γαλλιωνα,,,,https://database.factgrid.de/entity/Q166698
-,Gamaliel,m,Γαμαλιήλ,γαμαλιηλ,"γαμαλιηλου,γαμαληηλ,γαμαηλ",Γαμαλιήλ,Γαμαλιήλ,,,,,,https://database.factgrid.de/entity/Q166700
-,Damaris,f,Δάμαρις,δαμαρις,"θαμαρις,δαμαρης",Δάμαρις,,,,,,,https://database.factgrid.de/entity/Q166365
-,Daniel,m,Δανιὴλ,δανιηλ,,Δανιὴλ,,,,,,,
-,David,m,Δαυιδ,δαυιδ,"ΔΑΔ,δαυειδ",Δαυὶδ,Δαυὶδ,Δαυὶδ,Δαυὶδ,,,,
-,Demas,m,Δημᾶς,δημας,,Δημᾶς,,,,,,,https://database.factgrid.de/entity/Q166400
-,Demetrius,m,Δημήτριος,δημητριος,,Δημήτριος,,Δημητρίῳ,,,,,https://database.factgrid.de/entity/Q166401
-,Didymus,m,Δίδυμος ,διδυμος,,,,,,,,"Beiname von Thomas, vgl. Joh 11,16; 20,24; 21,2",
-,Dionysius,m,Διονύσιος,διονυσιος,,Διονύσιος,,,,,,,https://database.factgrid.de/entity/Q166409
-,Diotrephes,m,Διοτρέφης,διοτρεφης,,Διοτρέφης,,,,,,,https://database.factgrid.de/entity/Q166410
-,Drusilla,f,Δρούσιλλα,δρουσιλλα,"δροσιλλη,δρουσηλλη,δρουσιλλι,δρυσιλλη,δρουσιλη,δροσουλη,δρουσιλλη",,,Δρουσίλλῃ,,,,,https://database.factgrid.de/entity/Q166422
-,Hiskia,m,Εζεκιας,εζεκιας,εζεκειας,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Eleazar,m,Ἐλεάζαρ,ελεαζαρ,ελιαζαρ,Ἐλεάζαρ,,,Ἐλεάζαρ,,,,https://database.factgrid.de/entity/Q166470
-,Eliakim,m,Ἐλιακίμ,ελιακιμ,,Ἐλιακίμ,Ἐλιακίμ,,Ἐλιακίμ,,,,"https://database.factgrid.de/entity/Q166488,https://database.factgrid.de/entity/Q166489"
-,Eliezer,m,Ἐλιέζερ,ελιεζερ,,,Ἐλιέζερ,,,,,,https://database.factgrid.de/entity/Q166527
-,Eliud,m,Ἐλιούδ,ελιουδ,,Ἐλιοὺδ,,,Ἐλιοὺδ,,,,https://database.factgrid.de/entity/Q166571
-,Elisabeth,f,Ελισάβετ,ελισαβετ,"ελεισαβετ,ελισαβεδ,ελεισαβεθ,ελησαβεθ,ελισαβεθ,ελισαβuτ,ελισαβετ",,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q166557
-,Elisa,m,Ελισαιε,ελισαιε,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Elmodam,m,Ελμαδαμ,ελμαδαμ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q166583
-,Elymas,m,Ἐλύμας,ελυμας,,Ἐλύμας,,,,,,,
-,Emmanuel,m,Ἐμμανουήλ,εμμανουηλ,,Ἐμμανουήλ,,,Ἐμμανουήλ,,,,
-,Emmaus,m,Ἐμμαοῦς,εμμαους,,Emmaus,,,,,,,
-,Henoch,m,Ενοχ,ενοχ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Enos,m,Ἐνώς,ενως,,,Ἐνὼς,,,,,,
-,Epaenetus,m,Ἐπαίνετος,επαινετος,,Ἐπαίνετος,,,Ἐπαίνετον,,,,https://database.factgrid.de/entity/Q166607
-,Epaphras,m,Ἐπαφρᾶς,επαφρας,,Ἐπαφρᾶς,Ἐπαφρᾶ,,,,,,https://database.factgrid.de/entity/Q166608
-,Epaphroditus,m,Ἐπαφρόδιτος,επαφροδιτος,,Ἐπαφρόδιτος,Ἐπαφροδίτου,,Ἐπαφρόδιτον,,,,https://database.factgrid.de/entity/Q166609
-,Erastus,m,Ἔραστος,εραστος,,Ἔραστος,,,Ἔραστον,,,,https://database.factgrid.de/entity/Q166627
-,Hermas,m,Ἑρμᾶς,ερμας,,,,,Ἑρμᾶν,,,,https://database.factgrid.de/entity/Q166951
-,Hermes,m,Ἑρμῆς,ερμης,,,,,Ἑρμῆν,,,,https://database.factgrid.de/entity/Q166952
-,Hermogenes,m,Ἑρμογένης,ερμογενης,,Ἑρμογένης,,,,,,,https://database.factgrid.de/entity/Q166953
-,Hesli,m,Εσλι,εσλι,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Esli,m,Ἑσλί,εσλι,,,Ἑσλὶ,,,,,,https://database.factgrid.de/entity/Q166638
-,Hesrom,m,Εσρωμ,εσρωμ,"Ἑσρών,Ἐσρών",,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Eve,f,Εὕα,ευα,Εὔα,,,,,,,"Bauer; Wörterbuch, NRSV",
-,Eubulus,m,Εὔβουλος,ευβουλος,,Εὔβουλος,,,,,,,https://database.factgrid.de/entity/Q166648
-,Eunice,f,Εὐνίκη,ευνικη,,,,Εὐνίκῃ,,,,,https://database.factgrid.de/entity/Q166649
-,Euodias,f,Ευοδια,ευοδια,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q166650
-,Eutychus,m,Εὔτυχος,ευτυχος,,Εὔτυχος,,,,,,,https://database.factgrid.de/entity/Q166651
-,Ephraim,m,Ἐφραίμ,εφραιμ,,,,,Ἐφραὶμ,,,,
-,Zacchaeus,m,Ζακχαῖος,ζακχαιος,,Ζακχαῖος,,,,Ζακχαῖε,,,https://database.factgrid.de/entity/Q168967
-,Zerah,m,Ζάρα,ζαρα,Ζάρε,,,,Ζάρα,,,"Bauer; Wörterbuch, NRSV",https://database.factgrid.de/entity/Q168992
-,Zacharias,m,Ζαχαρίας,ζαχαριας,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168977
-,Zebedee,m,Ζεβεδαῖος,ζεβεδαιος,,,Ζεβεδαίου,,Ζεβεδαῖον,,,,https://database.factgrid.de/entity/Q169008
-,Zeus,m,Ζευς,ζευς,,,Διὸς,,Δία,,,,
-,Zenas,m,Ζηνᾶς,ζηνας,,,,,ζηνᾶν,,,,https://database.factgrid.de/entity/Q169052
-,Zeno,m,Ζηνων,ζηνων,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Zorobabel,m,Ζοροβαβελ,ζοροβαβελ,,,,,,,,,https://database.factgrid.de/entity/Q169129
-,Heli,m,Ηλι,ηλι,,,,,ἠλὶ,,,,https://database.factgrid.de/entity/Q166931
-,Elia,m,Ηλιας,ηλιας,,,,,,,,"ursprünglich stand hier Επαψρας, was falsch sein müsste - ZS; keine Formen für label:en in Louw-Naida - CW",
-,Er,m,Ἤρ,ηρ,,,Ἢρ,,,,,,https://database.factgrid.de/entity/Q166625
-,Herod,m,Ἡρῴδης,ηρωδης,ηρωδηι,Ἡρῴδης,Ἡρῴδου,Ἡρῴδῃ,Ἡρῴδην,,,,"https://database.factgrid.de/entity/Q166956,https://database.factgrid.de/entity/Q166955,https://database.factgrid.de/entity/Q166954"
-,Herodias,f,Ἡρῳδιὰς,ηρωδιας,"ηρωδηας,ηρωδιαιδα,ιρωδιαδα,ηροδιαδος,ιρωδιαδος,ηρωδειαδος,ηροδιας,ρωδιαδα,ηρωδιαδως,ηρωιαδα,ηρωδιαδε,ρωδιας,ηροδιαδα",Ἡρῳδιὰς,Ἡρῳδιάδος,,Ἡρῳδιάδα,,,,https://database.factgrid.de/entity/Q166957
-,Herodion,m,Ἡρῳδίων,ηρωδιων,,,,,Ἡρῳδίωνα,,,,https://database.factgrid.de/entity/Q166958
-,Jesaja,m,Ησαιας,ησαιας,Ἡσαΐας,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Esau,m,Ἠσαῦ,ησαυ,"εσαυ,ισα",Ἠσαῦ,,,Ἠσαῦ,,,,
-,Thaddaeus,m,Θαδδαῖος,θαδδαιος,Λεββαῖος,Θαδδαῖος,,,Θαδδαῖον,,,"ursprünglich war Θαδδαιος als Nebenform zu angegeben, aber müsste Φαδδαιος falsch sein - ZS",
-,Thamar,m,Θαμαρ,θαμαρ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Theophilus,m,Θεόφιλος,θεοφιλος,,,,,,Θεόφιλε,,,https://database.factgrid.de/entity/Q168840
-,Theudas,m,Θευδᾶς,θευδας,,Θευδᾶς,,,,,,,https://database.factgrid.de/entity/Q168841
-,Thomas,m,Θωμᾶς,θωμας,Δίδυμος,Θωμᾶς,,Θωμᾷ,Θωμᾶν,,,,https://database.factgrid.de/entity/Q166406
-,Jairus,m,Ἰάϊρος,ιαιρος,,Ἰάϊρος,,,,,,,https://database.factgrid.de/entity/Q167192
-,Jacob,m,Ἰακώβ,ιακωβ,γιαχακωβ,Ἰακώβ,Ἰακώβ,Ἰακώβ,Ἰακώβ,,,,https://database.factgrid.de/entity/Q167160
-,James,m,Ἰάκωβος,ιακωβος,,Ἰάκωβος,Ἰακώβου,Ἰακώβῳ,Ἰάκωβον,,,,"https://database.factgrid.de/entity/Q167200,https://database.factgrid.de/entity/Q167199,https://database.factgrid.de/entity/Q167201"
-,Jambres,m,Ἰαμβρῆς,ιαμβρης,,Ἰαμβρῆς,,,,,,,https://database.factgrid.de/entity/Q167198
-,Janna,m,Ἰανναί,ιανναι,ιαναν,,Ἰανναὶ,,,,,,https://database.factgrid.de/entity/Q167206
-,Jannes,m,Ἰάννης,ιαννης,,Ἰάννης,,,,,,,https://database.factgrid.de/entity/Q167207
-,Jared,m,Ἰάρετ,ιαρετ,,,Ἰάρετ,,,,,,
-,Jason,m,Ἰάσων,ιασων,,Ἰάσων,Ἰάσονος,,Ἰάσονα,,,,https://database.factgrid.de/entity/Q167228
-,Isebel,f,Ιεζαβελ,ιεζαβελ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Jeremia,m,Ἰερεμίας,ιερεμιας,,,Ἰερεμίου,,Ἰερεμίαν,,,,
-,Jesse,m,Ἰεσσαί,ιεσσαι,,Ἰεσσαί,Ἰεσσαί,,Ἰεσσαί,,,,https://database.factgrid.de/entity/Q167418
-,Jechonja,m,Ιεχονιας,ιεχονιας,,,,,,,,,
-,Jose,m,Ιησου,ιησου,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q167556
-,Jesus,m,Ιησους,ιησους,ΙΣ,"Ιησους,ΙΣ","Ἰησοὺ,ΙΥ","Ἰησοῦ,ΙΥ","Ἰησοῦν,ΙΝ","Ἰησοῦ,ΙΥ",,,https://database.factgrid.de/entity/Q167421
-,Jose,m,Ιοσης,ιοσης,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Juda,m,Ιουδα,ιουδα,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q167602
-,Judas,m,Ἰούδας,ιουδας,,Ἰούδας,Ἰούδα,,Ἰούδαν,Ἰούδα,,,"https://database.factgrid.de/entity/Q167611,https://database.factgrid.de/entity/Q167614,https://database.factgrid.de/entity/Q167616,https://database.factgrid.de/entity/Q167617"
-,Julia,f,Ἰουλία,ιουλια,,Ἰουλία,,,Ἰουλίαν,,,,https://database.factgrid.de/entity/Q167620
-,Junia,f,Ἰουλία,ιουλια,,,,,Ἰουλίαν,,,,https://database.factgrid.de/entity/Q167622
-,Julius,m,Ἰούλιος,ιουλιος,,Ἰούλιος,,Ἰουλίῳ,,,,,https://database.factgrid.de/entity/Q167621
-,Junias,m,Ἰουνιᾶς,ιουνιας,,,,,Ἰουνίαν,,,,https://database.factgrid.de/entity/Q167622
-,Justus,m,Ιουστος,ιουστος,,,,,,,,,
-,Justus,m,Ἰοῦστος,ιουστος,,Ἰοῦστος,Ἰούστου,,,,,,https://database.factgrid.de/entity/Q167625
-,Isaak,m,Ισαακ,ισαακ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Ischarioth,m,Ισκαριωθ,ισκαριωθ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Isaschar,m,Ισσαχαρ,ισσαχαρ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Joatham,m,Ιωαθαμ,ιωαθαμ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Joachim,m,Ιωακιμ,ιωακιμ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Joanan,m,Ἰωανάν,ιωαναν,ιωανναν,,Ἰωανὰν,,,,,,https://database.factgrid.de/entity/Q167461
-,Joanna,f,Ἰωάννα,ιωαννα,"ιωαννου,ιαννα,ιωναν,ιωανα",Ἰωάννα,,,,,,,https://database.factgrid.de/entity/Q167462
-,John,m,Ιωάννης,ιωαννης,"ιωανης,ιωανου",Ἰωάννης,Ἰωάννου,Ἰωάννῃ,Ἰωάννην,,,,"https://database.factgrid.de/entity/Q167524,https://database.factgrid.de/entity/Q167513,https://database.factgrid.de/entity/Q167514,https://database.factgrid.de/entity/Q167512,https://database.factgrid.de/entity/Q167515"
-,Joas,m,Ιωας,ιωας,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Hiob,m,Ιωβ,ιωβ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Jobed,m,Ιωβηδ,ιωβηδ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Juda,m,Ιωδα,ιωδα,,,,,,,,"ursprünglich stand hier Κλόη (mit Χλοης als alternative), was falsch sein müsste - ZS, Joda und Juda nicht im LN – CW",https://database.factgrid.de/entity/Q167601
-,Joel,m,Ἰωήλ,ιωηλ,,,Ἰωήλ,,,,,,
-,Jona,m,ιωνα,ιωνα,,,,,,,,,https://database.factgrid.de/entity/Q167524
-,Jonathas,m,Ιωναθας,ιωναθας,,,,,,,,Nach Louw-Naida entspricht Jonathas dem John,
-,Jonan,m,Ιωναμ,ιωναμ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q167528
-,Jonam,m,Ἰωνάμ,ιωναμ,,,Ἰωνάμ,,,,,,
-,"Jonas,Jonah",m,Ιωνας,ιωνας,ιωνα,Ἰωνᾶς,Ἰωνᾶ,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q169266
-,Joram,m,Ἰωράμ,ιωραμ,,Ἰωρὰμ,,,Ἰωρὰμ,,,,
-,Jorim,m,Ἰωρίμ,ιωριμ,,,Ἰωρίμ,,,,,,https://database.factgrid.de/entity/Q167553
-,Josaphar,m,Ιωσαφατ,ιωσαφατ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,"Joseph,Joses",m,Ιωσηφ,ιωσηφ,Ιωσληχ,Ἰωσήφ,Ἰωσήφ,Ἰωσήφ,Ἰωσήφ,,,,"https://database.factgrid.de/entity/Q167562,https://database.factgrid.de/entity/Q167566,https://database.factgrid.de/entity/Q167565,https://database.factgrid.de/entity/Q167564,https://database.factgrid.de/entity/Q167563,https://database.factgrid.de/entity/Q167570,https://database.factgrid.de/entity/Q167562"
-,Josech,m,Ἰωσήχ,ιωσηχ,,,,,,,,,
-,Josiah,m,Ἰωσίας,ιωσιας,"ιωσσιαν,ιωσειαν",Ἰωσίας,,,Ἰωσίαν,,,,https://database.factgrid.de/entity/Q167569
-,Caiaphas,m,Καϊάφας,καιαφας,,Καϊάφας,Καϊάφα,,Καϊάφαν,,,,https://database.factgrid.de/entity/Q166291
-,Cain,m,Καϊν,καιν,,Κάϊν,Κάϊν,,Κάϊν,,,,
-,Cainan,m,Καϊνὰμ,καιναμ,"Καινάμ,Καινάν,Καϊνάν",,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q166293
-,Candace,f,Κανδάκη,κανδακη,κανδακις,Κανδάκη,Κανδάκης,,,,,,https://database.factgrid.de/entity/Q166300
-,Kephas,m,Κηφας,κηφας,,,,,,,,,https://database.factgrid.de/entity/Q166310
-,Claudia,"m,f",Κλαυδία,κλαυδια,,Κλαυδία,,,,,,,"https://database.factgrid.de/entity/Q166336,https://database.factgrid.de/entity/Q169483"
-,Claudius,m,Κλαύδιος,κλαυδιος,,Κλαύδιος,Κλαυδίου,,Κλαύδιον,,,,"https://database.factgrid.de/entity/Q166337,https://database.factgrid.de/entity/Q166338"
-,Cleopas,m,Κλεοπᾶς,κλεοπας,Κλεοπα,,Κλωπα,,,,,woher die alternative Κλεοπα und der Genitiv?,https://database.factgrid.de/entity/Q166340
-,Clement,m,Κλήμης,κλημης,,,Κλημεντος,,,,,,https://database.factgrid.de/entity/Q166339
-,Clopas,m,Κλωπᾶς,κλωπας,,Κλωπᾶς,Κλωπᾶ,,,,,"ursprünglich stand hier κλοπή (mit als alternatives), was falsch sein müsste, man darf außerdem nicht verwechseln, dass Klopas und Kleopas zwei verschiedene Namen sind, habe Clopas ergänzt - ZS",
-,Cornelius,m,Κορνήλιος,κορνηλιος,"κορνιλιος,κορνιλιως",Κορνήλιος,Κορνηλίου,,,Κορνήλιε,,,https://database.factgrid.de/entity/Q166349
-,Quartus,m,Κούαρτος,κουαρτος,,Κούαρτος,,,,,,,https://database.factgrid.de/entity/Q168325
-,Crescens,m,Κρήσκης,κρησκης,,Κρήσκης,,,,,,,https://database.factgrid.de/entity/Q166353
-,Crispus,m,Κρίσπος,κρισπος,,Κρίσπος,,,Κρίσπον,,,,https://database.factgrid.de/entity/Q166354
-,Quirinius,m,Κυρήνιος,κυρηνιος,,,,,,,,,https://database.factgrid.de/entity/Q166360
-,Cosam,m,Κωσάμ,κωσαμ,,Κωσὰμ,,,,,,,https://database.factgrid.de/entity/Q166350
-,Lazarus,m,Λάζαρος,λαζαρος,,Λάζαρος,,,Λάζαρον,Λάζαρε,,,"https://database.factgrid.de/entity/Q167677,https://database.factgrid.de/entity/Q167678"
-,Lebbaeus,m,Λεββαῖος,λεββαιος,,,,,,,,anscheinend als zweite Form für Thaddaeus,
-,Lekrta,f,Λεκτρα,λεκτρα,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Levi,m,Λευί,λευι,,Λευί,Λευί,,Λευὶν,,,,"https://database.factgrid.de/entity/Q167688,https://database.factgrid.de/entity/Q167689"
-,Linus,m,Λίνος,λινος,,Λίνος,,,,,,,https://database.factgrid.de/entity/Q167694
-,Luke,m,Λουκᾶς,λουκας,,Λουκᾶς,,,,,,,
-,Lucius,m,Λούκιος,λουκιος,,Λούκιος,,,,,,,https://database.factgrid.de/entity/Q167702
-,Lydia,f,Λυδία,λυδια,λυδδιαν,Λυδία,,,Λυδίαν,,,,https://database.factgrid.de/entity/Q167706
-,Lysanias,m,Λυσανίας,λυσανιας,,,Λυσανίου,,,,,,https://database.factgrid.de/entity/Q167707
-,Lois,f,Λωΐς,λωις,,Λωΐς,,Λωΐδι,,,,,https://database.factgrid.de/entity/Q167696
-,Lot,m,Λώτ,λωτ,,Λώτ,Λώτ,,Λώτ,,,,
-,Magdalene,f,Μαγδαληνη,μαγδαληνη,"μαγδανηνη,μαγδαληνηι,μαγδαληνι,μαμδαλινη,μαγδαληνει,μαγδαληνη,μαγδαλινη",,,,,,,,
-,Matthew,m,Μαθθαῖος,μαθθαιος,,Μαθθαῖος,,,Μαθθαῖον,,,,https://database.factgrid.de/entity/Q167856
-,Matthat,m,Μαθθὰτ,μαθθατ,,,Μαθθὰτ,,,,,,https://database.factgrid.de/entity/Q167854
-,Matthias,m,Μαθθίας,μαθθιας,,Μαθθίας,,,Μαθθίαν,,,,https://database.factgrid.de/entity/Q167857
-,Methusalem,m,Μαθουσαλα,μαθουσαλα,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Malchus,m,Μάλχος,μαλχος,,Μάλχος,,,,,,,https://database.factgrid.de/entity/Q167794
-,Manaen,m,Μαναήν,μαναην,,Μαναήν,,,,,,,https://database.factgrid.de/entity/Q167805
-,Maath,m,Μάοθ,μαοθ,Μάαθ,,Μάαθ,,,,,,https://database.factgrid.de/entity/Q167743
-,Martha,f,Μάρθα,μαρθα,μαρθασ,Μάρθα,Μάρθας,,Μάρθαν,Μάρθα,,,https://database.factgrid.de/entity/Q167821
-,Mary,f,Μαρια,μαρια,"μαριαρ,μαριαι,μαρηαμ,μαριασ,μαρηα,μαρι,μαριαμ,μαριας,μαρηαν",Μαρία,Μαρίας,Μαρίᾳ,Μαρίαν,,,,"https://database.factgrid.de/entity/Q167822,https://database.factgrid.de/entity/Q167826,https://database.factgrid.de/entity/Q167827,https://database.factgrid.de/entity/Q167824,https://database.factgrid.de/entity/Q167823,https://database.factgrid.de/entity/Q167825"
-,Mark ,m,Μᾶρκος,μαρκος,,Μᾶρκος,Μάρκου,,Μᾶρκον,,,,
-,Matthan,m,Ματθάν,ματθαν,μαθθαν,Ματθὰν,,,Ματθὰν,,,,https://database.factgrid.de/entity/Q167853
-,Mattatha,m,Ματταθά,ματταθα,,,Ματταθά,,,,,,https://database.factgrid.de/entity/Q167846
-,Mattathias,m,Ματταθίας,ματταθιας,,,Ματταθίου,,,,,,"https://database.factgrid.de/entity/Q167848,https://database.factgrid.de/entity/Q167849"
-,Melea,m,Μελεὰ,μελεα,,,Μελεὰ,,,,,,https://database.factgrid.de/entity/Q167879
-,Melchi,m,Μελχὶ,μελχι,,,Μελχὶ,,,,,,"https://database.factgrid.de/entity/Q167874,https://database.factgrid.de/entity/Q167873"
-,Menan,m,Μεννα,μεννα,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q167885
-,Michael,m,Μιχαήλ,μιχαηλ,,Μιχαὴλ,,,,,,,
-,Mnason,m,Μνάσων,μνασων,,,,Μνάσωνί,,,,,https://database.factgrid.de/entity/Q168010
-,Mose,m,Μωϋσῆς,μωυσης,,Μωϋσῆς,Μωϋσέως,"Μωϋσεῖ,Μωϋσῇ","Μωϋσέα,Μωϋσῆν",,,,
-,Naasson,m,Ναασσων,ναασσων,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168035
-,Nagge,m,Ναγγαι,ναγγαι,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168044
-,Nathan,m,Ναθάμ,ναθαμ,,,Ναθὰμ,,,,,,https://database.factgrid.de/entity/Q168067
-,Nathanael,m,Ναθαναὴλ,ναθαναηλ,"αθαναηλ,ναθαηλ",Ναθαναὴλ,,,Ναθαναὴλ,,,,https://database.factgrid.de/entity/Q168073
-,Naiman,m,Ναιμαν,ναιμαν,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,"Naum,Nahum",m,Ναούμ,ναουμ,,,Ναοὺμ,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168075
-,Narcissus,m,Νάρκισσος,ναρκισσος,,,Ναρκίσσου,,,,,,https://database.factgrid.de/entity/Q168066
-,Nachor,m,Ναχωρ,ναχωρ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Naphtali,m,Νεφθαλίμ,νεφθαλιμ,,,Νεφθαλὶμ,,,,,,
-,Nereus,m,Νηρεύς,νηρευς,,,,,Νηρέα,,,,https://database.factgrid.de/entity/Q168105
-,Neri,m,Νηρί,νηρι,,,Νηρὶ,,,,,,https://database.factgrid.de/entity/Q168108
-,Nicanor,m,Νικάνωρ,νικανωρ,,,,,Νικάνορα,,,,https://database.factgrid.de/entity/Q168126
-,Nicodemus,m,Νικόδημος,νικοδημος,"νικοδημος,νικωδιμος,νηκοδημος,νικοδημοσ,νικωδης,εικοδημος,νεικοδημος,νικοδιμος",Νικόδημος,,,,,,,https://database.factgrid.de/entity/Q168127
-,Nicolas,m,Νικόλαος,νικολαος,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168128
-,Nympha,f,Νυμφα,νυμφα,Νυμφη,,"Νυμφας,Νυμφης",Νύμφαν,,,,,
-,Nymphas,m,Νυμφας,νυμφας,,,Νυμφα ,Νύμφαν,,,,,
-,Noah,m,Νῶε,νωε,,Νῶε,Νῶε,,Νῶε,,,,
-,Olympas,m,Ὀλυμπᾶς,ολυμπας,,,,,Ὀλυμπᾶν,,,,https://database.factgrid.de/entity/Q168168
-,Onesimus,m,Ὀνήσιμος,ονησιμος,,,,Ὀνησίμῳ,Ὀνήσιμον,,,,https://database.factgrid.de/entity/Q168178
-,Onesiphorus,m,Ὀνησίφορος,ονησιφορος,,,Ὀνησιφόρου,,,,,,https://database.factgrid.de/entity/Q168179
-,Urbanus,m,Οὐρβανός,ουρβανος,,,,,Οὐρβανὸν,,,,https://database.factgrid.de/entity/Q168891
-,Uria,m,Οὐρίας,ουριας,,,Οὐρίου,,,,,,
-,Parmenas,m,Παρμενᾶς,παρμενας,,,,,Παρμενᾶν,,,,https://database.factgrid.de/entity/Q168205
-,Patrobas,m,Πατροβας,πατροβας,,,,,Πατροβᾶν,,,,https://database.factgrid.de/entity/Q168222
-,"Paul,Paulus",m,Παῦλος,παυλος,παυλωι,Παῦλος,Παύλου,Παύλῳ,Παῦλον,Παῦλε,,,https://database.factgrid.de/entity/Q167894
-,Persis,m,Περσίς,περσις,,,,,Περσίδα,,,,https://database.factgrid.de/entity/Q168253
-,Peter,m,Πέτρος,πετρος,"πετρωι,πετρως",Πέτρος,Πέτρου,Πέτρῳ,Πέτρον,Πέτρε,,,
-,Pilate,m,Πιλᾶτος,πιλατος,"πειλατος,πιλατος,πιλατοσ,πηλατος",Πιλᾶτος,Πιλάτου,Πιλάτῳ,Πιλᾶτον,,,,https://database.factgrid.de/entity/Q168308
-,Publius,m,Πόπλιος,ποπλιος,,,Ποπλίου,Ποπλίῳ,,,,,https://database.factgrid.de/entity/Q168320
-,Porcius,m,Πόρκιος,πορκιος,,,,,,,,,https://database.factgrid.de/entity/Q168310
-,Pudens,m,Πούδης,πουδης,,Πούδης,,,,,,,https://database.factgrid.de/entity/Q168321
-,Preiscas,m,πρεισκας,πρεισκας,πρεισκαν,,,,,,,,
-,Prisca,f,Πρισκα,πρισκα,"πρισκιλλα,πρισκυλαν,πρισκυλλαν,πρισκιλαν,πρισκαν,πρισκυλλα,πρισκυλα,πισκιλλαν,πρισκιλα,πρισκιλλαν,πρισκηλα,πρισκιλλα","Πρίσκα,Πρίσκιλλα",,,"πρισκιλλαν,Πρίσκαν",,,,https://database.factgrid.de/entity/Q168313
-,Prochorus,m,Πρόχορος,προχορος,,,,,Πρόχορον,,,,https://database.factgrid.de/entity/Q168315
-,Ragau,m,Ραγαυ,ραγαυ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Rachab,f,Ραχαβ,ραχαβ,"ρακαβ,ρηχαβ,ραχααβ",,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168333
-,Rachel,f,Ῥαχὴλ,ραχηλ,"ραχηηλ,ραχιηλ,ραχιλ",Ῥαχὴλ,,,,,,,
-,Rebecca,f,Ῥεβέκκα,ρεβεκκα,"ρεβεκκαν,ρεβεκα,ρεββεκα,ρεβεκκας",Ῥεβέκκα,,,,,,,
-,Rhesa,m,Ῥησά,ρησα,,,Ῥησά,,,,,,
-,Rehabeam,m,Ροβοαμ,ροβοαμ,,,,,,,,,
-,Rhoda,f,Ῥόδη,ροδη,ρωδη,Ῥόδη,,,,,,,https://database.factgrid.de/entity/Q168393
-,Ruben,m,Ρουβην,ρουβην,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Ruth,m,Ῥούθ,ρουθ,,,Ῥούθ,,,,,,
-,Rufus,m,Ῥοῦφος,ρουφος,,,Ῥούφου,,Ῥοῦφον,,,,"https://database.factgrid.de/entity/Q168404,https://database.factgrid.de/entity/Q168403"
-,Zebaoth,m,Σαβαωθ,σαβαωθ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Sadoc,m,Σαδωκ,σαδωκ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168412
-,Shealtiel,m,Σαλαθιηλ,σαλαθιηλ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168416
-,Salome,f,Σαλώμη,σαλωμη,"σαλομη,σαλωνη,σαλο",Σαλώμη,,,,,,,"https://database.factgrid.de/entity/Q168425,https://database.factgrid.de/entity/Q166377"
-,Samuel,m,Σαμουήλ,σαμουηλ,,,Σαμουήλ,,,,,,
-,Simson,m,Σαμψων,σαμψων,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Saul,m,Σαοὺλ,σαουλ,,,,,Σαοὺλ,Σαοὺλ,,,
-,Sapphira,f,Σάπφειρα,σαπφειρα,"Σάπφιρα,σαπφηρι,σαμφιρη,σαπφειρη,σαπφηρη,σαφφιρα,σαφφιρη,σαμφειρει,σαμφειρη,σαπφειρι,σαμφειρα,σαπφηρει,σαφφυρα,σαμπφηρα",,,Σαπφίρῃ,,,,,https://database.factgrid.de/entity/Q168433
-,Secundus,m,Σεκοῦνδος,σεκουνδος,,Σεκοῦνδος,,,,,,,https://database.factgrid.de/entity/Q168448
-,Semei,m,Σεμεϊν,σεμειν,,,Σεμεῒν,,,,,,https://database.factgrid.de/entity/Q168455
-,Sergius,m,Σέργιος,σεργιος,,,,,,,,,https://database.factgrid.de/entity/Q168469
-,Seruch,m,Σερουχ,σερουχ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Seth,m,Σήθ,σηθ,,,Σὴθ,,,,,,
-,Sem,m,Σημ,σημ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Silas,m,Σιλᾶς,σιλας,σειλα,Σιλᾶς,,σιλα,σιλαν,,,"Σικας, was hier ursprünglich stand, ist ziemlich sicher ein Tippfehler - ZS",https://database.factgrid.de/entity/Q168747
-,Silvanus,m,Σιλουανός,σιλουανος,,Σιλουανός,Σιλουανοῦ,,,,,,
-,Simaias,m,Σιμαιας,σιμαιας,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Simon,m,Σιμων,σιμων,,,Σίμωνος,Σίμωνι,"Σίμωνα,Σίμωνά",,,,https://database.factgrid.de/entity/Q168755
-,Sceva,m,Σκευᾶς,σκευας,,,Σκευᾶ,,,,,,https://database.factgrid.de/entity/Q168446
-,Solomon,m,Σολομῶν,σολομων,,Σολομῶν,Σολομῶντος,,,,,,
-,Susanna,f,Σουσάννα,σουσαννα,σωσαννα,Σουσάννα,,,,,,,https://database.factgrid.de/entity/Q168789
-,Stachys,m,Σταχυς,σταχυς,,,,στάχυϊ,στάχυν,,,,https://database.factgrid.de/entity/Q168785
-,Stephanas,m,Στεφανᾶς,στεφανας,,,Στεφανᾶ,,,,,,https://database.factgrid.de/entity/Q168786
-,Stephen,m,Στέφανος,στεφανος,,στέφανός,,,στέφανόν,στέφανός,,,https://database.factgrid.de/entity/Q168787
-,Simeon,m,Συμεών,συμεων,,Συμεὼν,Συμεὼν,,,,,,"https://database.factgrid.de/entity/Q168750,https://database.factgrid.de/entity/Q168751,https://database.factgrid.de/entity/Q168129"
-,Syntyche,f,Συντύχη,συντυχη,"συντοιχην,συντυχιαν,συντυχιν",,,,Συντύχην,,,,https://database.factgrid.de/entity/Q168792
-,Sosthenes,m,Σωθένης,σωθενης,,Σωσθένης,,,Σωσθένην,,,,https://database.factgrid.de/entity/Q168783
-,Sopater,m,Σώπατρος,σωπατρος,,Σώπατρος,,,,,,,https://database.factgrid.de/entity/Q168780
-,Tabitha,f,Ταβιθά,ταβιθα,"θαβιθα,ταβηθα,βιθα",Ταβιθά,,,,Ταβιθά,,,https://database.factgrid.de/entity/Q166421
-,Tertius,m,Τέρτιος,τερτιος,,Τέρτιος,,,,,,,https://database.factgrid.de/entity/Q168831
-,Tertullus,m,Τέρτουλλος,τερτουλλος,Τέρτυλλος,,Τερτύλλου,,,,,,https://database.factgrid.de/entity/Q168832
-,Tiberius,m,Τιβέριος,τιβεριος,,,Τιβερίου,,,,,,https://database.factgrid.de/entity/Q168843
-,Timaeus,m,Τιμαῖος,τιμαιος,,,Τιμαίου,,,,,,https://database.factgrid.de/entity/Q168852
-,Timothy,m,Τιμόθεος,τιμοθεος,,Τιμόθεος,Τιμοθέου,Τιμοθέῳ,Τιμόθεον,Τιμόθεε,,,https://database.factgrid.de/entity/Q168857
-,Timon,m,Τίμων,τιμων,,,,,Τίμωνα,,,,https://database.factgrid.de/entity/Q168856
-,Titus,m,Τίτος,τιτος,,Τίτος,Τίτου,Τίτῳ,Τίτον,,,,https://database.factgrid.de/entity/Q168863
-,Trophimus,m,Τρόφιμος,τροφιμος,,Τρόφιμος,,,Τρόφιμον,,,"ursprünglich war als Grundform Φορτουνατοε angegeben, was falsch sein müsste - ZS",https://database.factgrid.de/entity/Q168876
-,Tryphaena,m,Τρύφαινα,τρυφαινα,,,,,Τρύφαιναν,,,,https://database.factgrid.de/entity/Q168877
-,Tryphosa,m,Τρυφῶσα,τρυφωσα,,,,,Τρυφῶσαν,,,,https://database.factgrid.de/entity/Q168878
-,Tyrannus,m,Τύραννος,τυραννος,,,Τυράννου,,,,,,https://database.factgrid.de/entity/Q168882
-,Tychicus,m,Τυχικός,τυχικος,,Τυχικὸς,,,"Τυχικόν,Τυχικὸν",,,,https://database.factgrid.de/entity/Q168881
-,Hymenaeus,m,Ὑμέναιος,υμεναιος,,Ὑμέναιος,,,,,,,https://database.factgrid.de/entity/Q167042
-,Phalek,m,φαλεκ,φαλεκ,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Phanuel,m,Φανουήλ,φανουηλ,,,Φανουήλ,,,,,,https://database.factgrid.de/entity/Q168266
-,Phares,m,Φαρες,φαρες,,,,,,,,keine Formen für label:en in Louw-Naida - CW,
-,Felix,m,Φῆλιξ,φηλιξ,,Φῆλιξ,Φήλικος,Φήλικι,Φήλικα,Φῆλιξ,,,https://database.factgrid.de/entity/Q166680
-,Festus,m,Φηστος,φηστος,,,,,,,,,https://database.factgrid.de/entity/Q168310
-,Festus,m,Φῆστος,φηστος,,Φῆστος,Φήστου,Φήστῳ,Φῆστον,Φῆστε,,,
-,Philemon,m,Φιλήμων,φιλημων,,,,Φιλήμονι,,,,,https://database.factgrid.de/entity/Q168285
-,Philetus,m,Φίλητος,φιλητος,,Φίλητος,,,,,,,https://database.factgrid.de/entity/Q168286
-,Philip,m,Φίλιππος,φιλιππος,,Φίλιππος,Φιλίππου,Φιλίππῳ,Φίλιππον,Φίλιππε,,,"https://database.factgrid.de/entity/Q168290,https://database.factgrid.de/entity/Q168287,https://database.factgrid.de/entity/Q168288"
-,Philologus,m,Φιλόλογος,φιλολογος,,,,,Φιλόλογον,,,,https://database.factgrid.de/entity/Q168291
-,Phlegon,m,Φλέγων,φλεγων,,,,,Φλέγοντα,,,,https://database.factgrid.de/entity/Q168295
-,Phebe,f,Φοιβη,φοιβη,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168283
-,Fortunatus,m,Φορτουνᾶτος,φορτουνατος,,,Φορτουνάτου,,,,,,https://database.factgrid.de/entity/Q166681
-,Phygellus,m,Φύγελος,φυγελος,,,,,,,,keine Formen für label:en in Louw-Naida - CW,https://database.factgrid.de/entity/Q168299
-,Chloe,m,Χλόη,χλοη,,Χλόη,Χλόης,,,,,,https://database.factgrid.de/entity/Q166331
-,Chuza,m,Χουζᾶς,χουζας,,Χουζᾶς,Χουζᾶ,,,,,,https://database.factgrid.de/entity/Q166334
-,Christ,m,Χριστός,χριστος,"χω,χρυ,χε,χρε,χρς,χρηστος,χσ","Χριστός,ΧΣ","χριστοῦ,ΧΥ",Χριστῷ,χριστόν,χριστέ,,,
-,Hosea,m,Ὡσηέ,ωσηε,,,,Ὡσηὲ,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,"https://database.factgrid.de/entity/Q168754,https://database.factgrid.de/entity/Q168757,https://database.factgrid.de/entity/Q168758,https://database.factgrid.de/entity/Q168756,https://database.factgrid.de/entity/Q168762,https://database.factgrid.de/entity/Q166310"
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-
+﻿gender,label:de,label:en,label:el,label:el:norm,alternatives,Nom Sg,Gen Sg,Dat Sg,Akk Sg,Voc Sg,nomina insignia,source,note,factgrid,label:lat
+m,Jason,Jason,Ἰάσων,ιασων,Ἰησοῦς,Ἰάσων,Ιασονος,Ἰάσονι,Ἰάσονα,,,"Bauer,Louw-Naida","""Die Juden liebten es, den Namen Ἰησοῦς durch den echtgriechischen Ἰάσων zu ersetzen"" (Bauer), daher evtl. Ἰησοῦς als Alternative?",,
+m,Agathopus,Agathopus,Ἀγαθόπους,αγαθοπους,,Ἀγαθόπους,Αγαθοποδος,,"Ἀγαθόπουν,Ἀγαθόποδα",,,Bauer,0 mal im Ausgangstext,,
+f,Alke,Alce,Ἄλκη,αλκη,,Ἄλκη,Αλκης,,,,, Bauer,0 mal im Ausgangstext,,
+m,Amathios,Amathios?,Ἀμάθιος,αμαθιος,Αμαθι,Ἀμάθιος,Αμαθιου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Aristion,Aristion,Ἀριστίων,αριστιων,,Ἀριστίων,Αριστιωνος,,,,,Bauer,0 mal im Ausgangstext,,
+f,Artemilla,Artemilla,Ἀρτεμύλλα,αρτεμυλλα,,Ἀρτεμύλλα,Αρτεμυλλας,,,,,Bauer,0 mal im Ausgangstext,,
+m,Attalus,Attalus,Ἄτταλος,ατταλος,,Ἄτταλος,Ατταλου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165703,
+m,Bassus,Bassus,Βάσσος,βασσος,,Βάσσος,Βασσου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Biton,Bito,Βίτων,βιτων,,Βίτων,Βιτωνος,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165759,
+m,Burrus,Burrhus,Βοῦρρος,βουρρος,,Βοῦρρος,Βουρρου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Germanicus,Germanicus,Γερμανικός,γερμανικος,,Γερμανικός,Γερμανικοῦ,,,,,Bauer,0 mal im Ausgangstext,,
+f,Grapte,Grapte,Γραπτή,γραπτη,,Γραπτή,Γραπτῆς,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165764,
+m,Dathan,Dathan,Δαθάν,δαθαν,Δαθάμης,Δαθάν,"Δαθάν,Δαθαμου",,,,,Bauer,0 mal im Ausgangstext,,
+m,Damas,Damas,Δαμᾶς,δαμας,,Δαμᾶς,Δαμᾶ,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165732,
+m,Daphnus,Daphnus,Δάφνος,δαφνος,,Δάφνος,Δαφνου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Diognet,Diognetus,Διόγνητος,διογνητος,,Διόγνητος,Διογνητου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Diophantos,Diophantus,Διόφαντος,διοφαντος,,Διόφαντος,Διοφαντου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166086,
+f,Dirke,Dirce,Δίρκη,διρκη,,Δίρκη,Διρκης,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165758,
+m,Irenaeus,Irenaeus,Εἰρηναῖος,ειρηναιος,,Εἰρηναῖος,Ειρηναιου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165946,
+m,Eldad,Eldad,Ἐλδάδ,ελδαδ,,Ἐλδάδ,Ἐλδάδ,,,,,Bauer,0 mal im Ausgangstext,"https://database.factgrid.de/entity/Q165847,https://database.factgrid.de/entity/Q165845",
+m,Epitropus,Epitropus?,Ἐπίτροπος,επιτροπος,,Ἐπίτροπος,Επιτροπου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Epiphanius,Epiphanius,Ἑπιφάνιος,επιφανιος,Ἑπιφάνειος,Ἑπιφάνιος,Ἑπιφανιου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165853,
+f,Esther,Esther,Ἐσθήρ,εσθηρ,,Ἐσθήρ,"Ἐσθήρ,Ἐσθῆρος",,,,,Bauer ,0 mal im Ausgangstext,,
+m,Euarestus,Euarestus?,Εὐάρεστος,ευαρεστος,Εὐάρεστος,Εὐάρεστος ,Ευαρεστου,,,,,Bauer,0 mal im Ausgangstext,,
+f,Eubula,Eubula,Εὐβούλα,ευβουλα,Εὐβούλη,Εὐβούλα,Ευβουλας,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165881,
+m,Euplus,Euplus,Εὔπλους,ευπλους,,Εὔπλους,Ευπλου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165906,
+m,Zosimus,Zosimus,Ζώσιμος,ζωσιμος,,Ζώσιμος,Ζωσιμου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Zotion,Zotion?,Ζωτίων,ζωτιων,Σωτίων ,Ζωτίων,Ζωτιωνος,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165904,
+m,Thamyris,Thamyris,Θάμυρις,θαμυρις,Θαμῦρις,Θάμυρις,Θαμυριδος,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165924,
+m,Thegri,Thegri?,Θεγρί,θεγρι,,Θεγρί,Θεγρί,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q77541,
+f,Theonoe,Theonoe,Θεονόη,θεονοη,,Θεονόη,Θεονοης,Θεονόῃ,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165931,
+m,Theophorus,Theophorus,Θεοφόρος,θεοφορος,,Θεοφόρος,Θεοφορου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165934,
+m,Ignatius,Ignatius,Ἰγνάτιος,ιγνατιος,,Ἰγνάτιος,Ιγνατιου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165935,
+m,Hesekiel,Ezekiel,Ἰεζεκιήλ,ιεζεκιηλ,Ἰεζεκίηλος,Ἰεζεκιήλ,Ἰεζεκιήλ,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165936,
+m,Hieronymus,Hieronymus,Ἱερώνυμος,ιερωνυμος,,Ἱερώνυμος,Ἱερωνυμου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165939,
+f,Judith,Judith,Ἰουδίθ,ιουδιθ,,Ἰουδίθ,Ἰουδίθ,,,,,Bauer,0 mal im Ausgangstext,,
+f,Juthine,Juthine?,Ἰουθίνη,ιουθινη,"Εὐθίνη,Εὐθήνη ",Ἰουθίνη,Ιουθινης,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165942,
+m,Isokrates,Isocrates,Ἰσοκράτης,ισοκρατης,,Ἰσοκράτης,Ισοκρατους,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165945,
+m,Cestus,Cestus?,Κέστος,κεστος,Κέσκος,Κέστος,Κεστου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Kleobios,Kleobios?,Κλεόβιος,κλεοβιος,,Κλεόβιος,Κλεοβιου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165965,
+m,Quadratus,Quadratus?,Κοδρᾶτος,κοδρατος,,Κοδρᾶτος,Κοδρατου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165974,
+m,Quintus,Quintus,Κόϊντος,κοιντος,,Κόϊντος,Κοιντου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165975,
+m,Crocus,Crocus,Κρόκος,κροκος,,Κρόκος,Κροκου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Laban,Laban,Λαβάν,λαβαν,Λάβανος,Λαβάν,"Λαβάν,Λαβανου",,,,,Bauer,0 mal im Ausgangstext,,
+m,Longinus,Longinus,Λογγῖνος,λογγινος,,Λογγῖνος,Λογγινου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165984,
+m,Longus,Longus,Λόγγος,λογγος,,Λόγγος,Λογγου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Manaïmos,Manaïmos?,Μανάϊμος,μαναιμος,Μανάημος,Μανάϊμος,"Μαναΐμου,Μαναημου",,,,,Bauer,0 mal im Ausgangstext,,
+m,Maximus,Maximus,Μάξιμος,μαξιμος,,Μάξιμος,Μαξιμου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Marcion,Marcion,Μαρκίων,μαρκιων,"Μάρκου,Μαρκιανοῦ",Μαρκίων,Μαρκιωνος,,,,,Bauer,0 mal im Ausgangstext,,
+f,Myrte,Myrte?,Μύρτη,μυρτη,,Μύρτη,Μυρτης,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165959,
+m,Niketes,Nicetes,Νικήτης ,νικητης,,Νικήτης ,Νικητου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165960,
+m,Xenon,Xenon?,Ξένων ,ξενων,,Ξένων ,Ξενωνος ,,,,,Bauer,0 mal im Ausgangstext,,
+m,Holofernes,Holofernes ,Ὀλοφέρνης ,ολοφερνης,,Ὀλοφέρνης ,Ολοφερνου ,,,,,Bauer,0 mal im Ausgangstext,,
+m,Valerius,Valerius,Οὐαλέριος ,ουαλεριος,,Οὐαλέριος ,Ουαλεριου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166026,
+m,Papias,Papias,Παπίας ,παπιας,,Παπίας ,"Παπια,Παπιου ",,,,,Bauer,0 mal im Ausgangstext,,
+m,Petronius,Petronius,Πετρώνιος ,πετρωνιος,,Πετρώνιος ,Πετρωνιου ,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166039,
+m,Pionius,Pionius,Πιόνιος ,πιονιος,,Πιόνιος ,Πιονιου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Polybius,Polybius ,Πολύβιος ,πολυβιος,,Πολύβιος ,Πολυβιου,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165708,
+m,Polykarp,Polycarp,Πολύκαρπος ,πολυκαρπος,,Πολύκαρπος ,Πολυκαρπου ,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q165715,
+m,Rheus,Rheus,Ῥέος,ρεος,,Ῥέος,Ῥεου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Statius,Statius,Στάτιος ,στατιος,,Στάτιος ,Στατιου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Sokrates,Socrates,Σωκράτης ,σωκρατης,Ἰσοκράτης ,Σωκράτης ,Σωκρατους,,,,,Bauer,0 mal im Ausgangstext,,
+f,Tavia,Tavia?,Ταουΐα ,ταουια,"Ταουις,Ταουεις,Γαουΐα ",Ταουΐα ,Ταουιας,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166136,
+m,Tertullus,Tertullus,Τέρτουλλος ,τερτουλλος,,Τέρτουλλος ,Τερτουλλου,,,,,Bauer,0 mal im Ausgangstext,,
+m,Philo ,Philo ,Φίλων ,φιλων,,Φίλων ,Φιλωνος,,,,,Bauer,0 mal im Ausgangstext,,
+m,Fronto,Fronto,Φρόντων ,φροντων,,Φρόντων ,Φροντωνος,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166146,
+m,Og,Og,Ὤγ ,ωγ,Ὤγης ,Ὤγ ,Ὤγ ,,,,,Bauer,0 mal im Ausgangstext,https://database.factgrid.de/entity/Q166141,
+m,Patroklos ,Patroclus,Πάτροκλος ,πατροκλος,,Πάτροκλος ,Πατροκλου,,,,,Bauer,0 mal im Ausgangstext (im Bauer dazu keine Angabe),,
+m,Abiram,Abiram,Ἀβειρών,αβειρων,"Ἀβιρών,Ἀβίραμος",Ἀβειρών,"Ἀβειρών,Ἀβιρων,Ἀβιραμου",,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Abiron",,
+m,Amazja,Amaziah,Ἀμασίας,αμασιας,,Ἀμασίας,Αμασιου,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Amasja",https://database.factgrid.de/entity/Q166144,
+m,Asarja,Azariah,Ἀζαρίας,αζαριας,,Ἀζαρίας,Αζαριου,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Azaria",https://database.factgrid.de/entity/Q166147,
+m,Ephebus,Ephebus,Ἔφηβος,εφηβος,,Ἔφηβος,Εφηβου,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Ephebus",,
+m,Mischaël,Mishael,Μισαήλ,μισαηλ,Μισάηλος,Μισαήλ,Μισαήλ,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Misael",,
+m,Medad,Medad,Μωδάτ,μωδατ,,Μωδάτ,Μωδάτ,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Modat",,
+m,Nun,Nun,Ναυή,ναυη,Νούμ,Ναυή,Ναυή,,,,,Bauer,"0 mal im Ausgangstext,im Bauer als Nave",,
+m,Nabal,Nabal,Νάβαλ,ναβαλ,"Ναβαλ,Νάβαλος",Νάβαλ,Νάβαλ,,,,,Bauer,"0 mal im Ausgangstext,im Bauer kein Verweis auf indekl. oder Genitiv-Form, aber vermutlich ist der Genitiv Νάβαλ, da höchstwahrscheinlich indekl.",https://database.factgrid.de/entity/Q166234,
+m,Amon,Amon,Ἀμών,αμων,"Ἀμμών,αμων,αμμωμ",Ἀμών,"Ἀμών,Ἀμμῶνα",,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Beor,Beor,Βεώρ,βεωρ,Βέωρ,Βεώρ,Βεώρ,,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Dan ,Dan ,Δάν,δαν ,Δάνος,Δάν,"Δάν,Δανου",,,,,Bauer,"0 mal im Ausgangstext,v.l.",https://database.factgrid.de/entity/Q166273,
+m,Jachin,Jachin?,Ἰαχίν,ιαχιν,,Ἰαχίν,Ἰαχίν,,,,,Bauer,"0 mal im Ausgangstext,v.l.",https://database.factgrid.de/entity/Q166276,
+f,Lektra,Lectra,Λέκτρα,λεκτρα,,Λέκτρα,Λεκτρας,,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Nero,Nero,Νέρων,νερων,,Νέρων,Νερωνος,,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Nineves,Nineveh,Νινευής ,νινευης ,"Νευης,Νινευε ",Νινευής ,Νινευής ,,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Ahasja ,Ahaziah ,Ὀχοζίας ,οχοζιας,,Ὀχοζίας ,Οχοζιου ,,,,,Bauer,"0 mal im Ausgangstext,v.l.",,
+m,Simaias,Shemaiah ,Σιμαίας ,σιμαιας,,Σιμαίας ,Σιμαιου,,,,,Bauer,"0 mal im Ausgangstext,v.l.",https://database.factgrid.de/entity/Q166694,
+m,Sichem,Shechem ,Συχέμ ,συχεμ,,Συχέμ ,Συχέμ ,,,,,Bauer,"0 mal im Ausgangstext,v.l. für die Stadt Συχέμ ",https://database.factgrid.de/entity/Q166698,
+f,Thekla,Thecla,Θέκλα,θεκλα,,Θέκλα,"Θεκλης,Θέκλας",,,,,Bauer,"0 mal im Ausgangstext,v.l. laut Bauer aber nicht ohne Weiteres zu identifizieren",https://database.factgrid.de/entity/Q166700,
+m,Lebbäus,Lebbaeus,Λεββαῖος,λεββαιος,,Λεββαῖος,Λεββαιου,,,,,"Bauer,Louw-Naida","0 mal im Ausgangstext,v.l.,alternativer Name für Θαδδαῖος",,
+m,Zeno,Zeno,Ζήνων,ζηνων,,Ζήνων,Ζηνωνος,,,,,Bauer,"0 mal im Ausgangstext,v.l.,Genitiv rekonstruiert",,
+m,Joachim,Joachim,Ἰωακίμ,ιωακιμ,"Ἰωακείμ,ιακειμ",Ἰωακίμ,Ἰωακίμ,,,,,Bauer,"0 mal im Ausgangstext,v.l.,im Bauer als Joachim",,
+m,Joasch,Joash,Ἰωάς,ιωας,Ἰώασος,Ἰωάς,"Ἰωάς,Iωασου",,,,,Bauer,"0 mal im Ausgangstext,v.l.,im Bauer als Joas",,
+m,Apollonius,Apollonius,Ἀπολλώνιος,απολλωνιος,,Ἀπολλώνιος,Απολλωνιου,,,,,"Bauer,Louw-Naida","0 mal im Ausgangstext,v.l.,Langform zu Ἀπολλῶς",,
+m,Jonatan,Jonathan,Ἰωνάθας,ιωναθας,Ἰωνάθης,Ἰωνάθας,Ιωναθου,,,,,"Bauer,Louw-Naida","0 mal im Ausgangstext,v.l.,nach Louw-Nida entspricht Jonathas dem John",https://database.factgrid.de/entity/Q166365,
+m,Serach,Zerah,Ζάρα,ζαρα,"Ζάρε,ζαραν,Ζαρά",Ζάρα,Ζάρα,,Ζάρα,,,"Bauer,Louw-Naida","Bauer; Wörterbuch, NRSV",,
+m,Christus,Christ,Χριστός,χριστος,Χρηστός ,Χριστός,Χριστοῦ,Χριστῷ,χριστόν,χριστέ,"χω,χρυ,χε,χρε,χρς,χσ,ΧΣ,ΧΥ","Bauer,Louw-Naida",Christus ist in der 2. Bedeutung im Bauer-Wörterbuch ein Eigenname,,
+m,Levi,Levi,Λευί,λευι,"Λευίς,Λευΐ,Λευΐς,Λευεί,Λευείς",Λευί,Λευί,,Λευίν,,,"Bauer,Louw-Naida","Darstellung der Alternativen Λευΐ-,Λευεί- nicht eindeutig ",,
+m,Simon,Simon,Σίμων ,σιμων,,Σίμων ,Σίμωνος,Σίμωνι,"Σίμωνα,Σίμωνά",,,"Bauer,Louw-Naida",Genitiv nicht im Bauer vermerkt,,
+m,Zenas,Zenas,Ζηνᾶς,ζηνας,,Ζηνᾶς,Ζηνᾶ,,Ζηνᾶν,,,"Bauer,Louw-Naida",Genitiv rekonstruiert,,
+m,Abija,Abijah,Ἀβιά,αβια,,Ἀβιά,Ἀβιά,,,,,"Bauer; Wörterbuch, NRSV",im Bauer als Abia,https://database.factgrid.de/entity/Q166400,
+m,Abjatar,Abiathar,Ἀβιαθάρ,αβιαθαρ,"αβηαβηαθαρ,Ἀβιάθαρ,Ἀβιάθαρος,αβηαθαρ",Ἀβιαθάρ,"Ἀβιαθάρ,Ἀβιαθαρου",,,,,Bauer,im Bauer als Abjathar,https://database.factgrid.de/entity/Q166401,
+m,Achaikus,Achaicus,Ἀχαϊκός,αχαικος,,Ἀχαϊκός,Ἀχαϊκοῦ,,,,,"Bauer,Louw-Naida",im Bauer als Achaicus,,
+m,Äneas,Aeneas,Αἰνέας,αινεας,,Αἰνέας,Αινεου,,Αἰνέαν,Αἰνέα,,"Bauer,Louw-Naida",im Bauer als Aeneas,,
+m,Amminadab,Amminadab,Ἀμιναδάβ,αμιναδαβ,"Ἀμιναδάμ,Ἀμινάδαβος",Ἀμιναδάβ,"Ἀμιναδάβ,Αμιναδαβου",,Ἀμιναδὰβ,,,"Bauer,Louw-Naida",im Bauer als Aminadab,https://database.factgrid.de/entity/Q166409,
+m,Hananias,Ananias,Ἁνανίας,ανανιας,"Ἀνανίας,Ἀνάνιος,Ἄνανις",Ἁνανίας,Ἁνανιου,,Ἁνανίαν,Ἁνανία,,"Bauer,Louw-Naida",im Bauer als Ananias,https://database.factgrid.de/entity/Q166410,
+m,Andronikus,Andronicus,Ἀνδρόνικος,ανδρονικος,,Ἀνδρόνικος,Ανδρονικου,,Ἀνδρόνικον,,,"Bauer,Louw-Naida",im Bauer als Andronicus,,
+f,Aphia,Apphia,Ἀπφία,απφια,,Ἀπφία,Απφιας,Ἀπφίᾳ,,,,"Bauer,Louw-Naida",im Bauer als Apphia,,
+m,Ram,Ram,Ἀράμ,αραμ,,Ἀράμ,Ἀράμ,,,,,Bauer,im Bauer als Aram,https://database.factgrid.de/entity/Q166422,
+m,Aristarch,Aristarchus,Ἀρίσταρχος,αρισταρχος,,Ἀρίσταρχος,Αρισταρχου,,Ἀρίσταρχον,,,"Bauer,Louw-Naida",im Bauer als Aristarchus,,
+m,Aristobul,Aristobulus,Ἀριστόβουλος,αριστοβουλος,,Ἀριστόβουλος,Αριστοβουλου,,,,,"Bauer,Louw-Naida",im Bauer als Aristobulus,,
+m,Arpachschad,Arphaxad,Ἀρφαξάδ,αρφαξαδ,Ἀρφαξάδης,Ἀρφαξάδ,"Ἀρφαξάδ,Αρφαξαδου",,,,,Bauer ,im Bauer als Arphachsad,,
+m,Asynkritus,Asyncritus,Ἀσύγκριτος,ασυγκριτος,,Ἀσύγκριτος,Ασυγκριτου,,Ἀσύγκριτον,,,"Bauer,Louw-Naida",im Bauer als Asyncritus,,
+m,Berechja,Barachiah,Βαραχίας,βαραχιας,,Βαραχίας,Βαραχιου,,Βαραχιον,,,Bauer,im Bauer als Barachja,https://database.factgrid.de/entity/Q166470,
+m,Barjona,Barjona,Βαριωνᾶ,βαριωνα,"Βαριονὰν,Βαριωνᾶς,Βὰρ Ἰωνᾶ,Βαριωνά","Βαριωνᾶ,Βαριωνᾶς",Βαριωνᾶ,,,,,Bauer,"im Bauer als Barjona,in Louw-Naida als Bar-Jonas,(Beiname von Simon vgl. Mt 16,17)","https://database.factgrid.de/entity/Q166488,https://database.factgrid.de/entity/Q166489",
+m,Bartholomäus,Bartholomew,Βαρθολομαῖος,βαρθολομαιος,"Θολεμαῖος,Θολομαῖος,βαρθολομεος",Βαρθολομαῖος,Βαρθολομαιου,,Βαρθολομαῖον,,,"Bauer,Louw-Naida",im Bauer als Bartholomaeus,https://database.factgrid.de/entity/Q166527,
+m,Bartimäus,Bartimaeus,Βαρτιμαῖος,βαρτιμαιος,"Βαρτίμαιος,Βαρτειμίας",Βαρτιμαῖος,Βαρτιμαιου,,,,,"Bauer,Louw-Naida",im Bauer als Bartimaeus,https://database.factgrid.de/entity/Q166571,
+m,Beor,Bosor,Βοσόρ,βοσορ,,Βοσόρ,Βοσόρ,,,,,Bauer,im Bauer als Bosor,https://database.factgrid.de/entity/Q166557,
+f,Chloë,Chloe,Χλόη,χλοη,,Χλόη,Χλοης,,,,,"Bauer,Louw-Naida",im Bauer als Chloe,,
+f,Klaudia,Claudia,Κλαυδία,κλαυδια,,Κλαυδία,Κλαυδιας,,,,,"Bauer,Louw-Naida",im Bauer als Claudia,https://database.factgrid.de/entity/Q166583,
+m,Klaudius,Claudius,Κλαύδιος,κλαυδιος,,Κλαύδιος,Κλαυδιου,,Κλαύδιον,,,"Bauer,Louw-Naida",im Bauer als Claudius,,
+m,Klemens,Clement,Κλήμης,κλημης,,Κλήμης,Κλημεντος,,,,,"Bauer,Louw-Naida",im Bauer als Clemens,,
+m,Kornelius,Cornelius,Κορνήλιος,κορνηλιος,"κορνιλιος,κορνιλιως",Κορνήλιος,Κορνηλιου,,,Κορνήλιε,,"Bauer,Louw-Naida",im Bauer als Cornelius,,
+m,Kreszens,Crescens,Κρήσκης,κρησκης,Κρίσκης,Κρήσκης,Κρησκεντος,,,,,"Bauer,Louw-Naida",im Bauer als Crescens,,
+m,Krispus,Crispus,Κρίσπος,κρισπος,,Κρίσπος,Κρισπου,,Κρίσπον,,,"Bauer,Louw-Naida",im Bauer als Crispus,,
+m,Didymus,Didymus,Δίδυμος ,διδυμος,,Δίδυμος,Διδυμου,,,,,"Bauer,Louw-Naida","im Bauer als Didymus,griechischer Name von Thomas,vgl. Joh 11,16; 20,24; 21,2",https://database.factgrid.de/entity/Q166607,
+m,Ger,Er,Ἤρ,ηρ,,Ἤρ,Ἢρ,,,,,"Bauer,Louw-Naida",im Bauer als Er,https://database.factgrid.de/entity/Q166608,
+f,Evodia,Euodia,Εὐοδία,ευοδια,Εὐωδία,Εὐοδία,Ευοδιας,,,,,Bauer,im Bauer als Euodia,https://database.factgrid.de/entity/Q166609,
+m,Issachar,Issachar,Ἰσσαχάρ,ισσαχαρ,"ασαχαρ,Ἰσσάχαρ,Ἰσαχάρ,Ἰσσαχάρης",Ἰσσαχάρ,"Ἰσσαχάρ,Ἰσακχάρου",,,,ισσχαρ ,Bauer,"im Bauer als Isaschar,Genus von Ἰσακχάρου unsicher",,
+m,Iskariot,Iscariot,Ἰσκαριώθ,ισκαριωθ,"Ἰσκαριώτης,Σκαριώθ,Σκαριώτης",Ἰσκαριώθ,"Ἰσκαριώθ,Ισκαριωτου",,,,,Bauer,im Bauer als Ischarioth,,
+m,Jaïrus,Jairus,Ἰάϊρος,ιαιρος,"Ἰάιρος,Ἰάειρος,Ἰαΐρ,",Ἰάϊρος,Ιαιρου,,,,,"Bauer,Louw-Naida",im Bauer als Jairus,https://database.factgrid.de/entity/Q166627,
+m,Jojachin,Jechonjah,Ἰεχονίας,ιεχονιας,,Ἰεχονίας,Ιεχονιου,,,,,"Bauer,Louw-Naida",im Bauer als Jechonja,https://database.factgrid.de/entity/Q166951,
+m,Jeftah,Jephthah,Ἰεφθάε,ιεφθαε,"Ἰαφθᾶς,Ἰεφθάς",Ἰεφθάε,"Ἰεφθάε,ιαφθα,ιεφθα",,,,,Bauer,im Bauer als Jephtha,https://database.factgrid.de/entity/Q166952,
+m,Johanan,Joanan,Ἰωανάν,ιωαναν,"ιωανναν,Ἰωαννᾶς",Ἰωανάν,Ἰωανάν,Ἰωανάν,,,,"Bauer,Louw-Naida",im Bauer als Jochanan,https://database.factgrid.de/entity/Q166953,
+m,Josef,Joseph,Ἰωσήφ,ιωσηφ,"Ἰώσηφος,Ἰώσηπος",Ἰωσήφ,"Ἰωσήφ,Ιωσηπου",Ἰωσήφ,Ἰωσήφ,,"ιηφ,ισηφ ","Bauer,Louw-Naida","im Bauer als Joseph,Ιωσληχ ursprünglich als Alternative notiert – vermutlich falsche Schreibung von Ἰωσήχ ",,
+m,Kisch,Kish,Κίς,κις,"Κείς,Κείσαιος,Κεῖσος",Κίς,Κίς,,,,,Bauer,im Bauer als Kis,https://database.factgrid.de/entity/Q166638,
+m,Korach,Korah,Κόρε ,κορε,"Κορέ,Κορῆς",Κόρε,"Κόρε,Κορέου",,,,,Bauer,im Bauer als Kora,,
+m,Luzius,Lucius,Λούκιος,λουκιος,,Λούκιος,Λουκιου,,,,,"Bauer,Louw-Naida",im Bauer als Lucius,,
+m,Mahat,Maath,Μάοθ,μαοθ,"Μαάθ,Μεθ,Μααθ",Μάοθ,Μάοθ,,,,,Bauer ,im Bauer als Maath,,
+m,Mahalalel,Mahalaleel,Μαλελεήλ,μαλελεηλ,"Μελελεήλ,Μαλάηλος",Μαλελεήλ,"Μαλελεήλ,Μαλαηλου",,,,,Bauer,im Bauer als Maleleel,,
+m,Manaën,Manaen,Μαναήν,μαναην,"Μαναήμ,Μανάημος",Μαναήν,"Μαναήν,Μαναημου",,,,,"Bauer,Louw-Naida",im Bauer als Manahen,https://database.factgrid.de/entity/Q166648,
+f,Marta,Martha,Μάρθα,μαρθα,,Μάρθα,Μαρθας,,Μάρθαν,Μάρθα,,"Bauer,Louw-Naida",im Bauer als Martha,https://database.factgrid.de/entity/Q166649,
+m,Mattatas,Mattatha,Ματταθά,ματταθα,"Μαθαθα,Μαθθαθα",Ματταθά,Ματταθά,,,,,"Bauer,Louw-Naida",im Bauer als Mattatha,https://database.factgrid.de/entity/Q166650,
+m,Mattan,Matthan,Ματθάν,ματθαν,μαθθαν,Ματθάν,Ματθάν,,Ματθάν,,,"Bauer,Louw-Naida",im Bauer als Matthan,,
+m,Mattat,Matthat,Μαθθάτ,μαθθατ,"Ματθάτ,Μαθθάθ",Μαθθάτ,Μαθθάτ,,,,,"Bauer,Louw-Naida",im Bauer als Matthat,https://database.factgrid.de/entity/Q166651,
+m,Metuschelach,Methuselah,Μαθουσαλά,μαθουσαλα,"Μαθουσάλα,Μεθουσάλεκ,Μαθουσάλας",Μαθουσαλά,Μαθουσαλά,,,,,Bauer,im Bauer als Methusalem,,
+m,Nachschon,Nahshon,Ναασσών,ναασσων,,Ναασσών,Ναασσών,,,,,Bauer,im Bauer als Naasson,,
+m,Nahor,Nahor,Ναχώρ,ναχωρ,Ναχώρης,Ναχώρ,"Ναχώρ,Ναχωρου",,,,,Bauer,im Bauer als Nachor,,
+m,Naaman,Naaman,Ναιμάν,ναιμαν,Νεεμάν,Ναιμάν,Ναιμάν,,,,,Bauer,im Bauer als Naiman,https://database.factgrid.de/entity/Q168967,
+m,Naftali,Naphtali,Νεφθαλίμ,νεφθαλιμ,"Νεφθαλείμ,Νεφθαλείς,Νεφθαλίς",Νεφθαλίμ,"Νεφθαλίμ,νεφθαλεμ,νεφθαλημ",,,,,"Bauer,Louw-Naida",im Bauer als Naphthali,https://database.factgrid.de/entity/Q168992,
+m,Narzissus,Narcissus,Νάρκισσος,ναρκισσος,,Νάρκισσος,Ναρκισσου,,,,,"Bauer,Louw-Naida",im Bauer als Narcissus,https://database.factgrid.de/entity/Q168977,
+m,Nathan,Nathan,Ναθάμ,ναθαμ,"Ναθάν,Νάθας",Ναθάμ,Ναθάμ,,"Ναθάμ,Νάθαν",,,"Bauer,Louw-Naida",im Bauer als Natham,https://database.factgrid.de/entity/Q169008,
+m,Peleg,Peleg,Φάλεκ ,φαλεκ,"Φαλέκ,Φαλέγ,Φάλεχ,Φάλεγος ",Φάλεκ ,"Φάλεκ,Φαλεγου",,,,,Bauer,im Bauer als Phalek,,
+m,Phanuël,Phanuel,Φανουήλ,φανουηλ,φελιηλ,Φανουήλ,Φανουήλ,,,,,"Bauer,Louw-Naida",im Bauer als Phanuel,https://database.factgrid.de/entity/Q169052,
+m,Perez,Perez,Φάρες ,φαρες,"Φαρές,Φάρεσος ",Φάρες ,"Φάρες,Φαρεσου ",,,,,Bauer,im Bauer als Phares,,
+f,Phöbe,Phoebe,Φοίβη ,φοιβη,"φοιβην,φυβην,φηβην,φοιβον,φοιβιν",Φοίβη ,Φοιβης,,,,,Bauer,im Bauer als Phoebe,https://database.factgrid.de/entity/Q169129,
+f,Priska,Prisca,Πρίσκα,πρισκα,"πρισκιλλα,πρισκυλαν,πρισκυλλαν,πρισκιλαν,πρισκαν,πρισκυλλα,πρισκυλα,πισκιλλαν,πρισκιλα,πρισκιλλαν,πρισκηλα,πρισκιλλα,πρεισκας,πρεισκαν,Πρῖσκα","Πρίσκα,Πρίσκιλλα","Πρισκας,Πρισκιλλης ",,"πρισκιλλαν,Πρίσκαν",,,"Bauer,Louw-Naida","im Bauer als Prisca,Priscilla;Genitiv rekonstruiert",,
+m,Pudens,Pudens,Πούδης,πουδης,,Πούδης,Πουδεντος ,,,,,"Bauer,Louw-Naida",im Bauer als Pudēns ,,
+m,Regu,Ragau,Ῥαγαύ ,ραγαυ,Ῥάγαυος ,Ῥαγαύ ,Ῥαγαύ ,,,,,Bauer,im Bauer als Ragau,https://database.factgrid.de/entity/Q166931,
+m,Räfan,Rephan,Ῥαιφάν ,ραιφαν,"Ῥομφάν,Ῥομφάμ,Ῥεμφάν,Ῥεμφάμ,Ῥεφάν,Ῥεφα,Ῥαιραν,Ῥεμφαν,Ῥαφάν ",Ῥαιφάν ,Ῥαιφάν ,,,,,Bauer,im Bauer als Raiphan,,
+f,Rut,Ruth,Ῥούθ,ρουθ,Ῥούθη,Ῥούθ,Ῥούθ,,,,,"Bauer,Louw-Naida",im Bauer als Ruth,https://database.factgrid.de/entity/Q166625,
+m,Schealtiël,Salathiel,Σαλαθιήλ,σαλαθιηλ,Σαλαθίηλος,Σαλαθιήλ,Σαλαθιήλ,,,,,Bauer,im Bauer als Salathiel,"https://database.factgrid.de/entity/Q166956,https://database.factgrid.de/entity/Q166955,https://database.factgrid.de/entity/Q166954",
+f,Saphira,Sapphira,Σάπφιρα,σαπφιρα,"Σαπφείρα,Σαμπφειρα,Σαφφειρα,Σαμπφιρα,Σαφφιρα,Σάπφιρα,σαπφηρι,σαμφιρη,σαπφειρη,σαπφηρη,σαφφιρη,σαμφειρει,σαμφειρη,σαπφειρι,σαπφηρει,σαφφυρα,σαμπφηρα",Σάπφιρα,Σαπφιρης,Σαπφίρῃ,,,,"Bauer,Louw-Naida","im Bauer als Sapphira,der Artikel ἡ im Bauer wahrscheinlich fehlerhaft – vermutlich Dativ Endung gemeint ",https://database.factgrid.de/entity/Q166957,
+m,Sekundus,Secundus,Σεκοῦνδος,σεκουνδος,Σέκουνδος ,Σεκοῦνδος,Σεκουνδου,,,,,"Bauer,Louw-Naida",im Bauer als Secundus ,https://database.factgrid.de/entity/Q166958,
+m,Schimi,Semein,Σεμεΐν ,σεμειν,"Σεμεεί,Σεμείν,Σεμεῆ,Σαμούις",Σεμεΐν ,Σεμεΐν ,,,,,"Bauer,Louw-Naida",im Bauer als Semeïn ,,
+m,Serug,Serug,Σερούχ ,σερουχ,"Σαρούχ,Σεροῦγος ",Σερούχ ,Σερούχ ,,,,,Bauer,im Bauer als Seruch,,
+m,Set,Seth,Σήθ,σηθ,Σῆθος ,Σήθ ,"Σήθ,Σηθου ",,,,,"Bauer,Louw-Naida",im Bauer als Seth,,
+m,Skevas,Sceva,Σκευᾶς,σκευας,,Σκευᾶς ,Σκευᾶ,,,,,"Bauer,Louw-Naida",im Bauer als Skeuas,,
+m,Simeon,Simeon,Συμεών,συμεων,,Συμεών,"Συμεών,Συμεῶνος ",,,,,"Bauer,Louw-Naida","im Bauer als Symeon,Σίμων als v.l. zu Συμεών vermerkt",,
+f,Tabita,Tabitha,Ταβιθά,ταβιθα,"θαβιθα,ταβηθα,βιθα,ταβειθά",Ταβιθά,Ταβιθά,,,Ταβιθά,,"Bauer,Louw-Naida",im Bauer als Tabitha,,
+f,Tamar,Tamar,Θαμάρ,θαμαρ,"Θάμαρ,Θαμάρα",Θαμάρ,"Θαμάρ,Θαμαρας",,,,,Bauer,im Bauer als Thamar,,
+m,Terach,Terah,Θάρα,θαρα,"Θαρά,Θάρρα,Θέρρος,Θάρρος",Θάρα,"Θάρα,Θερρου",,,,,Bauer,im Bauer als Thara,,
+m,Timäus,Timaeus,Τιμαῖος,τιμαιος,,Τιμαῖος,Τιμαιου,,,,,"Bauer,Louw-Naida",im Bauer als Timaeus,,
+f,Tryphäna,Tryphaena,Τρύφαινα,τρυφαινα,,Τρύφαινα ,Τρυφαινης,,Τρύφαιναν,,,"Bauer,Louw-Naida",im Bauer als Tryphaena ,https://database.factgrid.de/entity/Q168840,
+m,Tychikus,Tychicus,Τύχικος,τυχικος,Τυχικός ,Τύχικος,Τυχικου,,"Τυχικόν,Τυχικὸν",,,"Bauer,Louw-Naida",im Bauer als Tychicus,,
+m,Usija,Uzziah ,Ὀζίας ,οζιας,Ὀζείας,Ὀζίας ,"Οζιου,Ὀζία ",,,,,Bauer,im Bauer als Usia,https://database.factgrid.de/entity/Q168841,
+m,Zachäus,Zacchaeus,Ζακχαῖος,ζακχαιος,"Σακχαῖος,Ζαχαῖος",Ζακχαῖος,Ζακχαιου ,,,Ζακχαῖε,,"Bauer,Louw-Naida",im Bauer als Zacchäus,https://database.factgrid.de/entity/Q166406,
+m,Asa,Asaph,Ἀσάφ,ασαφ,Ἀσά,Ἀσάφ,"Ἀσάφ,Ἀσάφου",,,,,Bauer,im Bauer auch als Asaph,https://database.factgrid.de/entity/Q167192,
+f,Berenike,Bernice,Βερνίκη,βερνικη,"βερονικη,βερνικηνα,βερνικι,βερονικης,βερνηκης,βερονικη,βερνικηι,βερνηκη,Βερενίκη",Βερνίκη,Βερνικης,,,,,"Bauer,Louw-Naida",im Bauer auch als Bernike,https://database.factgrid.de/entity/Q167160,
+m,Isai,Jesse,Ἰεσσαί,ιεσσαι,Ἰεσσαῖος,Ἰεσσαί,"Ἰεσσαί,Ιεσσαιου",,Ἰεσσαί,,,"Bauer,Louw-Naida",im Bauer auch als Jesse,"https://database.factgrid.de/entity/Q167200,https://database.factgrid.de/entity/Q167199,https://database.factgrid.de/entity/Q167201",
+m,Jambres,Jambres,Ἰαμβρῆς,ιαμβρης,Μαμβρῆς,Ἰαμβρῆς,Ἰαμβρῆς,,,,,"Bauer,Louw-Naida","im Bauer kein Verweis auf indekl. oder Genitiv-Form, aber vermutlich ist der Genitiv Ἰαμβρῆς, da höchstwahrscheinlich indekl.",https://database.factgrid.de/entity/Q167198,
+m,Jannai,Jannai,Ἰανναί,ιανναι,"ιαναν,Ἰαννά",Ἰανναί,Ἰανναί,,,,,"Bauer,Louw-Naida","im Bauer kein Verweis auf indekl. oder Genitiv-Form, aber vermutlich ist der Genitiv Ἰαμβρῆς, da höchstwahrscheinlich indekl.",https://database.factgrid.de/entity/Q167206,
+m,Jannes,Jannes,Ἰάννης,ιαννης,Ἰαννῆς,Ἰάννης,Ἰαννης,,,,,"Bauer,Louw-Naida","im Bauer kein Verweis auf indekl. oder Genitiv-Form, aber vermutlich ist der Genitiv Ἰαννης, da höchstwahrscheinlich indekl.",https://database.factgrid.de/entity/Q167207,
+f,Magdalena,Magdalene,Μαγδαληνή ,μαγδαληνη,"μαγδανηνη,μαγδαληνηι,μαγδαληνι,μαμδαλινη,μαγδαληνει,μαγδαληνη,μαγδαλινη",Μαγδαληνή ,Μαγδαληνῆς ,,,,,Bauer,"im Bauer nicht als N.pr. aber als Beiname,Unterscheidungsmerkmal zu anderen Marias",,
+m,Joda,Joda,Ἰωδά,ιωδα,,Ἰωδά,Ἰωδά,,,,,"Bauer,Louw-Naida",Joda und Juda nicht im LN – CW,https://database.factgrid.de/entity/Q167228,
+m,Beliar,Beliar,Βελιάρ,βελιαρ,"Βελίαρ,Βελιάλ,Βελιάβ,Βελιάν",Βελιάρ,Βελιάρ,,,,,Bauer,keine Formen für label:en in Louw-Naida - CW,,
+m,Jotam,Jotham,Ἰωαθάμ,ιωαθαμ,"Ιωαθαν,Ἰωαθάν",Ἰωαθάμ,Ἰωαθάμ,,,,,Bauer,keine Formen für label:en in Louw-Naida - CW,,
+m,Nikolaus,Nicolaus,Νικόλαος,νικολαος,,Νικόλαος ,Νικολαου ,,,,,Bauer,keine Formen für label:en in Louw-Naida - CW,,
+m,Apollos,Apollos,Ἀπολλῶς,απολλως,"Ἀπολλώς,Ἀπολλόδωρος,Ἀπολλωνίδης,Ἀπελλῆς",Ἀπολλῶς,"Ἀπολλῶ,Ἀπελλοῦ",Ἀπολλώς,"Ἀπολλῶν,Ἀπολλῶ",,,"Bauer,Louw-Naida","Kurzform zu Ἀπολλώνιος,nach Louw-Nida zwei Akk. Formen",,
+m,Demas,Demas,Δημᾶς,δημας,,Δημᾶς,Δημᾶ,,,,,"Bauer,Louw-Naida",Kurzform zu Δημήτριος oder Δημάρατος?,,
+m,Epaphras,Epaphras,Ἐπαφρᾶς,επαφρας,,Ἐπαφρᾶς,Επαφρᾶ,,,,,"Bauer,Louw-Naida",Kurzform zu Ἐπαφρόδιτος,,
+m,Matthias,Matthias,Μαθθίας,μαθθιας,"ματθιαν,Ματθίας",Μαθθίας,Μαθθιου,,Μαθθίαν,,,"Bauer,Louw-Naida",Kurzform zu Ματταθίας,https://database.factgrid.de/entity/Q167418,
+m,Silas,Silas,Σιλᾶς,σιλας,"σειλα,Σίλας",Σιλᾶς,"Σιλᾶ,Σιλα ",σιλα,σιλαν,,,"Bauer,Louw-Naida",Kurzform zu Σιλουανός?,,
+m,Demetrius,Demetrius,Δημήτριος,δημητριος,,Δημήτριος,Δημητριου,Δημητρίῳ,,,,"Bauer,Louw-Naida",Langform zu Δημᾶς?,,
+m,Epaphroditus,Epaphroditus,Ἐπαφρόδιτος,επαφροδιτος,,Ἐπαφρόδιτος,Επαφροδιτου,,Ἐπαφρόδιτον,,,"Bauer,Louw-Naida",Langform zu Ἐπαφρᾶς,https://database.factgrid.de/entity/Q167421,
+m,Mattitja,Mattathias,Ματταθίας,ματταθιας,"Μαθαθία,Μαθθαθίας,Ματθαθίας",Ματταθίας,Ματταθιου,,,,,"Bauer,Louw-Naida","Langform zu Μαθθίας,im Bauer als Mattathia","https://database.factgrid.de/entity/Q167611,https://database.factgrid.de/entity/Q167614,https://database.factgrid.de/entity/Q167616,https://database.factgrid.de/entity/Q167617",
+m,Silvanus,Silvanus,Σιλουανός,σιλουανος,Σιλβανός ,Σιλουανός,Σιλουανοῦ,,,,,"Bauer,Louw-Naida",Langform zu Σιλας?,,
+m,Niger,Niger ,Νίγερ ,νιγερ,,Νίγερ ,Νίγερ ,,,,,Bauer,laut Friberg indekl.,,
+f,Junia,Junia,Ἰουνία,ιουνια,,Ἰουνία,Ιουνιας,,Ἰουνίαν,,,"Bauer,Louw-Naida",Lexem abweichend vom Bauer,https://database.factgrid.de/entity/Q167620,
+m,Israel,Israel,Ἰσραήλ,ισραηλ,Ἰσράηλος ,Ἰσραήλ,Ἰσραήλ,,,,"ηλ,ηηλ",Bauer,"teilweise Volksname, teilweise Personenname, vgl. Bauer",https://database.factgrid.de/entity/Q167621,
+m,Augustus,Augustus,Αὐγοῦστος,αυγουστος,Ἀόστου,Αὐγοῦστος,Αυγουστου,,,,,"Bauer,Louw-Naida",TODO: Mischform,https://database.factgrid.de/entity/Q167622,
+m,Sosipater,Sosipater ,Σωσίπατρος ,σωσιπατρος,,Σωσίπατρος ,Σωσιπατρου,,,,,Bauer,Verweis auf Σώπατρος aber keine v.l.,https://database.factgrid.de/entity/Q167622,
+m,Thomas,Thomas,Θωμᾶς,θωμας,,Θωμᾶς,Θωμᾶ,Θωμᾷ,Θωμᾶν,,,"Bauer,Louw-Naida",Δίδυμος ist die griechische Übersetzung für das aramäische Wort Thomas,https://database.factgrid.de/entity/Q167625,
+m,Salomo,Solomon,Σολομών,σολομων,"Σολομῶν,Σαλωμών,Σαλομών ",Σολομών,"Σολομῶνος,Σολομῶντος",,,,σολομωοανος ,"Bauer,Louw-Naida",Σολομών teilweise indekl.,,
+m,Aaron,Aaron,Ἀαρών,ααρων,,Ἀαρών,"Ἀαρών,Ἀαρῶνος",Ἀαρών,Ἀαρών,,,"Bauer,Louw-Naida",,,
+m,Abaddon,Abaddon,Ἀβαδδών,αβαδδων,Ἀπολλύων,Ἀβαδδών,Ἀβαδδών,,,,,"Bauer,Louw-Naida",,,
+m,Abel,Abel,Ἅβελ,αβελ,"Ἄβελ,Ἄβελος",Ἅβελ,"Ἅβελ,Αβελου",,Αβελ,,,"Bauer,Louw-Naida",,,
+m,Abihud,Abiud,Ἀβιούδ,αβιουδ,Ἀβιοῦς,Ἀβιοὺδ,Ἀβιοὺδ,,Ἀβιοὺδ,,,"Bauer,Louw-Naida",,,
+m,Abraham,Abraham,Ἀβραάμ,αβρααμ,"Ἀβράμ,Ἄβραμος,Ἀβράμης,Ἀβραμίας",Ἀβραάμ,"Ἀβραάμ,Αβραμου,Ἀβράμωνος",Ἀβραάμ,"Ἀβραάμ,Ἄβραμον ",Ἀβραάμ,,"Bauer,Louw-Naida",,,Joatham
+m,Agabus,Agabus,Ἅγαβος,αγαβος,,Ἅγαβος,Ἁγαβου,,,,,"Bauer,Louw-Naida",,,
+f,Hagar,Hagar,Ἁγάρ,αγαρ," Ἀγάρ,Ἄγαρ,Ἅγαρ,Ἁγάρη",Ἁγάρ,Ἁγάρ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167461,
+m,Agrippa,Agrippa,Ἀγρίππας,αγριππας,,Ἀγρίππας,Αγριππα,,,Ἀγρίππα,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167462,
+m,Adam,Adam,Ἀδάμ,αδαμ,Ἄδαμος,Ἀδάμ,"Ἀδάμ,Αδαμου",,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q167524,https://database.factgrid.de/entity/Q167513,https://database.factgrid.de/entity/Q167514,https://database.factgrid.de/entity/Q167512,https://database.factgrid.de/entity/Q167515",
+m,Addi,Addi,Ἀδδί,αδδι,,Ἀδδί,Ἀδδὶ,,,,,"Bauer,Louw-Naida",,,Joas
+m,Admin,Admin,Ἀδμίν,αδμιν,,Ἀδμίν,Ἀδμὶν,,,,,"Bauer,Louw-Naida",,,
+m,Azor,Azor,Ἀζώρ,αζωρ,,Ἀζώρ,Ἀζώρ,,Ἀζὼρ,,,"Bauer,Louw-Naida",,,
+m,Aquila,Aquila,Ἀκύλας,ακυλας,,Ἀκύλας,Ακυλου,,"Ἀκύλαν,κυλαν",,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167601,
+m,Alexander,Alexander,Ἀλέξανδρος,αλεξανδρος,,Ἀλέξανδρος,Αλεξανδρου,,Ἀλέξανδρον,,,"Bauer,Louw-Naida",,,
+m,Alphäus,Alphaeus,Ἁλφαῖος,αλφαιος,,Ἁλφαῖος,Ἁλφαιου,,,,,"Bauer,Louw-Naida",,,Jonathas
+m,Ampliatus,Ampliatus,Ἀμπλιᾶτος,αμπλιατος,"Ἀμπλιάς,Ἀμπλίατος,Ἀμπλιᾶς",Ἀμπλιᾶτος,Αμπλιατου,,Ἀμπλιᾶτον,,,Bauer,,https://database.factgrid.de/entity/Q167528,
+m,Amos,Amos,Ἀμώς,αμως,,Ἀμώς,Ἀμώς,,Ἀμώς,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q169266,
+m,Andreas,Andrew,Ἀνδρέας,ανδρεας,,Ἀνδρέας,Ανδρεου,Ἀνδρέᾳ,Ἀνδρέαν,,,"Bauer,Louw-Naida",,,
+f,Hanna,Anna,Ἅννα,αννα,Ἄννα,Ἅννα,Ἁννας,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167553,
+m,Hannas,Annas,Ἅννας,αννας,"Ἄννας,Ἀννᾶς,Ἅνανος",Ἅννας,Ἁννα,,Ἅνναν,,ανας,"Bauer,Louw-Naida",,,
+m,Antipas,Antipas,Ἀντιπᾶς,αντιπας,"Ἀντείπᾶς,Ἀντίπᾶς,Ἀντίπατρος,ἀντίπας",Ἀντιπᾶς,Ἀντιπᾶ,,,,,"Bauer,Louw-Naida",,,
+m,Apelles,Apelles,Ἀπελλῆς,απελλης,,Ἀπελλῆς,Ἀπελλοῦ,,Ἀπελλῆν,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q167562,https://database.factgrid.de/entity/Q167566,https://database.factgrid.de/entity/Q167565,https://database.factgrid.de/entity/Q167564,https://database.factgrid.de/entity/Q167563,https://database.factgrid.de/entity/Q167570,https://database.factgrid.de/entity/Q167562",
+m,Aretas,Aretas,Ἁρέτας,αρετας,,Ἁρέτας,Ἁρετα,,,,,"Bauer,Louw-Naida",,,
+m,Arni,Arni,Ἀρνί,αρνι,"Ἀρνεί,Ἀράμ",Ἀρνί,Ἀρνί,,,,,Bauer ,,https://database.factgrid.de/entity/Q167569,
+m,Artemas,Artemas,Ἀρτεμᾶς,αρτεμας,Ἀρτεμίδωρος,Ἀρτεμᾶς,Ἀρτεμᾶ,,Ἀρτεμᾶν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166291,
+f,Artemis,Artemis,Ἄρτεμις,αρτεμις,,Ἄρτεμις,Αρτεμιδος,,,,,Bauer ,,,
+m,Artemon,Artemon,Ἀρτέμων,αρτεμων,,Ἀρτέμων,Αρτεμωνος,,,,,Bauer,,https://database.factgrid.de/entity/Q166293,
+m,Archelaus,Archelaus,Ἀρχέλαος,αρχελαος,,Ἀρχέλαος,Αρχελαου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166300,
+m,Archippus,Archippus,Ἄρχιππος,αρχιππος,,Ἄρχιππος,Αρχιππου,Ἀρχίππῳ,,,,"Bauer,Louw-Naida",,,
+m,Asser,Asher,Ἀσήρ,ασηρ,"Ἄσηρος,ασορ",Ἀσήρ,"Ἀσήρ,Ασηρου",,,,,Bauer,,,
+m,Ahas,Ahaz,Ἀχάζ,αχαζ,"Ἄχας,Ἀχας,Ἀχάς,Ἄχαζος",Ἀχάζ,"Ἀχάζ,Αχαζου",,,,,Bauer,,https://database.factgrid.de/entity/Q166310,
+m,Achim,Achim,Ἀχίμ,αχιμ,Ἀχείμ,Ἀχίμ,Ἀχίμ,,Ἀχὶμ,,,"Bauer,Louw-Naida",,,
+m,Baal,Baal,Βάαλ,βααλ,,Βάαλ,Βάαλ,,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q166336,https://database.factgrid.de/entity/Q169483",
+m,Bileam,Balaam,Βαλαάμ,βαλααμ,Βάλαμος,Βαλαάμ,"Βαλαάμ,Βαλαμου",,,,,Bauer,,"https://database.factgrid.de/entity/Q166337,https://database.factgrid.de/entity/Q166338",
+m,Balak,Balak,Βαλάκ,βαλακ,"Βάλακος,Βαλαάκ",Βαλάκ,"Βαλάκ,Βαλακου",Βαλάκ,,,,"Bauer,Louw-Naida",,,
+m,Barabbas,Barabbas,Βαραββᾶς,βαραββας,"Βαραβας,Βαρσαββᾶς",Βαραββᾶς,Βαραββᾶ,,Βαραββᾶν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166340,
+m,Barak,Barak,Βαράκ,βαρακ,Βάρακος,Βαράκ,"Βαράκ,Βαρακου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166339,
+m,Barjesus,Bar-Jesus,Βαριησοῦ,βαριησου,"Βαρϊησοῦς,Βαριησοῦς",Βαριησοῦ,Βαριησοῦ,,,,βαριν ,"Bauer,Louw-Naida",,,
+m,Barnabas,Barnabas,Βαρναβᾶς,βαρναβας,Βαρνάβας,Βαρναβᾶς,Βαρναβᾶ,Βαρναβᾷ,Βαρναβᾶν,,,"Bauer,Louw-Naida",,,
+m,Barsabbas,Barsabbas,Βαρσαββᾶς,βαρσαββας,"Βαρσαβᾶς,Βαρσαβᾶς,Βαρζάβας",Βαρσαββᾶς,Βαρσαββᾶ,,,,,Bauer,,,
+m,Beelzebul,Beelzebul,Βεελζεβούλ,βεελζεβουλ,"Βεελζεβούβ,Βεεζεβούλ,Βεελζεβούλ,Βεελζεβουέλ",Βεελζεβούλ,Βεελζεβούλ,Βεελζεβούλ,Βεελζεβούλ,,,"Bauer,Louw-Naida",,,
+m,Benjamin,Benjamin,Βενιαμίν,βενιαμιν,"Βενιαμείν,Βενιαμήν,Βενιαμίς,Βενιαμείς,βενιαμη,βενιαμεηω,βενιαμειμ",Βενιαμίν,"Βενιαμίν,Βενιαμεῖ",,,,,Bauer,,https://database.factgrid.de/entity/Q166349,
+m,Blastus,Blastus,Βλάστος,βλαστος,,Βλάστος,Βλαστου,,Βλάστον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168325,
+m,Boas,Boaz,Βόες,βοες,"Βόος,Βόοζ,Βοές,Βοώζης,Βόαζος",Βόες,"Βοές,Βοαζου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166353,
+m,Gabriel,Gabriel,Γαβριήλ,γαβριηλ,,Γαβριὴλ,Γαβριήλ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166354,
+m,Gad,Gad,Γάδ,γαδ,"Γάδας,Γάδης",Γάδ,"Γάδ,Γαδου",,,,,Bauer,,,
+m,Gaius,Gaius,Γάϊος,γαιος,Γαῖος,Γάϊος,Γαιου,Γαΐῳ,Γάϊον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166360,
+m,Gallio,Gallio,Γαλλίων,γαλλιων,,Γαλλίων,Γαλλιωνος,Γαλλίωνι,Γαλλιωνα,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166350,
+m,Gamaliel,Gamaliel,Γαμαλιήλ,γαμαλιηλ,"γαμαλιηλου,γαμαληηλ,γαμαηλ,Γαμαλίηλος",Γαμαλιήλ,"Γαμαλιήλ,Γαμαλιηλου",,,,,"Bauer,Louw-Naida",,,
+m,Gideon,Gideon,Γεδεών,γεδεων,Γεδέων,Γεδεών,"Γεδεών,Γεδεῶνος",,,,,Bauer,,"https://database.factgrid.de/entity/Q167677,https://database.factgrid.de/entity/Q167678",
+m,Gog,Gog,Γώγ,γωγ,,Γώγ,Γώγ,,,,,Bauer,,,
+f,Damaris,Damaris,Δάμαρις,δαμαρις,"θαμαρις,δαμαρης,Δάμαλις",Δάμαρις,Δαμαριδος,,,,,"Bauer,Louw-Naida",,,
+m,Daniel,Daniel,Δανιήλ,δανιηλ,Δανίηλος,Δανιήλ,"Δανιήλ,Δανιηλου",,,,,"Bauer,Louw-Naida",,,
+m,David,David,Δαυίδ,δαυιδ,"Δαυείδ,Δαβίδ,Δαυίδης,Δαβίδης",Δαυίδ,Δαυίδ,"Δαυίδ,Δαυιδου",Δαυίδ,,"ΔΑΔ,Δᾶδ,δαιδ,δαυδ,δδ","Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q167688,https://database.factgrid.de/entity/Q167689",
+m,Dionysius,Dionysius,Διονύσιος,διονυσιος,,Διονύσιος,Διονυσιου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167694,
+m,Diotrephes,Diotrephes,Διοτρέφης,διοτρεφης,Διοτρεφής,Διοτρέφης,"Διοτρεφους,Διοτρεφοῦς",,,,,"Bauer,Louw-Naida",,,
+f,Drusilla,Drusilla,Δρούσιλλα,δρουσιλλα,"δροσιλλη,δρουσηλλη,δρουσιλλι,δρυσιλλη,δρουσιλη,δροσουλη,δρουσιλλη",Δρούσιλλα,Δρουσιλλης,Δρουσίλλῃ,,,,"Bauer,Louw-Naida",,,
+m,Eber,Eber,Ἔβερ,εβερ,"Ἕβερ,Ἔβερος",Ἔβερ,"Ἔβερ,Εβερου",,,,,Bauer,,,
+m,Hiskia,Hezekiah,Ἑζεκίας,εζεκιας,"εζεκειας,Ἐζεκίας",Ἑζεκίας,"Ἑζεκιου,Ἑζεκία",,,,,Bauer,,https://database.factgrid.de/entity/Q167702,
+m,Eleasar,Eleazar,Ἐλεάζαρ,ελεαζαρ,"ελιαζαρ,Ἐλεάζαρος",Ἐλεάζαρ,"Ἐλεάζαρ,Ελεαζαρου",,Ἐλεάζαρ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167706,
+m,Eljakim,Eliakim,Ἐλιακίμ,ελιακιμ,"Ἐλιάκειμος,Ἐλιάκιμος",Ἐλιακίμ,Ἐλιακίμ,,Ἐλιακίμ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167707,
+m,Eliëser,Eliezer,Ἐλιέζερ,ελιεζερ,,Ἐλιέζερ,Ἐλιέζερ,,,,,"Bauer,Louw-Naida",,,
+m,Eliud,Eliud,Ἐλιούδ,ελιουδ,,Ἐλιοὺδ,Ἐλιούδ,,Ἐλιοὺδ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167696,
+f,Elisabeth,Elizabeth,Ἐλισάβετ,ελισαβετ,"ελεισαβετ,ελισαβεδ,ελεισαβεθ,ελησαβεθ,ελισαβεθ,ελισαβuτ,ελισαβετ,Ἐλισάβη",Ἐλισάβετ,Ἐλισάβετ,,,,,Bauer,,,
+m,Elisa,Elisha,Ἐλισαιέ,ελισαιε,"Ἐλισαῖος,Ἑλισαῖος,Ἐλισσαῖος",Ἐλισαιέ,"Ἐλισαιέ,Ελισαιου,Ἐλεισαίου",,,,,Bauer,,,
+m,Elmadam,Elmadam,Ἐλμαδάμ,ελμαδαμ,"Ἐλμωδάμ,Ἐλμασάμ",Ἐλμαδάμ,Ἐλμαδάμ,,,,,Bauer,,,
+m,Elymas,Elymas,Ἐλύμας,ελυμας,Ἐλυμᾶς,Ἐλύμας,Ελυμα,,,,,"Bauer,Louw-Naida",,,
+m,Immanuel,Emmanuel,Ἐμμανουήλ,εμμανουηλ,,Ἐμμανουήλ,Ἐμμανουήλ,,Ἐμμανουήλ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167856,
+m,Hamor,Hamor,Ἐμμώρ,εμμωρ,"Ἐμμόρ,Ἑμώρ,Ἕμμωρος",Ἐμμώρ,"Ἐμμώρ,Ἑμμωρου",,,,,Bauer,,https://database.factgrid.de/entity/Q167854,
+m,Enosch,Enos,Ἐνώς,ενως,"Ἄνωσος,Ἔνωσος",Ἐνώς,"Ἐνώς,Ανωσου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167857,
+m,Henoch,Εnoch,Ἑνώχ,ενωχ,"Ἐνώχ,Ἄνωχος,Ἔνωχος",Ἑνώχ,"Ἑνώχ,Ανωχου",,,,,Bauer,,,
+m,Epänetus,Epaenetus,Ἐπαίνετος,επαινετος,Ἐπαινετός,Ἐπαίνετος,Επαινετου,,Ἐπαίνετον,,,"Bauer,Louw-Naida",,,
+m,Erastus,Erastus,Ἔραστος,εραστος,,Ἔραστος,Εραστου,,Ἔραστον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167794,
+m,Hermas,Hermas,Ἑρμᾶς,ερμας,,Ἑρμᾶς,Ἑρμᾶ,,Ἑρμᾶν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167805,
+m,Hermes,Hermes,Ἑρμῆς,ερμης,,Ἑρμῆς,Ἑρμοῦ,,Ἑρμῆν,,,"Bauer,Louw-Naida",,,
+m,Hermogenes,Hermogenes,Ἑρμογένης,ερμογενης,Ἐρμογένης,Ἑρμογένης,Ἑρμογενους,,,,,"Bauer,Louw-Naida",,,
+m,Hesli,Esli,Ἑσλί,εσλι,"εσλει,εσλιμ,εσσαι,εσλαι,Ἐσλί",Ἑσλί,Ἑσλί,,,,,"Bauer,Louw-Naida",,,
+m,Hezron,Hezron,Ἑσρώμ,εσρωμ,"Ἐσρώμ,Ἑσρών,Ἐσρών",Ἑσρώμ,Ἑσρώμ,,,,,Bauer,,https://database.factgrid.de/entity/Q167821,
+f,Eva,Eve,Εὕα,ευα,Εὔα,Εὕα,Ευας,,,,,"Bauer,Louw-Naida,NRSV",,"https://database.factgrid.de/entity/Q167822,https://database.factgrid.de/entity/Q167826,https://database.factgrid.de/entity/Q167827,https://database.factgrid.de/entity/Q167824,https://database.factgrid.de/entity/Q167823,https://database.factgrid.de/entity/Q167825",
+m,Eubulus,Eubulus,Εὔβουλος,ευβουλος,,Εὔβουλος,Ευβουλου,,,,,"Bauer,Louw-Naida",,,
+f,Eunike,Eunice,Εὐνίκη,ευνικη,,Εὐνίκη,Ευνικης,Εὐνίκῃ,,,,"Bauer,Louw-Naida",,,
+m,Eutychus,Eutychus,Εὔτυχος,ευτυχος,,Εὔτυχος,Ευτυχου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167853,
+m,Ephraim,Ephraim,Ἐφραίμ,εφραιμ,Ἐφράιμ,Ἐφραίμ,Ἐφραίμ,,Ἐφραὶμ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167846,
+m,Sebulon,Zebulun,Ζαβουλών,ζαβουλων,"ζαβουλον,Ζαβουλῶνος",Ζαβουλών,Ζαβουλών,,,,,Bauer,,"https://database.factgrid.de/entity/Q167848,https://database.factgrid.de/entity/Q167849",
+m,Zacharias,Zechariah,Ζαχαρίας,ζαχαριας,,Ζαχαρίας,Ζαχαριου,,,,,Bauer,,https://database.factgrid.de/entity/Q167879,
+m,Zebedäus,Zebedee,Ζεβεδαῖος,ζεβεδαιος,,Ζεβεδαῖος,Ζεβεδαιου,,Ζεβεδαῖον,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q167874,https://database.factgrid.de/entity/Q167873",
+m,Zeus,Zeus,Ζεύς,ζευς,,Ζεύς,Διός,,Δία,,,"Bauer,Louw-Naida",,,
+m,Serubbabel,Zerubbabel,Ζοροβαβέλ,ζοροβαβελ,"Ζοροβάβελ,Ζοροβάβηλος",Ζοροβαβέλ,"Ζοροβαβέλ,Ζοροβαβηλου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167885,
+m,Eli,Heli,Ἠλί,ηλι,"Ἡλί,Ἡλεί,Ἠλείς,Ἠλίς",Ἠλί,"Ἠλί,Ἠλεῖ",,ἠλὶ,,,"Bauer,Louw-Naida",,,
+m,Elia,Elijah,Ἠλίας,ηλιας,"Ἠλείας,Ἡλείας,Ἡλίας",Ἠλίας,Ηλιου,,,,,"Bauer,Louw-Naida",,,
+m,Herodes,Herod,Ἡρῴδης,ηρωδης,"ηρωδηι,Ηρωιδης",Ἡρῴδης,Ἡρῴδου,Ἡρῴδῃ,Ἡρῴδην,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168010,
+f,Herodias,Herodias,Ἡρῳδιάς,ηρωδιας,"ηρωδηας,ηρωδιαιδα,ιρωδιαδα,ηροδιαδος,ιρωδιαδος,ηρωδειαδος,ηροδιας,ρωδιαδα,ηρωδιαδως,ηρωιαδα,ηρωδιαδε,ρωδιας,ηροδιαδα,Ηρωιδιας",Ἡρῳδιάς,Ἡρῳδιάδος,,Ἡρῳδιάδα,,,"Bauer,Louw-Naida",,,
+m,Herodion,Herodion,Ἡρῳδίων,ηρωδιων,Ηρωιδιων,Ἡρῳδίων,Ἡρῳδιωνος,,"Ἡρῳδίωνα,ηρωδειωνα,ηρωδιονα,ηροδιωνα,ηρωδηωνα,ηηροδιονα,ρωδιωνα",,,"Bauer,Louw-Naida",,,
+m,Jesaja,Isaiah,Ἠσαΐας,ησαιας,"Ἡσαΐας,Ἰησαΐας",Ἠσαΐας,Ησαιου,,,,,Bauer,,,
+m,Esau,Esau,Ἠσαῦ,ησαυ,"εσαυ,ισα,Ἡσαῦ,Ἠσαῦς",Ἠσαῦ,Ἠσαῦ,,Ἠσαῦ,,,"Bauer,Louw-Naida",,,
+m,Thaddäus,Thaddaeus,Θαδδαῖος,θαδδαιος,,Θαδδαῖος,Θαδδαιου,,Θαδδαῖον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168035,
+m,Theophilus,Theophilus,Θεόφιλος,θεοφιλος,,Θεόφιλος,Θεοφιλου,,,Θεόφιλε,,"Bauer,Louw-Naida",,,
+m,Theudas,Theudas,Θευδᾶς,θευδας,,Θευδᾶς,Θευδᾶ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168044,
+m,Jakob,Jacob,Ἰακώβ,ιακωβ,"γιαχακωβ,Ἰακούβ,Ἰάκωβος",Ἰακώβ,Ἰακώβ,Ἰακώβ,Ἰακώβ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168067,
+m,Jakobus,James,Ἰάκωβος,ιακωβος,"Ἰάκουβος,Ἰακώβ",Ἰάκωβος,Ιακωβου,Ἰακώβῳ,Ἰάκωβον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168073,
+m,Jered,Jared,Ἰάρετ,ιαρετ,"Ἰαρέδ,Ἰάρεδ,Ἰάρεθ,Ἰάρετ,Ἰάρεδος",Ἰάρετ,"Ἰάρετ,Ιαρεδου",,,,,"Bauer,Louw-Naida",,,
+f,Isebel,Jezebel,Ἰεζάβελ,ιεζαβελ,"Ἰεζαβήλ,Ἰεζαβέλη",Ἰεζάβελ,"Ἰεζάβελ,Ιεζαβελης",,,,,Bauer,,https://database.factgrid.de/entity/Q168075,
+m,Jeremia,Jeremiah,Ἰερεμίας,ιερεμιας,Ἱερεμίας,Ἰερεμίας,Ιερεμιου,,Ἰερεμίαν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168066,
+m,Jesus ,Jesus,Ἰησοῦς,ιησους,Ἰωσή,Ἰησοῦς,Ἰησοῦ,Ἰησοῦ,Ἰησοῦν,Ἰησοῦ,"ΙΣ,ιη,ΙΥ,ΙΝ","Bauer,Louw-Naida",,,
+m,Juda,Judas,Ἰούδας,ιουδας,Ἰουδά,Ἰούδας,Ιουδα,,Ἰούδαν,Ἰούδα,,"Bauer,Louw-Naida",,,
+f,Julia,Julia,Ἰουλία,ιουλια,Ἀουλίαν,Ἰουλία,Ιουλιας,,Ἰουλίαν,,,"Bauer,Louw-Naida",,,
+m,Julius,Julius,Ἰούλιος,ιουλιος,Ἰουλιανός,Ἰούλιος,Ιουλιου,Ἰουλίῳ,,,,"Bauer,Louw-Naida",,,
+m,Junias,Junias,Ἰουνιᾶς,ιουνιας,Ἰουνίας,Ἰουνιᾶς,Ἰουνιᾶ,,Ἰουνίαν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168105,
+m,Justus,Justus,Ἰοῦστος,ιουστος,,Ἰοῦστος,Ιουστου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168108,
+m,Isaak,Isaac,Ἰσαάκ,ισαακ,"Ἰσάκ,Ἴσακος,Ἴσαχος",Ἰσαάκ,"Ἰσαάκ,Ισακου",,,,,Bauer,,,
+f,Johanna,Joanna,Ἰωάννα,ιωαννα,"ιωαννου,ιαννα,ιωναν,Ἰωάνα",Ἰωάννα,Ιωαννας,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168126,
+m,Johannes,John,Ἰωάννης,ιωαννης,"Ἰωάνης,Ἰωνάθας",Ἰωάννης,"Iωaννου,Iωανου ",Ἰωάννῃ,Ἰωάννην,,"ιιω,ιω,ιωαν,ιωη,ιωην,ιωηου,ιωης,ιωννου,ιωνου,ιωνς,ιωου,ιως,ιωαννη","Bauer,Louw-Naida",,,
+m,Hiob,Job ,Ἰώβ,ιωβ,Ἴωβος,Ἰώβ,Ἰώβ,,,,,Bauer,,https://database.factgrid.de/entity/Q168127,
+m,Obed,Obed,Ἰωβήδ,ιωβηδ,"Ἰωβήλ,Ὠβήδ,Ὠβήδης",Ἰωβήδ,"Ἰωβήδ,Ωβηδου",,,,,Bauer,,https://database.factgrid.de/entity/Q168128,
+m,Joel,Joel,Ἰωήλ,ιωηλ,,Ἰωήλ,Ἰωήλ,,,,,"Bauer,Louw-Naida",,,
+m,Jonam,Jonam,Ἰωνάμ,ιωναμ,Ἰωνάν,Ἰωνάμ,Ἰωνάμ,,,,,"Bauer,Louw-Naida",,,
+m,Jona,Jonah,Ἰωνᾶς,ιωνας,,Ἰωνᾶς,Ἰωνᾶ,,,,"ιωνη,ιωνης,ιωννα",Bauer,,,
+m,Joram,Joram,Ἰωράμ,ιωραμ,Ἰώραμος,Ἰωράμ,"Ἰωράμ,Ιωραμου",,Ἰωρὰμ,,,"Bauer,Louw-Naida",,,
+m,Jorim,Jorim,Ἰωρίμ,ιωριμ,Ἰωρείμ,Ἰωρίμ,Ἰωρίμ,,,,,"Bauer,Louw-Naida",,,
+m,Joschafat,Jehoshaphat,Ἰωσαφάτ,ιωσαφατ,Ἰωσάφατος,Ἰωσαφάτ,"Ἰωσαφάτ,Ιωσαφατου",,,,,Bauer,,,
+m,Jose,Joses,Ἰωσῆς,ιωσης,,Ἰωσῆς,"Ἰωσῆς,Ἰωσῆ,Ἰωσῆτος",,,,,Bauer,,,
+m,Josech,Josech,Ἰωσήχ,ιωσηχ,Ἰωσήφ,Ἰωσήχ,Ἰωσήχ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168168,
+m,Josia,Josiah,Ἰωσίας,ιωσιας,"ιωσσιαν,ιωσειαν,Ἰωσείας",Ἰωσίας,"Ιωσιου,Ἰωσία",,Ἰωσίαν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168178,
+m,Kaiphas,Caiaphas,Καϊάφας,καιαφας,"Καϊαφᾶς,Καϊφᾶς,Καιφας",Καϊάφας,Καιαφα,,Καϊάφαν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168179,
+m,Kain,Cain,Κάϊν,καιν,"Καΐν,Κάις,Καίν",Κάϊν,"Κάϊν,Κάιος ",,"Κάϊν,Κάιν ",,,"Bauer,Louw-Naida",,,
+m,Kenan,Cainan,Καϊνάμ,καιναμ,"Καινάμ,Καινάν,Καϊνάν,Καινᾶς",Καϊνάμ,"Καϊνάμ,Καινᾶ",,,,,Bauer,,https://database.factgrid.de/entity/Q168891,
+f,Kandake,Candace,Κανδάκη,κανδακη,κανδακις,Κανδάκη,Κανδακης,,,,,"Bauer,Louw-Naida",,,
+m,Karpus,Carpus,Κάρπος,καρπος,,Κάρπος,Καρπου,,,,,Bauer,,,
+m,Kephas,Kephas,Κηφᾶς,κηφας,,Κηφᾶς,Κηφᾶ,,,,,"Bauer,Louw-Naida",,,
+m,Kleopas,Cleopas,Κλεοπᾶς,κλεοπας,"Κλεόπας,Κλεόπατρος",Κλεοπᾶς,Κλεοπᾶ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168205,
+m,Klopas,Clopas,Κλωπᾶς,κλωπας,,Κλωπᾶς,Κλωπᾶ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168222,
+m,Quartus,Quartus,Κούαρτος,κουαρτος,Κουᾶρτος,Κούαρτος,Κουαρτου,,,,,"Bauer,Louw-Naida",,,
+m,Quirinius,Quirinius,Κυρήνιος,κυρηνιος,"Κυρίνιος,Κυρεῖνος",Κυρήνιος,"Κυρηνιου,Κυρινιου,Κυρεινου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167894,
+m,Kosam,Cosam,Κωσάμ,κωσαμ,,Κωσάμ,Κωσάμ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168253,
+m,Lazarus,Lazarus,Λάζαρος,λαζαρος,,Λάζαρος,Λαζαρου,,Λάζαρον,Λάζαρε,,"Bauer,Louw-Naida",,,
+m,Lamech,Lamech,Λάμεχ,λαμεχ,"Λέμεχ,Λάμεχ,Λάμεχος",Λάμεχ,"Λάμεχ,Λαμεχου",,,,,Bauer,,,
+m,Linus,Linus,Λίνος,λινος,,Λίνος,Λινου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168308,
+m,Lukas,Luke,Λουκᾶς,λουκας,,Λουκᾶς,Λουκᾶ,,,,,"Bauer,Louw-Naida",,,
+f,Lydia,Lydia,Λυδία,λυδια,Λύδη,Λυδία,Λυδιας,,"Λυδίαν,λυδδιαν",,,"Bauer,Louw-Naida",,,
+m,Lysanias,Lysanias,Λυσανίας,λυσανιας,,Λυσανίας,"Λυσανίου,Λυσανία",,,,,"Bauer,Louw-Naida",,,
+m,Lysias,Lysias,Λυσίας,λυσιας,,Λυσίας,Λυσιου,,,,,Bauer,,,
+f,Lois,Lois,Λωΐς,λωις,Λωϊς,Λωΐς,"Λωΐδος,Λωϊτος",Λωΐδι,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168320,
+m,Lot,Lot,Λώτ,λωτ,Λῶτος,Λώτ,"Λώτ,Λωτου",,Λώτ,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168310,
+m,Magog,Magog,Μαγώγ,μαγωγ,,Μαγώγ,Μαγώγ,,,,,Bauer,,https://database.factgrid.de/entity/Q168321,
+m,Matthäus,Matthew,Μαθθαῖος,μαθθαιος,"Ματθαῖος,Μαθαῖος",Μαθθαῖος,Μαθθαιου,,Μαθθαῖον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168313,
+m,Malchus,Malchus,Μάλχος,μαλχος,,Μάλχος,Μαλχου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168315,
+m,Manasse,Manasseh,Μανασσῆς,μανασσης,,Μανασσῆς,"Μανασσῆ,μαναση",,"Μανασσῆ,Μανασσῆν",,,Bauer,,,
+f,Maria,Mary,Μαρία,μαρια,"μαριαρ,μαριαι,μαρηαμ,μαριασ,μαρηα,μαρι,μαριαμ,μαριας,μαρηαν,Μαριάμ,Μαριάμμη,Μαριάμη",Μαρία,"Μαριας,Μαριαμμης,Μαριαμης",Μαρίᾳ,Μαρίαν,,,"Bauer,Louw-Naida",,,
+m,Markus,Mark ,Μᾶρκος,μαρκος,Μάρκος,Μᾶρκος,Μαρκου,,Μᾶρκον,,,"Bauer,Louw-Naida",,,
+m,Melea,Melea,Μελεά,μελεα,Μελεᾶς,Μελεά,"Μελεά,Μελεᾶ ",,,,,"Bauer,Louw-Naida",,,
+m,Melchi,Melchi,Μελχί,μελχι,Μελχεί,Μελχί,Μελχί,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168333,
+m,Melchisedek,Melchizedek,Μελχισέδεκ,μελχισεδεκ,Μελχισεδέκ,Μελχισέδεκ,Μελχισέδεκ,,,,,Bauer,,,
+m,Menna,Menna,Μεννά,μεννα,"μεναν,Μαινάν,Μεννᾶς,Μαϊνάν",Μεννά,"Μεννά,Μεννᾶ",,,,,Bauer,,,
+m,Michael,Michael,Μιχαήλ ,μιχαηλ,,Μιχαήλ ,Μιχαήλ ,,,,,"Bauer,Louw-Naida",,,
+m,Mnason,Mnason,Μνάσων,μνασων,"μνασω,μνασσω,μωασω,Μνασέας,Μνασίας",Μνάσων,Μνασωνος,"Μνάσωνί,μνασονι,μνασσωνι,μασωνι,μνασσονι ",,,,"Bauer,Louw-Naida",,,
+m,Moloch,Moloch,Μόλοχ,μολοχ,Μολόχ,Μόλοχ,Μόλοχ,,,,,Bauer,,,
+m,Mose,Moses,Μωϋσῆς,μωυσης,"Μωσῆς,Μοϋσῆς",Μωϋσῆς,"Μωϋσέως,μωυσεος,Μωϋσῆ,Μωσῆ","Μωϋσεῖ,Μωϋσῇ","Μωϋσῆν,Μωϋσέα","Μωϋσῆ,Μωσῆ","μωσει,μωσεως","Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168393,
+m,Naggai,Naggai,Ναγγαί,ναγγαι,,Ναγγαί,Ναγγαί,,,,,Bauer,,,
+m,Nathanael,Nathanael,Ναθαναήλ,ναθαναηλ,"αθαναηλ,ναθαηλ,Ναθανάηλος",Ναθανοήλ,"Ναθανοήλ,Ναθαναηλου",,Ναθαναὴλ,,,"Bauer,Louw-Naida",,,
+m,Nahum,Nahum,Ναούμ,ναουμ,Ναοῦμος,Ναούμ,Ναούμ,,,,,Bauer,,"https://database.factgrid.de/entity/Q168404,https://database.factgrid.de/entity/Q168403",
+m,Nereus,Nereus,Νηρεύς,νηρευς,,Νηρεύς ,Νηρεως ,,"Νηρέα,Βηρέα ",,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168412,Sadoc
+m,Neri,Neri,Νηρί,νηρι,Νηρεί ,Νηρί ,Νηρί ,,,,,"Bauer,Louw-Naida",,,
+m,Nikanor,Nicanor,Νικάνωρ,νικανωρ,,Νικάνωρ ,Νικανορος ,,Νικάνορα,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168416,
+m,Nikodemus,Nicodemus,Νικόδημος,νικοδημος,"νικοδημος,νικωδιμος,νηκοδημος,νικοδημοσ,νικωδης,εικοδημος,νεικοδημος,νικοδιμος",Νικόδημος,Νικοδημου ,,,,,"Bauer,Louw-Naida",,,
+f,Nympha,Nympha,Νύμφα ,νυμφα,Νύμφη ,Νύμφα ,"Νυμφας,Νυμφης",Νύμφαν,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q168425,https://database.factgrid.de/entity/Q166377",
+m,Nymphas,Nymphas,Νυμφᾶς ,νυμφας,Νυμφόδωρος ,Νυμφᾶς ,Νυμφᾶ,Νύμφαν,,,,"Bauer,Louw-Naida",,,
+m,Noah,Noah,Νῶε,νωε,Νῶχος ,Νῶε,"Νῶε,Νωχου ",,Νῶε,,,"Bauer,Louw-Naida",,,
+m,Olympas,Olympas,Ὀλυμπᾶς,ολυμπας,"Ὀλυμπιόδωρος,Ὀλυμπίδα",Ὀλυμπᾶς ,Ὀλυμπᾶ,,Ὀλυμπᾶν,,,"Bauer,Louw-Naida",,,
+m,Onesimus,Onesimus,Ὀνήσιμος,ονησιμος,,Ὀνήσιμος ,Ονησιμου ,Ὀνησίμῳ,Ὀνήσιμον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168433,
+m,Onesiphorus,Onesiphorus,Ὀνησίφορος,ονησιφορος,,Ὀνησίφορος,Ονησιφορου,,,,,"Bauer,Louw-Naida",,,
+m,Urbanus,Urbanus,Οὐρβανός,ουρβανος,,Οὐρβανός ,Ουρβανοῦ ,,Οὐρβανὸν,,,"Bauer,Louw-Naida",,,
+m,Uria,Uriah ,Οὐρίας,ουριας,,Οὐρίας ,"Ουριου,Οὐρία ",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168448,
+m,Parmenas,Parmenas,Παρμενᾶς,παρμενας,"Παρμενίδης,Παρμενίων,Παρμενίσκος",Παρμενᾶς ,Παρμενᾶ,,Παρμενᾶν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168455,
+m,Patrobas,Patrobas,Πατροβᾶς ,πατροβας,"Πατρόβας,Πατρόβιος ",Πατροβᾶς ,Πατροβᾶ,,Πατροβᾶν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168469,
+m,Paulus,Paul,Παῦλος,παυλος,παυλωι,Παῦλος,Παυλου,Παύλῳ,Παῦλον,Παῦλε,,"Bauer,Louw-Naida",,,
+f,Persis,Persis,Περσίς,περσις,,Περσίς,Περσίδος ,,Περσίδα,,,"Bauer,Louw-Naida",,,
+m,Petrus,Peter,Πέτρος,πετρος,"πετρως,Πέτρος,Πρῶτος,Πέτρων",Πέτρος,Πέτρου,"Πέτρῳ,πετρωι",Πέτρον,Πέτρε,,"Bauer,Louw-Naida",,,
+m,Pilatus,Pilate,Πιλᾶτος,πιλατος,"πιλατοσ,πηλατος,Πιλάτος,Πειλᾶτος",Πιλᾶτος,Πιλατου,Πιλάτῳ,Πιλᾶτον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168747,
+m,Pontius,Pontius,Πόντιος ,ποντιος,,Πόντιος ,Ποντιου,,,,,Bauer,,,
+m,Publius,Publius,Πόπλιος,ποπλιος,,Πόπλιος,Ποπλιου,Ποπλίῳ,,,,"Bauer,Louw-Naida",,,
+m,Porcius,Porcius,Πόρκιος,πορκιος,,Πόρκιος ,Πορκιου,,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q168754,https://database.factgrid.de/entity/Q168757,https://database.factgrid.de/entity/Q168758,https://database.factgrid.de/entity/Q168756,https://database.factgrid.de/entity/Q168762,https://database.factgrid.de/entity/Q166310",
+m,Prochorus,Prochorus,Πρόχορος,προχορος,,Πρόχορος ,Προχορου,,Πρόχορον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168446,
+m,Pyrrhus,Pyrrhus,Πύρρος ,πυρρος,,Πύρρος ,Πυρρου,,,,,Bauer,,,
+f,Rahab,Rahab,Ῥαάβ ,ρααβ,"Ῥαάβη,Ῥαχάβη",Ῥαάβ ,"Ῥαάβ,Ῥααβης ",,,,,Bauer,,https://database.factgrid.de/entity/Q168789,
+f,Rahab,Rahab,Ῥαχάβ ,ραχαβ,"ρακαβ,ρηχαβ,ραχααβ,Ῥαάβη,Ῥαχάβη",Ῥαχάβ ,"Ῥαχάβ,Ῥααβης ",,,,,Bauer,,,
+f,Rahel,Rachel,Ῥαχήλ,ραχηλ,"ραχηηλ,ραχιηλ,ραχιλ,Ῥαχήλα",Ῥαχήλ,"Ῥαχήλ,Ῥαχηλας",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168785,
+f,Rebekka,Rebecca,Ῥεβέκκα,ρεβεκκα,"ρεβεκκαν,ρεβεκα,ρεββεκα,ρεβεκκας",Ῥεβέκκα,Ῥεβεκκας,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168786,
+m,Resa,Rhesa,Ῥησά,ρησα,,Ῥησά,Ῥησά,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168787,
+m,Rehabeam,Rehoboam,Ῥοβοάμ,ροβοαμ,Ῥοβόαμος,Ῥοβοάμ,"Ῥοβοάμ,Ῥοβοαμου",,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q168750,https://database.factgrid.de/entity/Q168751,https://database.factgrid.de/entity/Q168129",
+f,Rhode,Rhoda,Ῥόδη,ροδη,ρωδη,Ῥόδη,Ῥοδης,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168792,
+m,Ruben,Reuben,Ῥουβήν,ρουβην,"Ῥουβήμ,Ρουβίμ,Ῥουβίν,Ῥουβῆλος,Ῥουβήλ,Ῥουβίμ",Ῥουβήν,"Ῥουβήν,Ῥουβηλου",,,,,Bauer,,,
+m,Rufus,Rufus,Ῥοῦφος,ρουφος,,Ῥοῦφος,Ῥουφου,,Ῥοῦφον,,,"Bauer,Louw-Naida",,,
+m,Zadok,Zadok,Σαδώκ,σαδωκ,"Σάδωκος,Σαδδουκ",Σαδώκ,"Σαδώκ,Σαδωκου",,,,,Bauer,,https://database.factgrid.de/entity/Q168780,
+m,Sala,Sala,Σαλά,σαλα,Σάλα,Σαλά,Σαλά,,,,,Bauer,,https://database.factgrid.de/entity/Q168783,
+m,Salmon,Salmon,Σαλμών,σαλμων,Σαλμάν,Σαλμών,Σαλμών,,,,,Bauer,,,
+f,Salome,Salome,Σαλώμη,σαλωμη,"σαλομη,σαλωνη,σαλο",Σαλώμη,Σαλωμης,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166421,
+m,Samuel,Samuel,Σαμουήλ,σαμουηλ,Σαμούηλος,Σαμουήλ,"Σαμουήλ,Σαμουηλου",,,,,"Bauer,Louw-Naida",,,
+m,Simson,Samson,Σαμψών,σαμψων,,Σαμψών,"Σαμψών,Σαμψῶνος",,,,,Bauer,,https://database.factgrid.de/entity/Q168831,
+m,Saul,Saul,Σαούλ,σαουλ,Σαοῦλος ,Σαούλ,"Σαούλ,Σαουλου,Σαυλου ",,Σαοὺλ,"Σαοὺλ,Σαῦλε",,"Bauer,Louw-Naida",,,
+f,Sara,Sarah,Σάρρα,σαρρα,,Σάρρα ,Σαρρας ,,,,,Bauer,,https://database.factgrid.de/entity/Q168832,
+m,Saulus,Saul,Σαῦλος ,σαυλος,Σαοῦλος ,Σαῦλος ,"Σαυλου,Σαουλου",,,Σαῦλε ,,Bauer,,https://database.factgrid.de/entity/Q168843,
+m,Sergius,Sergius,Σέργιος,σεργιος,,Σέργιος ,Σεργιου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168852,
+m,Sem,Shem,Σήμ ,σημ,Σήμας,Σήμ ,"Σήμ,Σημᾳ ",,,,,Bauer,,https://database.factgrid.de/entity/Q168857,
+f,Susanna,Susanna,Σουσάννα,σουσαννα,σωσαννα,Σουσάννα,"Σουσαννης,Σουσαννας",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168856,
+m,Stachys,Stachys,Στάχυς ,σταχυς,,Στάχυς ,Σταχυος ,στάχυϊ,στάχυν,,,"Bauer,Louw-Naida",,,
+m,Stephanas,Stephanas,Στεφανᾶς,στεφανας,Στεφανηφόρος,Στεφανᾶς,"Στεφανᾶ,Στεφανᾶτος ",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168863,
+m,Stephanus,Stephen,Στέφανος,στεφανος,,Στέφανος ,Στεφανου,,στέφανόν,στέφανός,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168876,
+f,Syntyche,Syntyche,Συντύχη,συντυχη,"Συντυχή,συντοιχην,συντυχιαν,συντυχιν",Συντύχη ,Συντυχης ,,Συντύχην,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168877,
+m,Sopater,Sopater,Σώπατρος,σωπατρος,Σωσίπατρος ,Σώπατρος,Σωπατρου ,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168878,
+m,Sosthenes,Sosthenes,Σωσθένης,σωσθενης,,Σωσθένης,Σωσθενους,,Σωσθένην,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168882,
+m,Tertius,Tertius,Τέρτιος,τερτιος,Τερέντιος ,Τέρτιος,Τερτιου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168881,
+m,Tertullus,Tertullus,Τέρτυλλος,τερτυλλος,,Τέρτυλλος ,Τερτυλλου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q167042,
+m,Tiberius,Tiberius,Τιβέριος,τιβεριος,,Τιβέριος ,Τιβεριου,,,,,"Bauer,Louw-Naida",,,
+m,Timotheus,Timothy,Τιμόθεος,τιμοθεος,,Τιμόθεος,Τιμοθεου,Τιμοθέῳ,Τιμόθεον,Τιμόθεε,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168266,
+m,Timon,Timon,Τίμων,τιμων,,Τίμων ,Τιμωνος ,,Τίμωνα,,,"Bauer,Louw-Naida",,,
+m,Titius,Titius,Τίτιος ,τιτιος,Τίτος ,Τίτιος ,Τιτιου,,,,,Bauer,,,
+m,Titus,Titus,Τίτος,τιτος,Τίτιος ,Τίτος,Τιτου,Τίτῳ,Τίτον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166680,
+m,Trophimus,Trophimus,Τρόφιμος,τροφιμος,,Τρόφιμος,Τροφιμου ,,Τρόφιμον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168310,
+f,Tryphosa,Tryphosa,Τρυφῶσα,τρυφωσα,,Τρυφῶσα ,Τρυφωσης,,Τρυφῶσαν,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168285,
+m,Tyrannus,Tyrannus,Τύραννος,τυραννος,,Τύραννος,Τυραννου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168286,
+m,Hymenäus,Hymenaeus,Ὑμέναιος,υμεναιος,,Ὑμέναιος,Ὑμεναιου,,,,,"Bauer,Louw-Naida",,"https://database.factgrid.de/entity/Q168290,https://database.factgrid.de/entity/Q168287,https://database.factgrid.de/entity/Q168288",
+m,Pharao,Pharaoh ,Φαραώ ,φαραω,Φαραώθης ,Φαραώ ,"Φαραώ,Φαραωθου",,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168291,
+m,Felix,Felix,Φῆλιξ,φηλιξ,,Φῆλιξ,Φηλικος,Φήλικι,Φήλικα,Φῆλιξ,,"Bauer,Louw-Naida",,,
+m,Festus,Festus,Φῆστος,φηστος,,Φῆστος,Φηστον,Φήστῳ,Φῆστον,Φῆστε,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168295,
+m,Philemon,Philemon,Φιλήμων,φιλημων,,Φιλήμων,Φιλημονος,Φιλήμονι,,,,"Bauer,Louw-Naida",, alternative formen nicht in fälle eingetragen – CW,https://database.factgrid.de/entity/Q168283
+m,Philetus,Philetus,Φίλητος,φιλητος,Φιλητός ,Φίλητος,Φιλητου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166681,
+m,Philippus,Philip,Φίλιππος,φιλιππος,,Φίλιππος,Φιλιππου,Φιλίππῳ,Φίλιππον,Φίλιππε,,"Bauer,Louw-Naida",,,
+m,Philologus,Philologus,Φιλόλογος,φιλολογος,,Φιλόλογος,Φιλολογου,,Φιλόλογον,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q168299,
+m,Phlegon,Phlegon,Φλέγων,φλεγων,,Φλέγων ,Φλεγοντος,,Φλέγοντα,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166331,
+m,Fortunatus,Fortunatus,Φορτουνᾶτος,φορτουνατος,Φουρτουνᾶτος ,Φορτουνᾶτος,Φορτουνατου,,,,,"Bauer,Louw-Naida",,https://database.factgrid.de/entity/Q166334,
+m,Phygelus,Phygelus,Φύγελος,φυγελος,Φύγελλος ,Φύγελος ,Φυγελου,,,,,Bauer,,,
+m,Chuza,Chuza,Χουζᾶς,χουζας,,Χουζᾶς,Χουζᾶ,,,,,"Bauer,Louw-Naida",,,
+m,Hosea,Hosea,Ὡσηέ,ωσηε,"Ὡσῆε,Ὡσῆος,Ὡσήης,Ὡσῆς ",Ὡσηέ,Ὡσηέ,Ὡσηὲ,,,,"Bauer,Louw-Naida",,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,Ausgeschiedene Wörter:,,
+,,,,,,,,,,,,,"m,Emmaus,εμμαους",,
+,,,,,,,,,,,,,"m,Zebaoth,σαβαωθ",,
+,,,,,,,,,,,,,"m,Boanerges,Βοανηργές",,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,"Allgemeine Anmerkungen: Deutsche Namen aus Luther17, und wenn nicht, dann aus dem Bauer-Wörterbuch. Englische Namen möglichst nach NRSV (und wenn nicht, nach Wikipedia)",,
