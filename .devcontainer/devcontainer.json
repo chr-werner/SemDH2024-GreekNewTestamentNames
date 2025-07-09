@@ -1,0 +1,38 @@
+{
+	"name": "bible-gender-data-all",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--gpus",
+		"all"
+	],
+	"customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "mechatroner.rainbow-csv",
+                "redhat.vscode-xml",
+                "ms-toolsai.datawrangler",
+                "naumovs.color-highlight",
+                "njpwerner.autodocstring",
+                "codezombiech.gitignore",
+                "mhutchie.git-graph",
+                "waderyan.gitblame",
+                "ms-python.isort",
+                "DavidAnson.vscode-markdownlint",
+                "LittleFoxTeam.vscode-python-test-adapter",
+                "chrmarti.regex",
+                "njqdev.vscode-python-typehint",
+                "DotJoshJohnson.xml",
+                "Gruntfuggly.todo-tree",
+                "DotJoshJohnson.xml",
+                "ms-azuretools.vscode-docker",
+                "Mikhail-Arkhipov.r",
+                "RDebugger.r-debugger",
+                "REditorSupport.r"
+            ]
+        }
+    }
+}

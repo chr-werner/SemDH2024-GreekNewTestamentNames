@@ -1,14 +1,13 @@
-import io
+import csv
 import json
 import os
-import pandas as pd
 import re
-import requests
 import xml.etree.ElementTree as ET
-import zipfile
-import csv
-
 from pathlib import Path
+from typing import Optional
+
+import pandas as pd
+import requests
 from constants import BOOK_INFO
 from TEIFile import TEIFile
 
@@ -20,9 +19,7 @@ def check_and_create_file(file_path):
         dir_path = os.path.dirname(file_path)
 
         # Create the directory path if it does not exist
-        if not os.path.exists(dir_path):
-            os.makedirs(dir_path)
-            print(f"Directory created: {dir_path}")
+        check_and_create_directory(dir_path)
 
         # Create the file
         with open(file_path, "w") as file:
@@ -30,7 +27,14 @@ def check_and_create_file(file_path):
             print(f"File created: {file_path}")
 
 
-def url_to_error_log(url: str, reason: str, error_log_file: str):
+def check_and_create_directory(directory_path):
+    # Create the directory path if it does not exist
+    if not os.path.exists(directory_path):
+        os.makedirs(directory_path)
+        print(f"Directory created: {directory_path}")
+
+
+def url_to_error_log(url: str, reason: str | None, error_log_file: str):
     """Print an error message to given log file
 
     :param url: Url string which produced an error
@@ -57,7 +61,7 @@ def fetch_and_format_xml(url: str, output_file: str, error_log_file: str):
     try:
         response = requests.get(url)
         if response.status_code == 200 and "text/xml" in response.headers.get(
-            "content-type"
+            "content-type", ""
         ):
             root = ET.fromstring(response.text)
             # Check for <error> tag with code attribute equal to 1
@@ -91,7 +95,7 @@ def format_xml(root: ET.Element) -> str:
     return re.sub(r"\s{2,}", "", xml_string)
 
 
-def check_xml(file_path: str, parser) -> str or None:
+def check_xml(file_path: str, parser) -> Optional[str]:
     """Check XML file validity
 
     :param file_path: path string to file to be checked
@@ -105,116 +109,20 @@ def check_xml(file_path: str, parser) -> str or None:
         return None
 
 
-def fetch_and_format_json(url: str, output_file: str, error_log_file: str):
-    """Fetches an JSON file from the given URL, formats it to be humanreadable and writes it to an output file
-
-    :param url: URL to the JSON
-    :param output_file: Path to the output file
-    :param error_log_file: Path to the log file
-    :return:
-    """
-    try:
-        response = requests.get(url)
-        if response.status_code == 200 and "application/json" in response.headers.get(
-            "content-type"
-        ):
-            data = response.json()
-            formatted_json = json.dumps(data, indent=4)
-
-            with open(output_file, "w", encoding="utf-8") as file:
-                file.write(formatted_json)
-        else:
-            url_to_error_log(url, "no json found", error_log_file)
-
-    except requests.RequestException as e:
-        url_to_error_log(url, str(e), error_log_file)
-
-
-def fetch_and_extract_zip(url: str, extract_dir: str):
-    """Fetches and extracts a zip file from the given URL to given directory
-
-    :param url: URL to the ZIP
-    :param extract_dir: Output directory where ZIP should be extracted to
-    :return:
-    """
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            with zipfile.ZipFile(io.BytesIO(response.content)) as zip_ref:
-                os.makedirs(extract_dir, exist_ok=True)
-                # Extract only XML files from the ZIP file
-                # Filter XML files and extract only those not containing "*MAC*"
-                xml_files = [
-                    f
-                    for f in zip_ref.namelist()
-                    if f.lower().endswith(".xml") and "__MAC" not in f
-                ]
-                for xml_file in xml_files:
-                    zip_ref.extract(xml_file, extract_dir)
-        else:
-            print("Failed to download the file")
-    except requests.RequestException as e:
-        print(f"Error downloading {url}: {e}")
-
-
-def download_ntvmr_transcripts(
-    docID: int, path: str, error_log_file: str, overwrite: bool = True
-):
-    """Download a transcription of a given docID from NTVMR
-
-    :param docID: documentID of the manuscript to download transcription of
-    :param path: directory where to save transcription
-    :param error_log_file: Path to the log file
-    :param overwrite: boolean to select if file should be overwritten if it already exists
-    :return:
-    """
-    url = f"http://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID={docID}&pageID=ALL&format=teiraw"  # &filterNoise=true
-    output_file = f"{path}/{docID}.xml"
-
-    if not os.path.exists(output_file) or overwrite:
-        # if file does not already do exist or overwrite is true
-        fetch_and_format_xml(url, output_file, error_log_file)
-    # else:
-    #    print(f"File already exists: {output_file}")
-
-
-def download_ntvmr_manuscripts(
-    docID: int, path: str, error_log_file: str, overwrite: bool = True
-):
-    """Download metadata of a given docID from NTVMR
-
-    :param docID: documentID of the manuscript to download metadata of
-    :param path: directory where to save metadata file
-    :param error_log_file: Path to the log file
-    :param overwrite: boolean to select if file should be overwritten if it already exists
-    :return:
-    """
-    url = f"https://ntvmr.uni-muenster.de/community/vmr/api/metadata/manuscript/get/?docID={docID}&detail=10&format=json"
-    output_file = f"{path}/{docID}.json"
-
-    if not os.path.exists(output_file) or overwrite:
-        # if file does not already do exist or overwrite is true
-        fetch_and_format_json(url, output_file, error_log_file)
-    # else:
-    #    print(f"File already exists: {output_file}")
-
-
-def concat_raw_text_from_tags(tags: list, exception_list: list) -> str:
-    """Concatenate texts of multiple tags to space seperated string
-
-    :param tags: list of tags to concatenate text from
-    :param exception_list: child tags to ignore in concatenation process
-    :return: string of tag texts
-    """
-    words = []
-
-    for tag in tags:
-        for child in tag.children:
-            if child.name not in exception_list:
-                if child.string:
-                    words.append(child.string.strip())
-
-    return " ".join(words)
+def get_unique_error_data(error_data) -> dict:
+    """TODO: this function should not be needed, but the parser throws same errors multiple times. You can test this with ntvmr/10001.xml"""
+    errors = error_data["errors"]
+    file = error_data["file"]
+    # Use a set to track seen items
+    seen = set()
+    unique_errors = []
+    for error in errors:
+        # Convert dictionary to a frozenset of its items for hashability
+        error_tuple = frozenset(error.items())
+        if error_tuple not in seen:
+            seen.add(error_tuple)
+            unique_errors.append(error)
+    return {"file": file, "errors": unique_errors}
 
 
 def get_data_from_tei(
@@ -224,9 +132,12 @@ def get_data_from_tei(
     write_to_file: bool = False,
     trans_out_dir: str = "../data/parsed/trans",
     man_out_dir: str = "../data/parsed/man",
-) -> tuple:
+    nomsac_out_dir: str = "../data/parsed/nomsac",
+    error_out_dir: str = "../data/parsed/errors",
+) -> tuple | None:
     """Wrapper function to extract manuscript and verse data from TEI file
 
+    :param nomsac_out_dir:
     :param man_out_dir:
     :param trans_out_dir:
     :param verbose:
@@ -237,63 +148,40 @@ def get_data_from_tei(
     """
     tei = TEIFile(tei_file_path, clear_only, verbose)
     file_name = Path(tei_file_path).stem
+    nomsac = tei.nomsac
     man_data = tei.get_manuscript_data()
     trans_data = tei.get_transcription_list()
+    error_data = tei.get_error_data()
 
     if not write_to_file:
-        return man_data, trans_data
+        return man_data, trans_data, nomsac
     else:
         with open(f"{man_out_dir}/{file_name}.csv", "w", newline="") as file1:
-            w = csv.DictWriter(file1, man_data.keys())
+            w = csv.DictWriter(file1, fieldnames=man_data.keys())
             w.writeheader()
             w.writerow(man_data)
         with open(f"{trans_out_dir}/{file_name}.csv", "w", newline="") as file2:
-            w = csv.DictWriter(file2, trans_data[0].keys())
+            w = csv.DictWriter(file2, fieldnames=trans_data[0].keys())
             w.writeheader()
             w.writerows(trans_data)
-
-
-def fix_bkv(row: pd.Series) -> str or None:
-    """Fix the bkv column, by checking and converting nkv entries
-
-    :param row: pandas dataframe row
-    :return: bkv string or NONE
-    """
-    bkv = row["bkv"]
-    # patterns to check for
-    pattern_nkv = r"([1-3A-Za-z]+)\.(\d+)\.(\d+)"
-    pattern_bkv = r"B(\d{2})K(\d+)V(\d+)"
-    # check data against patterns
-    match_nkv = re.match(pattern_nkv, bkv)
-    match_bkv = re.match(pattern_bkv, bkv)
-
-    # handle match on nkv schema
-    if match_nkv:
-        # parts of matched string
-        book_name = match_nkv.group(1)
-        chapter = match_nkv.group(2)
-        verse = match_nkv.group(3)
-        # check for book_name in en values of dicts
-        for key, value in BOOK_INFO.items():
-            if value["en"] == book_name:
-                book_num = key
-                break
-
-        return f"B{book_num}K{chapter}V{verse}"
-    # handle match on bkv schema
-    elif match_bkv:
-        return bkv
-    # handle no match (Rom.Inscriptio etc.)
-    else:
-        return None
+        if error_data:
+            error_data = get_unique_error_data(error_data)
+            with open(
+                f"{error_out_dir}/{file_name}.json", "w", encoding="utf8"
+            ) as file3:
+                json.dump(error_data, file3, ensure_ascii=False)
+        if nomsac:
+            with open(f"{nomsac_out_dir}/{file_name}.csv", "w", newline="") as file3:
+                w = csv.DictWriter(file3, fieldnames=nomsac[0].keys())
+                w.writeheader()
+                w.writerows(nomsac)
 
 
 def bkv_nkv_from_verse_id(row: pd.Series, verse_id_col: str = "verse") -> pd.Series:
-    """Taking a pandas data frames row, this function takes the verse id from a given column, checks for its format and
-    converts it to 'standardized' nkv and bkv formats
+    """Taking a pandas data frames row, this function takes the verse id from a given column, checks for its format and converts it to 'standardized' nkv and bkv formats
 
     :param row: row representing a verse
-    :param verse_id_col: column the verse id lives in
+    :param verse_id_col: column the verse id lives in. The verse_id mentioned here is either in bkv or nkv format – not the later given integer number for quick referencing between tables.
     :return: modified row representing a verse
     """
     verse_id = row[verse_id_col]
@@ -328,9 +216,14 @@ def bkv_nkv_from_verse_id(row: pd.Series, verse_id_col: str = "verse") -> pd.Ser
         chapter = match_bkv.group(2)
         verse = match_bkv.group(3)
         # check for book_name in en values of dicts
-        book_abb_en = BOOK_INFO[str(book_num)]["en"]
-        row["nkv"] = f"{book_abb_en}.{chapter}.{verse}"
-        row["bkv"] = verse_id
+        try:
+            book_abb_en = BOOK_INFO[str(book_num)]["en"]
+            row["nkv"] = f"{book_abb_en}.{chapter}.{verse}"
+            row["bkv"] = verse_id
+        except KeyError:
+            # If book_num is not in BOOK_INFO, leave nkv and bkv unset
+            row["nkv"] = None
+            row["bkv"] = None
     # check for sub- or inscriptio
     elif match_nkv_scriptio:
         book_name = match_nkv_scriptio.group(1)
@@ -356,29 +249,9 @@ def bkv_nkv_from_verse_id(row: pd.Series, verse_id_col: str = "verse") -> pd.Ser
     return row
 
 
-def generate_transcription_url(row: pd.Series) -> str or None:
-    """Generate a transcription URL for a pandas dataframe row which has a nkv and docID assigned, as well as is
-    sourced from the NTVMR.
-
-    :param row: pandas dataframe row to generate transcription URL for
-    :return: link string or NONE
-    """
-    try:
-        nkv = row["nkv"]
-        docID = int(row["docID"])
-        source = row["source"]
-
-        if (nkv is not None) and (docID is not None) and (source == "ntvmr"):
-            return f"https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docid={docID}&indexContent={nkv}&format=xhtml"
-        else:
-            return None
-    except:
-        return None
-
-
 def generate_local_copies(
     verses: pd.DataFrame, gendervoc: pd.DataFrame, bkv: str
-) -> (pd.DataFrame, pd.DataFrame):
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Generate local copies of the two given dataframes (verses and gendervoc). The copied verses dataframe only
     contains entries with the given bkv and drops all rows with None in 'text' and 'marks' columns. The copied
     gendervoc dataframe drops rows where variant value is None
@@ -390,21 +263,26 @@ def generate_local_copies(
     """
     # make local copy of verses_df
     local_verses = verses[verses["bkv"] == bkv].copy()
-    local_verses.dropna(subset=["transcript"], inplace=True)
+    local_verses.dropna(subset=["text"], inplace=True)
 
     # make local copy of gendervoc_df
     local_gendervoc = gendervoc.copy()
     local_gendervoc.dropna(subset=["variant"], inplace=True)
 
+    # TODO: DROP UNNECESSARY COLUMNS HERE
+    # needed columns of verses: verse_id, text
+    # needed columns of words: variant, variantID, wordID
+
     # return both
     return (local_verses, local_gendervoc)
 
 
-def search_words(words: pd.DataFrame, verses: pd.DataFrame):
+def search_words(words: pd.DataFrame, verses: pd.DataFrame, blacklist: dict):
     """search verses for given list of words
 
     :param words: pandas dataframe holding word variants (en_tag,el_tag,variant,gender,type,wordID,variantID)
     :param verses: pandas dataframe holding verses (bkv,text,docID)
+    :param blacklist:
 
     """
 
@@ -419,19 +297,27 @@ def search_words(words: pd.DataFrame, verses: pd.DataFrame):
     for index, verse_row in verses.iterrows():
         verse_text = verse_row["text"]
 
+        # check if current verse_id is blacklisted and set up a set of blacklisted wordIDs
+        if verse_row["verse_id"] in blacklist:
+            blacklisted_wordIDs = set(blacklist[verse_row["verse_id"]])
+        else:
+            blacklisted_wordIDs = set()
+
         # Create an empty set to store matching variants for the current verse.
         variant_id_set_verse = set()
 
         # Iterate over each row in dataframe_names to search for variants in the current verse
         for _, word_row in words.iterrows():
-            # get variant of this word_row
-            variant = word_row["variant"]
-            # Check if the variant is present in the verse text
-            if re.search(rf"\b{re.escape(variant)}\b", verse_text):
-                # write variants wordID to list
-                variant_id = word_row["variantID"]
-                variant_id_set_verse.add(variant_id)
-                word_id_set_bkv.add(word_row["wordID"])
+            # for every row check
+            if word_row["wordID"] not in blacklisted_wordIDs:
+                # get variant of this word_row
+                variant = word_row["variant"]
+                # Check if the variant is present in the verse text
+                if re.search(rf"\b{re.escape(variant)}\b", verse_text):
+                    # write variants wordID to list
+                    variant_id = word_row["variantID"]
+                    variant_id_set_verse.add(variant_id)
+                    word_id_set_bkv.add(word_row["wordID"])
 
         # add variant_id_list to verse_row column "found"
         verses.at[index, "found_variants"] = variant_id_set_verse
@@ -454,6 +340,7 @@ def process_bkv(
     out_dir: str,
     verses: pd.DataFrame,
     gendervoc: pd.DataFrame,
+    blacklist_dict: dict,
     overwrite: bool = True,
 ):
     """Search a BKV for names
@@ -462,6 +349,7 @@ def process_bkv(
     :param out_dir: directory to write resulting data to
     :param verses: pandas dataframe containing all verses
     :param gendervoc: pandas dataframe containing all gender bound vocabulary
+    :param blacklist_dict: TODO: description
     :param overwrite: whether to overwrite existing data
     :return:
     """
@@ -484,7 +372,7 @@ def process_bkv(
             return
 
         # update local_verses_df and get set of found variant ids
-        search_words(local_gendervoc_df, local_verses_df)
+        search_words(local_gendervoc_df, local_verses_df, blacklist_dict)
 
         # Explode the "found" column, drop empty rows, rename columns 'missing' and 'found'
         found = (
@@ -496,11 +384,12 @@ def process_bkv(
         )
         # set all entries to True
         found.loc[:, "occurrence"] = True
-        found["wordID"] = found["variantID"].apply(
-            lambda variant_id: gendervoc.loc[
-                gendervoc["variantID"] == variant_id, "wordID"
-            ].values[0]
-        )
+
+        def get_word_id(variant_id):
+            matches = gendervoc[gendervoc["variantID"] == variant_id]["wordID"]
+            return matches.iloc[0] if not matches.empty else None
+
+        found["wordID"] = found["variantID"].apply(get_word_id)
 
         # Explode the "missing" column, drop empty rows, rename columns 'found' and 'missing'
         missing = (
@@ -545,64 +434,23 @@ def get_docID_set(metadata_list_xml: str, all: bool = True) -> set:
     if all:
         # Original loop to add docIDs to the set
         for manuscript in root.findall("manuscript"):
-            doc_ids_set.add(int(manuscript.get("docID")))
+            doc_id = manuscript.get("docID")
+            if doc_id is not None:
+                doc_ids_set.add(int(doc_id))
     else:
         # Modified loop to add docIDs to the set and remove those above 50000
         for manuscript in root.findall("manuscript"):
-            docID = int(manuscript.get("docID"))
-            if docID <= 50000:
-                doc_ids_set.add(docID)
+            doc_id = manuscript.get("docID")
+            if doc_id is not None:
+                docID = int(doc_id)
+                if docID <= 50000:
+                    doc_ids_set.add(docID)
 
     # Print the set of docIDs smaller than 50000
     return doc_ids_set
 
 
-def ga_to_docID(row: pd.Series) -> int or None:
-    """Convert the GA string corresponding docID for a given row of a pandas dataframe. ONLY do this when docID is Null.
-
-    :param row: pandas dataframe row
-    :return: docID integer or None if GA string is present, else just return already present rows docID
-    """
-    if pd.isnull(row["docID"]):
-        # Get ga from row data
-        ga = str(row["ga"])
-
-        if not re.match(r"^[PL0-9]$", ga[0]):
-            raise AttributeError
-
-        # Compile the regular expression pattern
-        pattern = re.compile(r"([0-9]\d*)")
-
-        # Remove non-digits from ga
-        try:
-            ga_digits = re.search(pattern, ga).group()
-        except AttributeError:
-            print(f"No digits found in GA string: {ga}")
-            return None
-
-        if ga[0] == "P":
-            docID = 10000 + int(ga_digits)
-        elif ga[0] == "0":
-            docID = 20000 + int(ga_digits)
-        elif ga[0].isdigit():
-            docID = 30000 + int(ga_digits)
-        elif ga[0] == "L":
-            docID = 40000 + int(ga_digits)
-        else:
-            raise ValueError(
-                f"Invalid input: cannot determine document ID for the given input. {ga},{ga_digits}"
-            )
-
-        if len(ga_digits) > 4 or len(str(docID)) != 5 or docID > 49999:
-            raise ValueError(f"{ga} or {docID} is invalid in length")
-
-        return docID
-
-    else:
-        return row["docID"]
-
-
-def gap_clean(text: str) -> str:
+def gap_clean(text: str) -> str | None:
     """Removes everything inside brackets except Greek characters, also removes the brackets.
 
     :param text: Input string containing text with brackets
